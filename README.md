@@ -40,8 +40,6 @@ Click or press Enter on an item to see detailed information in the right pane.
 
 ### Keys:
 
-### Keys:
-
 * `n` - View by package Name
 * `t` - View by package Type
 * `c` - View by License (Copyright/Code)
