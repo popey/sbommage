@@ -2,7 +2,7 @@
 
 SBOM + Rummage = Sbommage.
 
-*Pronounced (in my British English) as "ess-boomb-idge", or "SBOM Mage 🧙" if you prefer.*
+*Pronounced (in my British English) as "ess-bomb-idge", or "SBOM Mage 🧙" if you prefer.*
 
 Sbommage is an interactive terminal frontend for viewing Software Bill of Materials ([SBOM](https://anchore.com/sbom/)) files in various formats.
 
