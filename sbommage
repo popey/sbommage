@@ -426,15 +426,18 @@ class Sbommage(App):
                 f"**Supplier:** {info['supplier']}\n\n"
             )
 
-            # Format license information nicely
-            if 'license_info' in info:
+            # Only show license info table if there is any
+            if 'license_info' in info and len(info['license_info']) > 0:
                 detail_text += "## License Information\n\n"
+                detail_text += "| Value | SPDX | Type | Location |\n"
+                detail_text += "| --- | --- | --- | --- |\n"
                 for lic in info['license_info']:
-                    detail_text += f"* **Value:** {lic['value']}\n"
+                    detail_text += f"| {lic['value']} |"
                     if lic['spdxExpression']:
-                        detail_text += f"* **SPDX:** {lic['spdxExpression']}\n"
-                    detail_text += f"* **Type:** {lic['type']}\n"
-                    detail_text += f"* **Location:** {lic['location']}\n\n"
+                        detail_text += f" {lic['spdxExpression']} |"
+                    else:
+                        detail_text += " |"
+                    detail_text += f" {lic['type']} | {lic['location']} |\n"
 
         elif data_type == 'distro':
             detail_text = (
