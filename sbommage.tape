@@ -17,61 +17,60 @@ Set BorderRadius 10
 Set Framerate 60
 Set PlaybackSpeed 1
 Env PS1 "[0;38;5;231;48;5;31;1m popey [0;38;5;31;48;5;240;22m [0;38;5;252;48;5;240;1m~ [0;38;5;240;49;22m [0m"
-Sleep 250ms
+Sleep 50ms
 Type `figlet sbommage`
 Enter
-Sleep 1s
+Sleep 500ms
 Type@5ms `./sbommage ./example_sboms/nextcloud-latest-syft-sbom.json`
+Sleep 250ms
+Enter
+Enter
 Sleep 500ms
-Enter
-Enter
-Sleep 1.5s
 Down
+Sleep 50ms
+Enter
+Sleep 50ms
+Down
+Sleep 50ms
+Enter
 Sleep 500ms
-Enter
-Sleep 2s
 Down
-Sleep 1s
+Sleep 50ms
 Enter
-Sleep 2s
-Down
-Sleep 1s
-Enter
-Sleep 1.5s
+Sleep 500ms
 Down
 Enter
-Sleep 2s
+Sleep 500ms
 Down 13
-Sleep 500ms
+Sleep 50ms
 Enter
-Sleep 5s
+Sleep 500ms
 Type "t"
-Sleep 1s
+Sleep 500ms
 Enter
 Sleep 500ms
 Down 2
 Sleep 500ms
 Enter
-Sleep 1s
+Sleep 500ms
 Down 2
-Sleep 1s
+Sleep 500ms
 Enter
 Sleep 500ms
 Down 4
 Enter
-Sleep 2.5s
+Sleep 500ms
 Type "c"
-Sleep 1.5s
+Sleep 500ms
 Enter
-Sleep 4.5s
+Sleep 500ms
 Down 11
 Enter
-Sleep 1s
+Sleep 500ms
 Down
 Enter
-Sleep 5.5s
 Sleep 2s
 Screenshot sbommage.png
-Sleep 3s
+Sleep 1s
 Type "q"
-Sleep 2s
+Sleep 1s
