@@ -337,7 +337,7 @@ class Sbommage(App):
         if not self.sbom_data or 'packages' not in self.sbom_data:
             return
 
-        packages_node = self.tree_view.root.add("Packages")
+        packages_node = self.tree_view.root.add("Package types")
         # Group packages by type
         type_map = {}
         for package in self.sbom_data['packages']:
@@ -364,7 +364,7 @@ class Sbommage(App):
         if not self.sbom_data or 'packages' not in self.sbom_data:
             return
 
-        packages_node = self.tree_view.root.add("Packages")
+        packages_node = self.tree_view.root.add("Licenses")
         # Group packages by license
         license_map = {}
         for package in self.sbom_data['packages']:
@@ -392,7 +392,7 @@ class Sbommage(App):
         if not self.sbom_data or 'packages' not in self.sbom_data:
             return
 
-        packages_node = self.tree_view.root.add("Packages")
+        packages_node = self.tree_view.root.add("Suppliers")
         # Group packages by supplier
         supplier_map = {}
         for package in self.sbom_data['packages']:
