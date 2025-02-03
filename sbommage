@@ -19,7 +19,14 @@ def format_urls_as_markdown(text):
     # Convert plain URLs to markdown links
     url_pattern = r'https?://(?:[-\w.]|(?:%[\da-fA-F]{2}))+(?:/[^)\s]*)?'
     return re.sub(url_pattern, lambda m: f'[{m.group()}]({m.group()})', text)
-    
+
+class SearchState:
+    def __init__(self):
+        self.active = False
+        self.query = ""
+        self.current_matches = []
+        self.current_match_index = -1
+
 class SBOMFormatDetector:
     """Detect the format of an SBOM file."""
     
@@ -181,15 +188,16 @@ class Sbommage(App):
     """A TUI for viewing Software Bill of Materials (SBOM) files."""
 
     BINDINGS = [
+        ("/", "start_search", "Search"),
         ("n", "load_tree_by_name", "by Name"),
         ("t", "load_tree_by_type", "by Type"),
         ("c", "load_tree_by_license", "by License"),  # Changed from 'l' to 'c'
         ("s", "load_tree_by_supplier", "by Supplier"),
+        ("j", "simulate_key('down')", "Down"),
+        ("k", "simulate_key('up')", "Up"),
+        ("h", "simulate_key('left')", "Left"),
+        ("l", "simulate_key('right')", "Right"),
         ("q", "quit", "Quit"),
-        ("j", "simulate_key('down')", "Move down"),
-        ("k", "simulate_key('up')", "Move up"),
-        ("h", "simulate_key('left')", "Move left"),
-        ("l", "simulate_key('right')", "Move right"),
     ]
 
     def __init__(self, sbom_file=None):
@@ -199,6 +207,66 @@ class Sbommage(App):
         self.debug_log_file = open("sbommage_debug.txt", "w")
         # Add a constant for the root label
         self.ROOT_LABEL = "SBOM Contents"
+        self.search_state = SearchState()
+
+    def action_start_search(self):
+        """Start search mode."""
+        self.search_state.active = True
+        # Don't reset query, keep the previous one
+        self.status_bar.update(f"Search: {self.search_state.query}")
+
+    def find_matches(self, query: str) -> list:
+        """Find all nodes matching the search query."""
+        matches = []
+        
+        def search_node(node):
+            # Get the label as string
+            label_str = str(node.label)
+            
+            # Check if this node matches
+            if query.lower() in label_str.lower():
+                matches.append(node)
+            
+            # If this node has any children, search them too
+            if len(node.children) > 0:  # Check children length
+                # Get all children, whether visible or not
+                for child in node.children:
+                    search_node(child)
+        
+        search_node(self.tree_view.root)
+        return matches
+
+    def update_live_search(self, key: str):
+        """Update search results as user types."""
+        if key == "enter":
+            self.search_state.active = False
+            self.status_bar.update("Status: Search complete")
+            return
+        
+        # Update query
+        if key == "backspace":
+            self.search_state.query = self.search_state.query[:-1]
+        else:
+            self.search_state.query += key
+        
+        # Find matches
+        matches = self.find_matches(self.search_state.query)
+        self.search_state.current_matches = matches
+        self.search_state.current_match_index = 0
+        
+        # Update status bar with current search
+        self.status_bar.update(f"Search: {self.search_state.query}")
+        
+        # If we have matches, highlight the first one and ensure its parent nodes are expanded
+        if matches:
+            match_node = matches[0]
+            # Expand all parent nodes to make the match visible
+            parent = match_node.parent
+            while parent is not None:
+                parent.expand()
+                parent = parent.parent
+            self.tree_view.select_node(match_node)
+            self.tree_view.scroll_to_node(match_node)
 
     def debug_log(self, message):
         """Helper method to write debug messages to log file."""
@@ -239,9 +307,25 @@ class Sbommage(App):
         await self.load_sbom()
 
     async def on_key(self, event):
-        """Handle key press events to switch views."""
+        """Handle key press events."""
         key = event.key.lower()
-        if key == "n":
+        
+        # If search is active, handle search input and prevent event propagation
+        if self.search_state.active:
+            event.prevent_default()  # Prevent the event from reaching the tree
+            if len(key) == 1:  # Single character
+                self.update_live_search(key)
+            elif key == "enter":
+                self.update_live_search("enter")
+            elif key == "backspace":
+                self.update_live_search("backspace")
+            return
+        
+        # Normal key handling
+        if key == "/":
+            event.prevent_default()  # Prevent the "/" from reaching the tree
+            self.action_start_search()
+        elif key == "n":
             self.load_tree_by_name()
             self.status_bar.update("Status: Viewing by package name.")
         elif key == "t":

@@ -44,16 +44,23 @@ Click or press Enter on an item to see detailed information in the right pane.
 
 ### Keys:
 
+Change view:
+
 * `n` - View by package Name
 * `t` - View by package Type
 * `c` - View by License (Copyright/Code)
 * `s` - View by Supplier
+
+Navigation:
 
 * `h` - Move left
 * `j` - Move down
 * `k` - Move up
 * `l` - Move right
 
+Misc:
+
+* `/` - Search
 * `q` - Quit
 
 ## Supported SBOM Formats
