@@ -297,17 +297,17 @@ class Sbommage(App):
         
         # Distribution info
         if 'distro' in meta:
-            distro_node = root_node.add("Distribution")
+            distro_node = root_node.add_leaf("Distribution")
             distro_node.data = {'type': 'distro', 'info': meta['distro']}
             
         # Source/container info
         if 'source' in meta:
-            source_node = root_node.add("Source")
+            source_node = root_node.add_leaf("Source")
             source_node.data = {'type': 'source', 'info': meta['source']}
             
         # Schema info
         if 'schema' in meta:
-            schema_node = root_node.add("Schema")
+            schema_node = root_node.add_leaf("Schema")
             schema_node.data = {'type': 'schema', 'info': meta['schema']}
 
     def load_tree_by_name(self):
