@@ -2,17 +2,17 @@
 
 SBOM + Rummage = Sbommage.
 
-Sbommage is an interactive terminal frontend for viewing Software Bill of Materials (SBOM) files in various formats.
+Sbommage is an interactive terminal frontend for viewing Software Bill of Materials ([SBOM](https://anchore.com/sbom/)) files in various formats.
 
 ![A short video showing Sbommage](./sbommage.gif)
 
 ## Introduction
 
-Software Bill of Materials (SBOM) files are increasingly important in software supply chain security. However, they come in multiple formats (SPDX, CycloneDX, Syft's native format), each with their own structure and complexity. Sbommage aims to provide a consistent, user-friendly way to view and explore SBOM data, regardless of the underlying format.
+Software Bill of Materials ([SBOM](https://anchore.com/sbom/)) files are increasingly important in software supply chain security. However, they come in multiple formats (SPDX, CycloneDX, Syft's native format), each with their own structure and complexity. Sbommage aims to provide a consistent, user-friendly way to view and explore SBOM data, regardless of the underlying format.
 
 ## Installation
 
-Sbommage is written in Python, and uses the Textual library for the UI.
+Sbommage is written in Python, and uses the [Textual](https://textual.textualize.io/) library for the UI.
 
 ### Pre-requisites
 
@@ -33,7 +33,7 @@ uv pip install textual
 Point sbommage at an SBOM file:
 
 ```shell
-./sbommage example.json
+./sbommage example_sboms/nextcloud-latest-syft-sbom.json
 ```
 
 Sbommage will detect the SBOM format (SPDX, CycloneDX, or Syft), and present the data in an interactive interface.
@@ -46,13 +46,17 @@ Click or press Enter on an item to see detailed information in the right pane.
 * `t` - View by package Type
 * `c` - View by License (Copyright/Code)
 * `s` - View by Supplier
-* `q` - Quit
+
 * `h` - Move left
 * `j` - Move down
 * `k` - Move up
 * `l` - Move right
 
+* `q` - Quit
+
 ## Supported SBOM Formats
+
+The goal is to support as many SBOM formats as possible. Patches welcome!
 
 * SPDX
 * CycloneDX
