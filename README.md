@@ -4,6 +4,8 @@ SBOM + Rummage = Sbommage.
 
 Sbommage is an interactive terminal frontend for viewing Software Bill of Materials (SBOM) files in various formats.
 
+![A short video showing Sbommage](./sbommage.gif)
+
 ## Introduction
 
 Software Bill of Materials (SBOM) files are increasingly important in software supply chain security. However, they come in multiple formats (SPDX, CycloneDX, Syft's native format), each with their own structure and complexity. Sbommage aims to provide a consistent, user-friendly way to view and explore SBOM data, regardless of the underlying format.
