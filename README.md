@@ -35,7 +35,7 @@ uv pip install textual
 Point sbommage at an SBOM file:
 
 ```shell
-./sbommage example_sboms/nextcloud-latest-syft-sbom.json
+./sbommage example_sboms/syft_1.19.0_docker.io_nextcloud_latest_syft.json
 ```
 
 Sbommage will detect the SBOM format (SPDX, CycloneDX, or Syft), and present the data in an interactive interface.
