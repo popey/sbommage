@@ -345,7 +345,7 @@ class Sbommage(App):
             return
 
         try:
-            with open(self.sbom_file, 'r') as f:
+            with open(self.sbom_file, 'r', encoding='utf-8') as f:
                 content = json.load(f)
             
             # Detect format
