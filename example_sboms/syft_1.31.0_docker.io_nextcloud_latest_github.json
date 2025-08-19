@@ -1,0 +1,4477 @@
+{
+  "version": 0,
+  "job": {},
+  "detector": {
+    "name": "syft",
+    "url": "https://github.com/anchore/syft",
+    "version": "1.31.0"
+  },
+  "metadata": {
+    "syft:distro": "pkg:generic/debian@13"
+  },
+  "manifests": {
+    "docker.io/nextcloud:latest:/usr/lib/apache2/modules/libphp.so": {
+      "name": "docker.io/nextcloud:latest:/usr/lib/apache2/modules/libphp.so",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/lib/apache2/modules/libphp.so"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:9b2f133f08991c6b13815a79b770ecb30e127d0888e3f9b3b088a4ca421a4da7"
+      },
+      "resolved": {
+        "pkg:generic/php@8.3.24": {
+          "package_url": "pkg:generic/php@8.3.24",
+          "relationship": "direct",
+          "scope": "runtime"
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/lib/python3/dist-packages/packaging-25.0.dist-info/METADATA": {
+      "name": "docker.io/nextcloud:latest:/usr/lib/python3/dist-packages/packaging-25.0.dist-info/METADATA",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/lib/python3/dist-packages/packaging-25.0.dist-info/METADATA"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:d507b396d7c86b71d84185ebb9a8b84ea68e78dc1a157d08e355fed9f05d276c"
+      },
+      "resolved": {
+        "pkg:pypi/packaging@25.0": {
+          "package_url": "pkg:pypi/packaging@25.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/local/bin/php": {
+      "name": "docker.io/nextcloud:latest:/usr/local/bin/php",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/local/bin/php"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:9b2f133f08991c6b13815a79b770ecb30e127d0888e3f9b3b088a4ca421a4da7"
+      },
+      "resolved": {
+        "pkg:generic/php-cli@8.3.24": {
+          "package_url": "pkg:generic/php-cli@8.3.24",
+          "relationship": "direct",
+          "scope": "runtime"
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/local/lib/php/.registry/.channel.pecl.php.net/apcu.reg": {
+      "name": "docker.io/nextcloud:latest:/usr/local/lib/php/.registry/.channel.pecl.php.net/apcu.reg",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/local/lib/php/.registry/.channel.pecl.php.net/apcu.reg"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:d507b396d7c86b71d84185ebb9a8b84ea68e78dc1a157d08e355fed9f05d276c"
+      },
+      "resolved": {
+        "pkg:pear/pecl.php.net/apcu@5.1.26": {
+          "package_url": "pkg:pear/pecl.php.net/apcu@5.1.26",
+          "relationship": "direct",
+          "scope": "runtime"
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/local/lib/php/.registry/.channel.pecl.php.net/igbinary.reg": {
+      "name": "docker.io/nextcloud:latest:/usr/local/lib/php/.registry/.channel.pecl.php.net/igbinary.reg",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/local/lib/php/.registry/.channel.pecl.php.net/igbinary.reg"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:d507b396d7c86b71d84185ebb9a8b84ea68e78dc1a157d08e355fed9f05d276c"
+      },
+      "resolved": {
+        "pkg:pear/pecl.php.net/igbinary@3.2.16": {
+          "package_url": "pkg:pear/pecl.php.net/igbinary@3.2.16",
+          "relationship": "direct",
+          "scope": "runtime"
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/local/lib/php/.registry/.channel.pecl.php.net/imagick.reg": {
+      "name": "docker.io/nextcloud:latest:/usr/local/lib/php/.registry/.channel.pecl.php.net/imagick.reg",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/local/lib/php/.registry/.channel.pecl.php.net/imagick.reg"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:d507b396d7c86b71d84185ebb9a8b84ea68e78dc1a157d08e355fed9f05d276c"
+      },
+      "resolved": {
+        "pkg:pear/pecl.php.net/imagick@3.8.0": {
+          "package_url": "pkg:pear/pecl.php.net/imagick@3.8.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/local/lib/php/.registry/.channel.pecl.php.net/memcached.reg": {
+      "name": "docker.io/nextcloud:latest:/usr/local/lib/php/.registry/.channel.pecl.php.net/memcached.reg",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/local/lib/php/.registry/.channel.pecl.php.net/memcached.reg"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:d507b396d7c86b71d84185ebb9a8b84ea68e78dc1a157d08e355fed9f05d276c"
+      },
+      "resolved": {
+        "pkg:pear/pecl.php.net/memcached@3.3.0": {
+          "package_url": "pkg:pear/pecl.php.net/memcached@3.3.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/local/lib/php/.registry/.channel.pecl.php.net/redis.reg": {
+      "name": "docker.io/nextcloud:latest:/usr/local/lib/php/.registry/.channel.pecl.php.net/redis.reg",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/local/lib/php/.registry/.channel.pecl.php.net/redis.reg"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:d507b396d7c86b71d84185ebb9a8b84ea68e78dc1a157d08e355fed9f05d276c"
+      },
+      "resolved": {
+        "pkg:pear/pecl.php.net/redis@6.2.0": {
+          "package_url": "pkg:pear/pecl.php.net/redis@6.2.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/local/lib/php/.registry/archive_tar.reg": {
+      "name": "docker.io/nextcloud:latest:/usr/local/lib/php/.registry/archive_tar.reg",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/local/lib/php/.registry/archive_tar.reg"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:9b2f133f08991c6b13815a79b770ecb30e127d0888e3f9b3b088a4ca421a4da7"
+      },
+      "resolved": {
+        "pkg:pear/pear.php.net/Archive_Tar@1.5.0": {
+          "package_url": "pkg:pear/pear.php.net/Archive_Tar@1.5.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/local/lib/php/.registry/console_getopt.reg": {
+      "name": "docker.io/nextcloud:latest:/usr/local/lib/php/.registry/console_getopt.reg",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/local/lib/php/.registry/console_getopt.reg"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:9b2f133f08991c6b13815a79b770ecb30e127d0888e3f9b3b088a4ca421a4da7"
+      },
+      "resolved": {
+        "pkg:pear/pear.php.net/Console_Getopt@1.4.3": {
+          "package_url": "pkg:pear/pear.php.net/Console_Getopt@1.4.3",
+          "relationship": "direct",
+          "scope": "runtime"
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/local/lib/php/.registry/pear.reg": {
+      "name": "docker.io/nextcloud:latest:/usr/local/lib/php/.registry/pear.reg",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/local/lib/php/.registry/pear.reg"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:9b2f133f08991c6b13815a79b770ecb30e127d0888e3f9b3b088a4ca421a4da7"
+      },
+      "resolved": {
+        "pkg:pear/pear.php.net/PEAR@1.10.16": {
+          "package_url": "pkg:pear/pear.php.net/PEAR@1.10.16",
+          "relationship": "direct",
+          "scope": "runtime"
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/local/lib/php/.registry/structures_graph.reg": {
+      "name": "docker.io/nextcloud:latest:/usr/local/lib/php/.registry/structures_graph.reg",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/local/lib/php/.registry/structures_graph.reg"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:9b2f133f08991c6b13815a79b770ecb30e127d0888e3f9b3b088a4ca421a4da7"
+      },
+      "resolved": {
+        "pkg:pear/pear.php.net/Structures_Graph@1.2.0": {
+          "package_url": "pkg:pear/pear.php.net/Structures_Graph@1.2.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/local/lib/php/.registry/xml_util.reg": {
+      "name": "docker.io/nextcloud:latest:/usr/local/lib/php/.registry/xml_util.reg",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/local/lib/php/.registry/xml_util.reg"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:9b2f133f08991c6b13815a79b770ecb30e127d0888e3f9b3b088a4ca421a4da7"
+      },
+      "resolved": {
+        "pkg:pear/pear.php.net/XML_Util@1.4.5": {
+          "package_url": "pkg:pear/pear.php.net/XML_Util@1.4.5",
+          "relationship": "direct",
+          "scope": "runtime"
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/local/lib/php/extensions/no-debug-non-zts-20230831/bcmath.so": {
+      "name": "docker.io/nextcloud:latest:/usr/local/lib/php/extensions/no-debug-non-zts-20230831/bcmath.so",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/local/lib/php/extensions/no-debug-non-zts-20230831/bcmath.so"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:d507b396d7c86b71d84185ebb9a8b84ea68e78dc1a157d08e355fed9f05d276c"
+      },
+      "resolved": {
+        "pkg:generic/bcmath@8.3.24": {
+          "package_url": "pkg:generic/bcmath@8.3.24",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:generic/php-cli@8.3.24",
+            "pkg:generic/php@8.3.24"
+          ]
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/local/lib/php/extensions/no-debug-non-zts-20230831/exif.so": {
+      "name": "docker.io/nextcloud:latest:/usr/local/lib/php/extensions/no-debug-non-zts-20230831/exif.so",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/local/lib/php/extensions/no-debug-non-zts-20230831/exif.so"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:d507b396d7c86b71d84185ebb9a8b84ea68e78dc1a157d08e355fed9f05d276c"
+      },
+      "resolved": {
+        "pkg:generic/exif@8.3.24": {
+          "package_url": "pkg:generic/exif@8.3.24",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:generic/php-cli@8.3.24",
+            "pkg:generic/php@8.3.24"
+          ]
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/local/lib/php/extensions/no-debug-non-zts-20230831/ftp.so": {
+      "name": "docker.io/nextcloud:latest:/usr/local/lib/php/extensions/no-debug-non-zts-20230831/ftp.so",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/local/lib/php/extensions/no-debug-non-zts-20230831/ftp.so"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:d507b396d7c86b71d84185ebb9a8b84ea68e78dc1a157d08e355fed9f05d276c"
+      },
+      "resolved": {
+        "pkg:generic/ftp@8.3.24": {
+          "package_url": "pkg:generic/ftp@8.3.24",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:generic/php-cli@8.3.24",
+            "pkg:generic/php@8.3.24"
+          ]
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/local/lib/php/extensions/no-debug-non-zts-20230831/gd.so": {
+      "name": "docker.io/nextcloud:latest:/usr/local/lib/php/extensions/no-debug-non-zts-20230831/gd.so",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/local/lib/php/extensions/no-debug-non-zts-20230831/gd.so"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:d507b396d7c86b71d84185ebb9a8b84ea68e78dc1a157d08e355fed9f05d276c"
+      },
+      "resolved": {
+        "pkg:generic/gd@8.3.24": {
+          "package_url": "pkg:generic/gd@8.3.24",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:generic/php-cli@8.3.24",
+            "pkg:generic/php@8.3.24"
+          ]
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/local/lib/php/extensions/no-debug-non-zts-20230831/gmp.so": {
+      "name": "docker.io/nextcloud:latest:/usr/local/lib/php/extensions/no-debug-non-zts-20230831/gmp.so",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/local/lib/php/extensions/no-debug-non-zts-20230831/gmp.so"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:d507b396d7c86b71d84185ebb9a8b84ea68e78dc1a157d08e355fed9f05d276c"
+      },
+      "resolved": {
+        "pkg:generic/gmp@8.3.24": {
+          "package_url": "pkg:generic/gmp@8.3.24",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:generic/php-cli@8.3.24",
+            "pkg:generic/php@8.3.24"
+          ]
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/local/lib/php/extensions/no-debug-non-zts-20230831/intl.so": {
+      "name": "docker.io/nextcloud:latest:/usr/local/lib/php/extensions/no-debug-non-zts-20230831/intl.so",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/local/lib/php/extensions/no-debug-non-zts-20230831/intl.so"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:d507b396d7c86b71d84185ebb9a8b84ea68e78dc1a157d08e355fed9f05d276c"
+      },
+      "resolved": {
+        "pkg:generic/intl@8.3.24": {
+          "package_url": "pkg:generic/intl@8.3.24",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:generic/php-cli@8.3.24",
+            "pkg:generic/php@8.3.24"
+          ]
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/local/lib/php/extensions/no-debug-non-zts-20230831/ldap.so": {
+      "name": "docker.io/nextcloud:latest:/usr/local/lib/php/extensions/no-debug-non-zts-20230831/ldap.so",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/local/lib/php/extensions/no-debug-non-zts-20230831/ldap.so"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:d507b396d7c86b71d84185ebb9a8b84ea68e78dc1a157d08e355fed9f05d276c"
+      },
+      "resolved": {
+        "pkg:generic/ldap@8.3.24": {
+          "package_url": "pkg:generic/ldap@8.3.24",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:generic/php-cli@8.3.24",
+            "pkg:generic/php@8.3.24"
+          ]
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/local/lib/php/extensions/no-debug-non-zts-20230831/opcache.so": {
+      "name": "docker.io/nextcloud:latest:/usr/local/lib/php/extensions/no-debug-non-zts-20230831/opcache.so",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/local/lib/php/extensions/no-debug-non-zts-20230831/opcache.so"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:9b2f133f08991c6b13815a79b770ecb30e127d0888e3f9b3b088a4ca421a4da7"
+      },
+      "resolved": {
+        "pkg:generic/opcache@8.3.24": {
+          "package_url": "pkg:generic/opcache@8.3.24",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:generic/php-cli@8.3.24",
+            "pkg:generic/php@8.3.24"
+          ]
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/local/lib/php/extensions/no-debug-non-zts-20230831/pcntl.so": {
+      "name": "docker.io/nextcloud:latest:/usr/local/lib/php/extensions/no-debug-non-zts-20230831/pcntl.so",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/local/lib/php/extensions/no-debug-non-zts-20230831/pcntl.so"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:d507b396d7c86b71d84185ebb9a8b84ea68e78dc1a157d08e355fed9f05d276c"
+      },
+      "resolved": {
+        "pkg:generic/pcntl@8.3.24": {
+          "package_url": "pkg:generic/pcntl@8.3.24",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:generic/php-cli@8.3.24",
+            "pkg:generic/php@8.3.24"
+          ]
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/local/lib/php/extensions/no-debug-non-zts-20230831/pdo_mysql.so": {
+      "name": "docker.io/nextcloud:latest:/usr/local/lib/php/extensions/no-debug-non-zts-20230831/pdo_mysql.so",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/local/lib/php/extensions/no-debug-non-zts-20230831/pdo_mysql.so"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:d507b396d7c86b71d84185ebb9a8b84ea68e78dc1a157d08e355fed9f05d276c"
+      },
+      "resolved": {
+        "pkg:generic/pdo_mysql@8.3.24": {
+          "package_url": "pkg:generic/pdo_mysql@8.3.24",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:generic/php-cli@8.3.24",
+            "pkg:generic/php@8.3.24"
+          ]
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/local/lib/php/extensions/no-debug-non-zts-20230831/pdo_pgsql.so": {
+      "name": "docker.io/nextcloud:latest:/usr/local/lib/php/extensions/no-debug-non-zts-20230831/pdo_pgsql.so",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/local/lib/php/extensions/no-debug-non-zts-20230831/pdo_pgsql.so"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:d507b396d7c86b71d84185ebb9a8b84ea68e78dc1a157d08e355fed9f05d276c"
+      },
+      "resolved": {
+        "pkg:generic/pdo_pgsql@8.3.24": {
+          "package_url": "pkg:generic/pdo_pgsql@8.3.24",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:generic/php-cli@8.3.24",
+            "pkg:generic/php@8.3.24"
+          ]
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/local/lib/php/extensions/no-debug-non-zts-20230831/sodium.so": {
+      "name": "docker.io/nextcloud:latest:/usr/local/lib/php/extensions/no-debug-non-zts-20230831/sodium.so",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/local/lib/php/extensions/no-debug-non-zts-20230831/sodium.so"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:9b2f133f08991c6b13815a79b770ecb30e127d0888e3f9b3b088a4ca421a4da7"
+      },
+      "resolved": {
+        "pkg:generic/sodium@8.3.24": {
+          "package_url": "pkg:generic/sodium@8.3.24",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:generic/php-cli@8.3.24",
+            "pkg:generic/php@8.3.24"
+          ]
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/local/lib/php/extensions/no-debug-non-zts-20230831/sysvsem.so": {
+      "name": "docker.io/nextcloud:latest:/usr/local/lib/php/extensions/no-debug-non-zts-20230831/sysvsem.so",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/local/lib/php/extensions/no-debug-non-zts-20230831/sysvsem.so"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:d507b396d7c86b71d84185ebb9a8b84ea68e78dc1a157d08e355fed9f05d276c"
+      },
+      "resolved": {
+        "pkg:generic/sysvsem@8.3.24": {
+          "package_url": "pkg:generic/sysvsem@8.3.24",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:generic/php-cli@8.3.24",
+            "pkg:generic/php@8.3.24"
+          ]
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/local/lib/php/extensions/no-debug-non-zts-20230831/zip.so": {
+      "name": "docker.io/nextcloud:latest:/usr/local/lib/php/extensions/no-debug-non-zts-20230831/zip.so",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/local/lib/php/extensions/no-debug-non-zts-20230831/zip.so"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:d507b396d7c86b71d84185ebb9a8b84ea68e78dc1a157d08e355fed9f05d276c"
+      },
+      "resolved": {
+        "pkg:generic/zip@1.22.3": {
+          "package_url": "pkg:generic/zip@1.22.3",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:generic/php-cli@8.3.24",
+            "pkg:generic/php@8.3.24"
+          ]
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/src/nextcloud/3rdparty/composer/installed.json": {
+      "name": "docker.io/nextcloud:latest:/usr/src/nextcloud/3rdparty/composer/installed.json",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/src/nextcloud/3rdparty/composer/installed.json"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:607d02ea78ba0eeda1279cc9dbc80751e1d6422abeb0d33f56f18ab14eea7cfd"
+      },
+      "resolved": {
+        "pkg:composer/aws/aws-crt-php@v1.2.7": {
+          "package_url": "pkg:composer/aws/aws-crt-php@v1.2.7",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/aws/aws-sdk-php@3.324.13": {
+          "package_url": "pkg:composer/aws/aws-sdk-php@3.324.13",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/bantu/ini-get-wrapper@v1.0.1": {
+          "package_url": "pkg:composer/bantu/ini-get-wrapper@v1.0.1",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/brick/math@0.12.1": {
+          "package_url": "pkg:composer/brick/math@0.12.1",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/cweagans/composer-patches@1.7.3": {
+          "package_url": "pkg:composer/cweagans/composer-patches@1.7.3",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/deepdiver/zipstreamer@v2.0.3": {
+          "package_url": "pkg:composer/deepdiver/zipstreamer@v2.0.3",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/deepdiver1975/tarstreamer@v2.1.0": {
+          "package_url": "pkg:composer/deepdiver1975/tarstreamer@v2.1.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/doctrine/cache@2.2.0": {
+          "package_url": "pkg:composer/doctrine/cache@2.2.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/doctrine/dbal@3.9.4": {
+          "package_url": "pkg:composer/doctrine/dbal@3.9.4",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/doctrine/deprecations@1.1.4": {
+          "package_url": "pkg:composer/doctrine/deprecations@1.1.4",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/doctrine/event-manager@2.0.1": {
+          "package_url": "pkg:composer/doctrine/event-manager@2.0.1",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/doctrine/lexer@3.0.1": {
+          "package_url": "pkg:composer/doctrine/lexer@3.0.1",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/egulias/email-validator@4.0.3": {
+          "package_url": "pkg:composer/egulias/email-validator@4.0.3",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/fusonic/opengraph@v2.3.0": {
+          "package_url": "pkg:composer/fusonic/opengraph@v2.3.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/giggsey/libphonenumber-for-php-lite@8.13.48": {
+          "package_url": "pkg:composer/giggsey/libphonenumber-for-php-lite@8.13.48",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/guzzlehttp/guzzle@7.9.2": {
+          "package_url": "pkg:composer/guzzlehttp/guzzle@7.9.2",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/guzzlehttp/promises@2.0.4": {
+          "package_url": "pkg:composer/guzzlehttp/promises@2.0.4",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/guzzlehttp/psr7@2.7.0": {
+          "package_url": "pkg:composer/guzzlehttp/psr7@2.7.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/guzzlehttp/uri-template@v1.0.3": {
+          "package_url": "pkg:composer/guzzlehttp/uri-template@v1.0.3",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/icewind/searchdav@v3.1.0": {
+          "package_url": "pkg:composer/icewind/searchdav@v3.1.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/icewind/streams@v0.7.8": {
+          "package_url": "pkg:composer/icewind/streams@v0.7.8",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/justinrainbow/json-schema@5.3.0": {
+          "package_url": "pkg:composer/justinrainbow/json-schema@5.3.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/kornrunner/blurhash@v1.2.2": {
+          "package_url": "pkg:composer/kornrunner/blurhash@v1.2.2",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/laravel/serializable-closure@v1.3.5": {
+          "package_url": "pkg:composer/laravel/serializable-closure@v1.3.5",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/lcobucci/clock@3.0.0": {
+          "package_url": "pkg:composer/lcobucci/clock@3.0.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/masterminds/html5@2.9.0": {
+          "package_url": "pkg:composer/masterminds/html5@2.9.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/mexitek/phpcolors@v1.0.4": {
+          "package_url": "pkg:composer/mexitek/phpcolors@v1.0.4",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/microsoft/azure-storage-blob@1.5.4": {
+          "package_url": "pkg:composer/microsoft/azure-storage-blob@1.5.4",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/microsoft/azure-storage-common@1.5.2": {
+          "package_url": "pkg:composer/microsoft/azure-storage-common@1.5.2",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/mlocati/ip-lib@1.18.1": {
+          "package_url": "pkg:composer/mlocati/ip-lib@1.18.1",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/mtdowling/jmespath.php@2.8.0": {
+          "package_url": "pkg:composer/mtdowling/jmespath.php@2.8.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/nextcloud/lognormalizer@v1.0.0": {
+          "package_url": "pkg:composer/nextcloud/lognormalizer@v1.0.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/paragonie/constant_time_encoding@v2.6.3": {
+          "package_url": "pkg:composer/paragonie/constant_time_encoding@v2.6.3",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/pear/archive_tar@1.5.0": {
+          "package_url": "pkg:composer/pear/archive_tar@1.5.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/pear/console_getopt@v1.4.3": {
+          "package_url": "pkg:composer/pear/console_getopt@v1.4.3",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/pear/pear-core-minimal@v1.10.15": {
+          "package_url": "pkg:composer/pear/pear-core-minimal@v1.10.15",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/pear/pear_exception@v1.0.2": {
+          "package_url": "pkg:composer/pear/pear_exception@v1.0.2",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/php-http/guzzle7-adapter@1.0.0": {
+          "package_url": "pkg:composer/php-http/guzzle7-adapter@1.0.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/php-http/httplug@2.2.0": {
+          "package_url": "pkg:composer/php-http/httplug@2.2.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/php-http/promise@1.1.0": {
+          "package_url": "pkg:composer/php-http/promise@1.1.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/php-opencloud/openstack@v3.10.0": {
+          "package_url": "pkg:composer/php-opencloud/openstack@v3.10.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/phpseclib/phpseclib@2.0.48": {
+          "package_url": "pkg:composer/phpseclib/phpseclib@2.0.48",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/pimple/pimple@v3.5.0": {
+          "package_url": "pkg:composer/pimple/pimple@v3.5.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/psr/cache@3.0.0": {
+          "package_url": "pkg:composer/psr/cache@3.0.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/psr/clock@1.0.0": {
+          "package_url": "pkg:composer/psr/clock@1.0.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/psr/container@2.0.2": {
+          "package_url": "pkg:composer/psr/container@2.0.2",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/psr/event-dispatcher@1.0.0": {
+          "package_url": "pkg:composer/psr/event-dispatcher@1.0.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/psr/http-client@1.0.3": {
+          "package_url": "pkg:composer/psr/http-client@1.0.3",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/psr/http-factory@1.1.0": {
+          "package_url": "pkg:composer/psr/http-factory@1.1.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/psr/http-message@1.1": {
+          "package_url": "pkg:composer/psr/http-message@1.1",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/psr/log@3.0.2": {
+          "package_url": "pkg:composer/psr/log@3.0.2",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/punic/punic@3.8.1": {
+          "package_url": "pkg:composer/punic/punic@3.8.1",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/ralouphie/getallheaders@3.0.3": {
+          "package_url": "pkg:composer/ralouphie/getallheaders@3.0.3",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/sabre/dav@4.7.0": {
+          "package_url": "pkg:composer/sabre/dav@4.7.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/sabre/event@5.1.7": {
+          "package_url": "pkg:composer/sabre/event@5.1.7",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/sabre/http@5.1.12": {
+          "package_url": "pkg:composer/sabre/http@5.1.12",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/sabre/uri@2.3.4": {
+          "package_url": "pkg:composer/sabre/uri@2.3.4",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/sabre/vobject@4.5.6": {
+          "package_url": "pkg:composer/sabre/vobject@4.5.6",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/sabre/xml@2.2.11": {
+          "package_url": "pkg:composer/sabre/xml@2.2.11",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/scssphp/scssphp@v1.12.1": {
+          "package_url": "pkg:composer/scssphp/scssphp@v1.12.1",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/spomky-labs/cbor-php@3.0.4": {
+          "package_url": "pkg:composer/spomky-labs/cbor-php@3.0.4",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/spomky-labs/pki-framework@1.2.1": {
+          "package_url": "pkg:composer/spomky-labs/pki-framework@1.2.1",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/stecman/symfony-console-completion@v0.13.0": {
+          "package_url": "pkg:composer/stecman/symfony-console-completion@v0.13.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/symfony/console@v6.4.17": {
+          "package_url": "pkg:composer/symfony/console@v6.4.17",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/symfony/css-selector@v6.4.3": {
+          "package_url": "pkg:composer/symfony/css-selector@v6.4.3",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/symfony/deprecation-contracts@v3.5.1": {
+          "package_url": "pkg:composer/symfony/deprecation-contracts@v3.5.1",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/symfony/dom-crawler@v6.4.4": {
+          "package_url": "pkg:composer/symfony/dom-crawler@v6.4.4",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/symfony/event-dispatcher-contracts@v3.5.1": {
+          "package_url": "pkg:composer/symfony/event-dispatcher-contracts@v3.5.1",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/symfony/event-dispatcher@v6.4.13": {
+          "package_url": "pkg:composer/symfony/event-dispatcher@v6.4.13",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/symfony/http-foundation@v6.4.18": {
+          "package_url": "pkg:composer/symfony/http-foundation@v6.4.18",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/symfony/mailer@v6.4.18": {
+          "package_url": "pkg:composer/symfony/mailer@v6.4.18",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/symfony/mime@v6.4.18": {
+          "package_url": "pkg:composer/symfony/mime@v6.4.18",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/symfony/polyfill-ctype@v1.31.0": {
+          "package_url": "pkg:composer/symfony/polyfill-ctype@v1.31.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/symfony/polyfill-intl-grapheme@v1.31.0": {
+          "package_url": "pkg:composer/symfony/polyfill-intl-grapheme@v1.31.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/symfony/polyfill-intl-idn@v1.31.0": {
+          "package_url": "pkg:composer/symfony/polyfill-intl-idn@v1.31.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/symfony/polyfill-intl-normalizer@v1.31.0": {
+          "package_url": "pkg:composer/symfony/polyfill-intl-normalizer@v1.31.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/symfony/polyfill-mbstring@v1.31.0": {
+          "package_url": "pkg:composer/symfony/polyfill-mbstring@v1.31.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/symfony/polyfill-php80@v1.31.0": {
+          "package_url": "pkg:composer/symfony/polyfill-php80@v1.31.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/symfony/polyfill-php83@v1.31.0": {
+          "package_url": "pkg:composer/symfony/polyfill-php83@v1.31.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/symfony/polyfill-uuid@v1.29.0": {
+          "package_url": "pkg:composer/symfony/polyfill-uuid@v1.29.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/symfony/process@v6.4.15": {
+          "package_url": "pkg:composer/symfony/process@v6.4.15",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/symfony/routing@v6.4.18": {
+          "package_url": "pkg:composer/symfony/routing@v6.4.18",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/symfony/service-contracts@v3.5.1": {
+          "package_url": "pkg:composer/symfony/service-contracts@v3.5.1",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/symfony/string@v6.4.15": {
+          "package_url": "pkg:composer/symfony/string@v6.4.15",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/symfony/translation-contracts@v3.5.1": {
+          "package_url": "pkg:composer/symfony/translation-contracts@v3.5.1",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/symfony/translation@v6.4.13": {
+          "package_url": "pkg:composer/symfony/translation@v6.4.13",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/symfony/uid@v6.4.3": {
+          "package_url": "pkg:composer/symfony/uid@v6.4.3",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/wapmorgan/mp3info@0.1.0": {
+          "package_url": "pkg:composer/wapmorgan/mp3info@0.1.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/web-auth/cose-lib@4.3.0": {
+          "package_url": "pkg:composer/web-auth/cose-lib@4.3.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/web-auth/webauthn-lib@4.9.1": {
+          "package_url": "pkg:composer/web-auth/webauthn-lib@4.9.1",
+          "relationship": "direct",
+          "scope": "runtime"
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/activity/package.json": {
+      "name": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/activity/package.json",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/activity/package.json"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:607d02ea78ba0eeda1279cc9dbc80751e1d6422abeb0d33f56f18ab14eea7cfd"
+      },
+      "resolved": {
+        "pkg:npm/activity@4.0.0": {
+          "package_url": "pkg:npm/activity@4.0.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/app_api/package.json": {
+      "name": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/app_api/package.json",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/app_api/package.json"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:607d02ea78ba0eeda1279cc9dbc80751e1d6422abeb0d33f56f18ab14eea7cfd"
+      },
+      "resolved": {
+        "pkg:npm/app_api@1.0.0": {
+          "package_url": "pkg:npm/app_api@1.0.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/bruteforcesettings/package.json": {
+      "name": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/bruteforcesettings/package.json",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/bruteforcesettings/package.json"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:607d02ea78ba0eeda1279cc9dbc80751e1d6422abeb0d33f56f18ab14eea7cfd"
+      },
+      "resolved": {
+        "pkg:npm/bruteforcesettings@4.0.0": {
+          "package_url": "pkg:npm/bruteforcesettings@4.0.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/files_downloadlimit/package.json": {
+      "name": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/files_downloadlimit/package.json",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/files_downloadlimit/package.json"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:607d02ea78ba0eeda1279cc9dbc80751e1d6422abeb0d33f56f18ab14eea7cfd"
+      },
+      "resolved": {
+        "pkg:npm/files_downloadlimit@4.0.0": {
+          "package_url": "pkg:npm/files_downloadlimit@4.0.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/files_external/3rdparty/composer/installed.json": {
+      "name": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/files_external/3rdparty/composer/installed.json",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/files_external/3rdparty/composer/installed.json"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:607d02ea78ba0eeda1279cc9dbc80751e1d6422abeb0d33f56f18ab14eea7cfd"
+      },
+      "resolved": {
+        "pkg:composer/icewind/smb@v3.7.0": {
+          "package_url": "pkg:composer/icewind/smb@v3.7.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/icewind/streams@v0.7.8": {
+          "package_url": "pkg:composer/icewind/streams@v0.7.8",
+          "relationship": "direct",
+          "scope": "runtime"
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/files_pdfviewer/package.json": {
+      "name": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/files_pdfviewer/package.json",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/files_pdfviewer/package.json"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:607d02ea78ba0eeda1279cc9dbc80751e1d6422abeb0d33f56f18ab14eea7cfd"
+      },
+      "resolved": {
+        "pkg:npm/files_pdfviewer@4.0.0": {
+          "package_url": "pkg:npm/files_pdfviewer@4.0.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/firstrunwizard/package.json": {
+      "name": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/firstrunwizard/package.json",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/firstrunwizard/package.json"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:607d02ea78ba0eeda1279cc9dbc80751e1d6422abeb0d33f56f18ab14eea7cfd"
+      },
+      "resolved": {
+        "pkg:npm/firstrunwizard@4.0.0": {
+          "package_url": "pkg:npm/firstrunwizard@4.0.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/logreader/package.json": {
+      "name": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/logreader/package.json",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/logreader/package.json"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:607d02ea78ba0eeda1279cc9dbc80751e1d6422abeb0d33f56f18ab14eea7cfd"
+      },
+      "resolved": {
+        "pkg:npm/logreader@4.0.0": {
+          "package_url": "pkg:npm/logreader@4.0.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/notifications/package.json": {
+      "name": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/notifications/package.json",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/notifications/package.json"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:607d02ea78ba0eeda1279cc9dbc80751e1d6422abeb0d33f56f18ab14eea7cfd"
+      },
+      "resolved": {
+        "pkg:npm/notifications@4.0.0": {
+          "package_url": "pkg:npm/notifications@4.0.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/password_policy/package.json": {
+      "name": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/password_policy/package.json",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/password_policy/package.json"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:607d02ea78ba0eeda1279cc9dbc80751e1d6422abeb0d33f56f18ab14eea7cfd"
+      },
+      "resolved": {
+        "pkg:npm/password_policy@3.0.0": {
+          "package_url": "pkg:npm/password_policy@3.0.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/photos/package.json": {
+      "name": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/photos/package.json",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/photos/package.json"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:607d02ea78ba0eeda1279cc9dbc80751e1d6422abeb0d33f56f18ab14eea7cfd"
+      },
+      "resolved": {
+        "pkg:npm/photos@4.0.0": {
+          "package_url": "pkg:npm/photos@4.0.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/photos/vendor/composer/installed.json": {
+      "name": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/photos/vendor/composer/installed.json",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/photos/vendor/composer/installed.json"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:607d02ea78ba0eeda1279cc9dbc80751e1d6422abeb0d33f56f18ab14eea7cfd"
+      },
+      "resolved": {
+        "pkg:composer/hexogen/kdtree@v0.2.6": {
+          "package_url": "pkg:composer/hexogen/kdtree@v0.2.6",
+          "relationship": "direct",
+          "scope": "runtime"
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/privacy/package.json": {
+      "name": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/privacy/package.json",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/privacy/package.json"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:607d02ea78ba0eeda1279cc9dbc80751e1d6422abeb0d33f56f18ab14eea7cfd"
+      },
+      "resolved": {
+        "pkg:npm/privacy@3.0.0": {
+          "package_url": "pkg:npm/privacy@3.0.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/recommendations/package.json": {
+      "name": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/recommendations/package.json",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/recommendations/package.json"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:607d02ea78ba0eeda1279cc9dbc80751e1d6422abeb0d33f56f18ab14eea7cfd"
+      },
+      "resolved": {
+        "pkg:npm/recommendations@4.0.0": {
+          "package_url": "pkg:npm/recommendations@4.0.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/related_resources/package.json": {
+      "name": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/related_resources/package.json",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/related_resources/package.json"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:607d02ea78ba0eeda1279cc9dbc80751e1d6422abeb0d33f56f18ab14eea7cfd"
+      },
+      "resolved": {
+        "pkg:npm/related_resources@2.0.0": {
+          "package_url": "pkg:npm/related_resources@2.0.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/support/package.json": {
+      "name": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/support/package.json",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/support/package.json"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:607d02ea78ba0eeda1279cc9dbc80751e1d6422abeb0d33f56f18ab14eea7cfd"
+      },
+      "resolved": {
+        "pkg:npm/support@3.0.0": {
+          "package_url": "pkg:npm/support@3.0.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/suspicious_login/vendor-bin/php-cs-fixer/vendor/composer/installed.json": {
+      "name": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/suspicious_login/vendor-bin/php-cs-fixer/vendor/composer/installed.json",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/suspicious_login/vendor-bin/php-cs-fixer/vendor/composer/installed.json"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:607d02ea78ba0eeda1279cc9dbc80751e1d6422abeb0d33f56f18ab14eea7cfd"
+      },
+      "resolved": {
+        "pkg:composer/nextcloud/coding-standard@v1.2.1": {
+          "package_url": "pkg:composer/nextcloud/coding-standard@v1.2.1",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/php-cs-fixer/shim@v3.62.0": {
+          "package_url": "pkg:composer/php-cs-fixer/shim@v3.62.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/suspicious_login/vendor-bin/psalm/vendor/composer/installed.json": {
+      "name": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/suspicious_login/vendor-bin/psalm/vendor/composer/installed.json",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/suspicious_login/vendor-bin/psalm/vendor/composer/installed.json"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:607d02ea78ba0eeda1279cc9dbc80751e1d6422abeb0d33f56f18ab14eea7cfd"
+      },
+      "resolved": {
+        "pkg:composer/amphp/amp@v2.6.4": {
+          "package_url": "pkg:composer/amphp/amp@v2.6.4",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/amphp/byte-stream@v1.8.2": {
+          "package_url": "pkg:composer/amphp/byte-stream@v1.8.2",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/composer/pcre@3.3.1": {
+          "package_url": "pkg:composer/composer/pcre@3.3.1",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/composer/semver@3.4.2": {
+          "package_url": "pkg:composer/composer/semver@3.4.2",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/composer/xdebug-handler@3.0.5": {
+          "package_url": "pkg:composer/composer/xdebug-handler@3.0.5",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/dnoegel/php-xdg-base-dir@v0.1.1": {
+          "package_url": "pkg:composer/dnoegel/php-xdg-base-dir@v0.1.1",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/doctrine/deprecations@1.1.3": {
+          "package_url": "pkg:composer/doctrine/deprecations@1.1.3",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/felixfbecker/advanced-json-rpc@v3.2.1": {
+          "package_url": "pkg:composer/felixfbecker/advanced-json-rpc@v3.2.1",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/felixfbecker/language-server-protocol@v1.5.2": {
+          "package_url": "pkg:composer/felixfbecker/language-server-protocol@v1.5.2",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/fidry/cpu-core-counter@1.2.0": {
+          "package_url": "pkg:composer/fidry/cpu-core-counter@1.2.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/netresearch/jsonmapper@v4.5.0": {
+          "package_url": "pkg:composer/netresearch/jsonmapper@v4.5.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/nextcloud/ocp@dev-master": {
+          "package_url": "pkg:composer/nextcloud/ocp@dev-master",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/nikic/php-parser@v4.19.2": {
+          "package_url": "pkg:composer/nikic/php-parser@v4.19.2",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/phpdocumentor/reflection-common@2.2.0": {
+          "package_url": "pkg:composer/phpdocumentor/reflection-common@2.2.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/phpdocumentor/reflection-docblock@5.4.1": {
+          "package_url": "pkg:composer/phpdocumentor/reflection-docblock@5.4.1",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/phpdocumentor/type-resolver@1.8.2": {
+          "package_url": "pkg:composer/phpdocumentor/type-resolver@1.8.2",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/phpstan/phpdoc-parser@1.30.1": {
+          "package_url": "pkg:composer/phpstan/phpdoc-parser@1.30.1",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/psr/clock@1.0.0": {
+          "package_url": "pkg:composer/psr/clock@1.0.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/psr/container@2.0.2": {
+          "package_url": "pkg:composer/psr/container@2.0.2",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/psr/event-dispatcher@1.0.0": {
+          "package_url": "pkg:composer/psr/event-dispatcher@1.0.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/psr/log@1.1.4": {
+          "package_url": "pkg:composer/psr/log@1.1.4",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/sebastian/diff@5.1.1": {
+          "package_url": "pkg:composer/sebastian/diff@5.1.1",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/spatie/array-to-xml@3.3.0": {
+          "package_url": "pkg:composer/spatie/array-to-xml@3.3.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/symfony/console@v6.4.11": {
+          "package_url": "pkg:composer/symfony/console@v6.4.11",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/symfony/deprecation-contracts@v3.5.0": {
+          "package_url": "pkg:composer/symfony/deprecation-contracts@v3.5.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/symfony/filesystem@v6.4.9": {
+          "package_url": "pkg:composer/symfony/filesystem@v6.4.9",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/symfony/polyfill-ctype@v1.31.0": {
+          "package_url": "pkg:composer/symfony/polyfill-ctype@v1.31.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/symfony/polyfill-intl-grapheme@v1.31.0": {
+          "package_url": "pkg:composer/symfony/polyfill-intl-grapheme@v1.31.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/symfony/polyfill-intl-normalizer@v1.31.0": {
+          "package_url": "pkg:composer/symfony/polyfill-intl-normalizer@v1.31.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/symfony/polyfill-mbstring@v1.31.0": {
+          "package_url": "pkg:composer/symfony/polyfill-mbstring@v1.31.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/symfony/service-contracts@v3.5.0": {
+          "package_url": "pkg:composer/symfony/service-contracts@v3.5.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/symfony/string@v6.4.11": {
+          "package_url": "pkg:composer/symfony/string@v6.4.11",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/vimeo/psalm@5.26.1": {
+          "package_url": "pkg:composer/vimeo/psalm@5.26.1",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/webmozart/assert@1.11.0": {
+          "package_url": "pkg:composer/webmozart/assert@1.11.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/suspicious_login/vendor-bin/psalm/vendor/symfony/console/Resources/bin/hiddeninput.exe": {
+      "name": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/suspicious_login/vendor-bin/psalm/vendor/symfony/console/Resources/bin/hiddeninput.exe",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/suspicious_login/vendor-bin/psalm/vendor/symfony/console/Resources/bin/hiddeninput.exe"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:607d02ea78ba0eeda1279cc9dbc80751e1d6422abeb0d33f56f18ab14eea7cfd"
+      },
+      "resolved": {
+        "": {
+          "relationship": "direct",
+          "scope": "runtime"
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/suspicious_login/vendor/amphp/process/bin/windows/ProcessWrapper.exe": {
+      "name": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/suspicious_login/vendor/amphp/process/bin/windows/ProcessWrapper.exe",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/suspicious_login/vendor/amphp/process/bin/windows/ProcessWrapper.exe"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:607d02ea78ba0eeda1279cc9dbc80751e1d6422abeb0d33f56f18ab14eea7cfd"
+      },
+      "resolved": {
+        "": {
+          "relationship": "direct",
+          "scope": "runtime"
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/suspicious_login/vendor/amphp/process/bin/windows/ProcessWrapper64.exe": {
+      "name": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/suspicious_login/vendor/amphp/process/bin/windows/ProcessWrapper64.exe",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/suspicious_login/vendor/amphp/process/bin/windows/ProcessWrapper64.exe"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:607d02ea78ba0eeda1279cc9dbc80751e1d6422abeb0d33f56f18ab14eea7cfd"
+      },
+      "resolved": {
+        "": {
+          "relationship": "direct",
+          "scope": "runtime"
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/suspicious_login/vendor/composer/installed.json": {
+      "name": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/suspicious_login/vendor/composer/installed.json",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/suspicious_login/vendor/composer/installed.json"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:607d02ea78ba0eeda1279cc9dbc80751e1d6422abeb0d33f56f18ab14eea7cfd"
+      },
+      "resolved": {
+        "pkg:composer/amphp/amp@v2.6.4": {
+          "package_url": "pkg:composer/amphp/amp@v2.6.4",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/amphp/byte-stream@v1.8.2": {
+          "package_url": "pkg:composer/amphp/byte-stream@v1.8.2",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/amphp/parallel@v1.4.4": {
+          "package_url": "pkg:composer/amphp/parallel@v1.4.4",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/amphp/parser@v1.1.1": {
+          "package_url": "pkg:composer/amphp/parser@v1.1.1",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/amphp/process@v1.1.9": {
+          "package_url": "pkg:composer/amphp/process@v1.1.9",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/amphp/serialization@v1.0.0": {
+          "package_url": "pkg:composer/amphp/serialization@v1.0.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/amphp/sync@v1.4.2": {
+          "package_url": "pkg:composer/amphp/sync@v1.4.2",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/andrewdalpino/okbloomer@1.0.0": {
+          "package_url": "pkg:composer/andrewdalpino/okbloomer@1.0.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/bamarni/composer-bin-plugin@1.8.2": {
+          "package_url": "pkg:composer/bamarni/composer-bin-plugin@1.8.2",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/psr/log@3.0.2": {
+          "package_url": "pkg:composer/psr/log@3.0.2",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/rubix/ml@2.3.2": {
+          "package_url": "pkg:composer/rubix/ml@2.3.2",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/rubix/tensor@3.0.5": {
+          "package_url": "pkg:composer/rubix/tensor@3.0.5",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/symfony/polyfill-iconv@v1.31.0": {
+          "package_url": "pkg:composer/symfony/polyfill-iconv@v1.31.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/symfony/polyfill-intl-grapheme@v1.31.0": {
+          "package_url": "pkg:composer/symfony/polyfill-intl-grapheme@v1.31.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/symfony/polyfill-intl-normalizer@v1.31.0": {
+          "package_url": "pkg:composer/symfony/polyfill-intl-normalizer@v1.31.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/symfony/polyfill-mbstring@v1.31.0": {
+          "package_url": "pkg:composer/symfony/polyfill-mbstring@v1.31.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/symfony/polyfill-php72@v1.31.0": {
+          "package_url": "pkg:composer/symfony/polyfill-php72@v1.31.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/symfony/polyfill-php80@v1.31.0": {
+          "package_url": "pkg:composer/symfony/polyfill-php80@v1.31.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/symfony/polyfill-php82@v1.31.0": {
+          "package_url": "pkg:composer/symfony/polyfill-php82@v1.31.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/symfony/polyfill-php83@v1.31.0": {
+          "package_url": "pkg:composer/symfony/polyfill-php83@v1.31.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/voku/portable-ascii@2.0.3": {
+          "package_url": "pkg:composer/voku/portable-ascii@2.0.3",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/voku/portable-utf8@6.0.13": {
+          "package_url": "pkg:composer/voku/portable-utf8@6.0.13",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/wamania/php-stemmer@v3.0.1": {
+          "package_url": "pkg:composer/wamania/php-stemmer@v3.0.1",
+          "relationship": "direct",
+          "scope": "runtime"
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/text/package.json": {
+      "name": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/text/package.json",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/text/package.json"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:607d02ea78ba0eeda1279cc9dbc80751e1d6422abeb0d33f56f18ab14eea7cfd"
+      },
+      "resolved": {
+        "pkg:npm/text@5.0.0": {
+          "package_url": "pkg:npm/text@5.0.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/twofactor_nextcloud_notification/package.json": {
+      "name": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/twofactor_nextcloud_notification/package.json",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/twofactor_nextcloud_notification/package.json"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:607d02ea78ba0eeda1279cc9dbc80751e1d6422abeb0d33f56f18ab14eea7cfd"
+      },
+      "resolved": {
+        "pkg:npm/twofactor_nextcloud_notification@5.0.0": {
+          "package_url": "pkg:npm/twofactor_nextcloud_notification@5.0.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/twofactor_totp/package.json": {
+      "name": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/twofactor_totp/package.json",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/twofactor_totp/package.json"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:607d02ea78ba0eeda1279cc9dbc80751e1d6422abeb0d33f56f18ab14eea7cfd"
+      },
+      "resolved": {
+        "pkg:npm/twofactor_totp@13.0.0-dev.0": {
+          "package_url": "pkg:npm/twofactor_totp@13.0.0-dev.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/twofactor_totp/vendor/composer/installed.json": {
+      "name": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/twofactor_totp/vendor/composer/installed.json",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/twofactor_totp/vendor/composer/installed.json"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:607d02ea78ba0eeda1279cc9dbc80751e1d6422abeb0d33f56f18ab14eea7cfd"
+      },
+      "resolved": {
+        "pkg:composer/christian-riesen/base32@1.6.0": {
+          "package_url": "pkg:composer/christian-riesen/base32@1.6.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:composer/rullzer/easytotp@v0.1.4": {
+          "package_url": "pkg:composer/rullzer/easytotp@v0.1.4",
+          "relationship": "direct",
+          "scope": "runtime"
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/viewer/package.json": {
+      "name": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/viewer/package.json",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/src/nextcloud/apps/viewer/package.json"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:607d02ea78ba0eeda1279cc9dbc80751e1d6422abeb0d33f56f18ab14eea7cfd"
+      },
+      "resolved": {
+        "pkg:npm/viewer@4.0.0": {
+          "package_url": "pkg:npm/viewer@4.0.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/src/nextcloud/lib/composer/composer/installed.json": {
+      "name": "docker.io/nextcloud:latest:/usr/src/nextcloud/lib/composer/composer/installed.json",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/src/nextcloud/lib/composer/composer/installed.json"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:607d02ea78ba0eeda1279cc9dbc80751e1d6422abeb0d33f56f18ab14eea7cfd"
+      },
+      "resolved": {
+        "pkg:composer/bamarni/composer-bin-plugin@1.8.2": {
+          "package_url": "pkg:composer/bamarni/composer-bin-plugin@1.8.2",
+          "relationship": "direct",
+          "scope": "runtime"
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/usr/src/nextcloud/package.json": {
+      "name": "docker.io/nextcloud:latest:/usr/src/nextcloud/package.json",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/usr/src/nextcloud/package.json"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:607d02ea78ba0eeda1279cc9dbc80751e1d6422abeb0d33f56f18ab14eea7cfd"
+      },
+      "resolved": {
+        "pkg:npm/nextcloud@1.0.0": {
+          "package_url": "pkg:npm/nextcloud@1.0.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        }
+      }
+    },
+    "docker.io/nextcloud:latest:/var/lib/dpkg/status": {
+      "name": "docker.io/nextcloud:latest:/var/lib/dpkg/status",
+      "file": {
+        "source_location": "docker.io/nextcloud:latest:/var/lib/dpkg/status"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:607d02ea78ba0eeda1279cc9dbc80751e1d6422abeb0d33f56f18ab14eea7cfd"
+      },
+      "resolved": {
+        "pkg:deb/debian/adduser@3.152": {
+          "package_url": "pkg:deb/debian/adduser@3.152?arch=all&distro=debian-13",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/apt@3.0.3"
+          ]
+        },
+        "pkg:deb/debian/apache2-bin@2.4.65-2": {
+          "package_url": "pkg:deb/debian/apache2-bin@2.4.65-2?arch=amd64&distro=debian-13&upstream=apache2",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/apache2@2.4.65-2"
+          ]
+        },
+        "pkg:deb/debian/apache2-data@2.4.65-2": {
+          "package_url": "pkg:deb/debian/apache2-data@2.4.65-2?arch=all&distro=debian-13&upstream=apache2",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/apache2@2.4.65-2"
+          ]
+        },
+        "pkg:deb/debian/apache2-utils@2.4.65-2": {
+          "package_url": "pkg:deb/debian/apache2-utils@2.4.65-2?arch=amd64&distro=debian-13&upstream=apache2",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/apache2@2.4.65-2"
+          ]
+        },
+        "pkg:deb/debian/apache2@2.4.65-2": {
+          "package_url": "pkg:deb/debian/apache2@2.4.65-2?arch=amd64&distro=debian-13",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:deb/debian/apt@3.0.3": {
+          "package_url": "pkg:deb/debian/apt@3.0.3?arch=amd64&distro=debian-13",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:deb/debian/autoconf@2.72-3.1": {
+          "package_url": "pkg:deb/debian/autoconf@2.72-3.1?arch=all&distro=debian-13",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:deb/debian/base-files@13.8": {
+          "package_url": "pkg:deb/debian/base-files@13.8?arch=amd64&distro=debian-13",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/bash@5.2.37-2%2Bb5"
+          ]
+        },
+        "pkg:deb/debian/base-passwd@3.6.7": {
+          "package_url": "pkg:deb/debian/base-passwd@3.6.7?arch=amd64&distro=debian-13",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/apt@3.0.3",
+            "pkg:deb/debian/passwd@1%3A4.17.4-2"
+          ]
+        },
+        "pkg:deb/debian/bash@5.2.37-2%2Bb5": {
+          "package_url": "pkg:deb/debian/bash@5.2.37-2%2Bb5?arch=amd64&distro=debian-13&upstream=bash%405.2.37-2",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:deb/debian/binutils-common@2.44-3": {
+          "package_url": "pkg:deb/debian/binutils-common@2.44-3?arch=amd64&distro=debian-13&upstream=binutils",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/binutils-x86-64-linux-gnu@2.44-3",
+            "pkg:deb/debian/libbinutils@2.44-3",
+            "pkg:deb/debian/binutils@2.44-3"
+          ]
+        },
+        "pkg:deb/debian/binutils-x86-64-linux-gnu@2.44-3": {
+          "package_url": "pkg:deb/debian/binutils-x86-64-linux-gnu@2.44-3?arch=amd64&distro=debian-13&upstream=binutils",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/gcc-14-x86-64-linux-gnu@14.2.0-19",
+            "pkg:deb/debian/binutils@2.44-3"
+          ]
+        },
+        "pkg:deb/debian/binutils@2.44-3": {
+          "package_url": "pkg:deb/debian/binutils@2.44-3?arch=amd64&distro=debian-13",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/gcc-14@14.2.0-19",
+            "pkg:deb/debian/dpkg-dev@1.22.21"
+          ]
+        },
+        "pkg:deb/debian/bsdutils@1%3A2.41-5": {
+          "package_url": "pkg:deb/debian/bsdutils@1%3A2.41-5?arch=amd64&distro=debian-13&upstream=util-linux%402.41-5",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:deb/debian/busybox-static@1%3A1.37.0-6%2Bb3": {
+          "package_url": "pkg:deb/debian/busybox-static@1%3A1.37.0-6%2Bb3?arch=amd64&distro=debian-13&upstream=busybox%401%3A1.37.0-6",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:deb/debian/bzip2@1.0.8-6": {
+          "package_url": "pkg:deb/debian/bzip2@1.0.8-6?arch=amd64&distro=debian-13",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/dpkg-dev@1.22.21"
+          ]
+        },
+        "pkg:deb/debian/ca-certificates@20250419": {
+          "package_url": "pkg:deb/debian/ca-certificates@20250419?arch=all&distro=debian-13",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:deb/debian/coreutils@9.7-3": {
+          "package_url": "pkg:deb/debian/coreutils@9.7-3?arch=amd64&distro=debian-13",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:deb/debian/cpp-14-x86-64-linux-gnu@14.2.0-19": {
+          "package_url": "pkg:deb/debian/cpp-14-x86-64-linux-gnu@14.2.0-19?arch=amd64&distro=debian-13&upstream=gcc-14",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/cpp-14@14.2.0-19",
+            "pkg:deb/debian/gcc-14-x86-64-linux-gnu@14.2.0-19",
+            "pkg:deb/debian/cpp-x86-64-linux-gnu@4%3A14.2.0-1"
+          ]
+        },
+        "pkg:deb/debian/cpp-14@14.2.0-19": {
+          "package_url": "pkg:deb/debian/cpp-14@14.2.0-19?arch=amd64&distro=debian-13&upstream=gcc-14",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/gcc-14@14.2.0-19",
+            "pkg:deb/debian/cpp@4%3A14.2.0-1"
+          ]
+        },
+        "pkg:deb/debian/cpp-x86-64-linux-gnu@4%3A14.2.0-1": {
+          "package_url": "pkg:deb/debian/cpp-x86-64-linux-gnu@4%3A14.2.0-1?arch=amd64&distro=debian-13&upstream=gcc-defaults%401.220",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/gcc@4%3A14.2.0-1",
+            "pkg:deb/debian/g%2B%2B@4%3A14.2.0-1",
+            "pkg:deb/debian/g%2B%2B-x86-64-linux-gnu@4%3A14.2.0-1",
+            "pkg:deb/debian/gcc-x86-64-linux-gnu@4%3A14.2.0-1",
+            "pkg:deb/debian/cpp@4%3A14.2.0-1"
+          ]
+        },
+        "pkg:deb/debian/cpp@4%3A14.2.0-1": {
+          "package_url": "pkg:deb/debian/cpp@4%3A14.2.0-1?arch=amd64&distro=debian-13&upstream=gcc-defaults%401.220",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/gcc@4%3A14.2.0-1",
+            "pkg:deb/debian/g%2B%2B@4%3A14.2.0-1"
+          ]
+        },
+        "pkg:deb/debian/curl@8.14.1-2": {
+          "package_url": "pkg:deb/debian/curl@8.14.1-2?arch=amd64&distro=debian-13",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:deb/debian/dash@0.5.12-12": {
+          "package_url": "pkg:deb/debian/dash@0.5.12-12?arch=amd64&distro=debian-13",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:deb/debian/debconf@1.5.91": {
+          "package_url": "pkg:deb/debian/debconf@1.5.91?arch=all&distro=debian-13",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libpam0g@1.7.0-5",
+            "pkg:deb/debian/libpam-modules@1.7.0-5",
+            "pkg:deb/debian/fontconfig-config@2.15.0-2.3",
+            "pkg:deb/debian/tzdata@2025b-4",
+            "pkg:deb/debian/libpam-runtime@1.7.0-5",
+            "pkg:deb/debian/ca-certificates@20250419"
+          ]
+        },
+        "pkg:deb/debian/debian-archive-keyring@2025.1": {
+          "package_url": "pkg:deb/debian/debian-archive-keyring@2025.1?arch=all&distro=debian-13",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/apt@3.0.3"
+          ]
+        },
+        "pkg:deb/debian/debianutils@5.23.2": {
+          "package_url": "pkg:deb/debian/debianutils@5.23.2?arch=amd64&distro=debian-13",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/bash@5.2.37-2%2Bb5",
+            "pkg:deb/debian/autoconf@2.72-3.1",
+            "pkg:deb/debian/dash@0.5.12-12"
+          ]
+        },
+        "pkg:deb/debian/diffutils@1%3A3.10-4": {
+          "package_url": "pkg:deb/debian/diffutils@1%3A3.10-4?arch=amd64&distro=debian-13",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:deb/debian/dpkg-dev@1.22.21": {
+          "package_url": "pkg:deb/debian/dpkg-dev@1.22.21?arch=all&distro=debian-13&upstream=dpkg",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:deb/debian/dpkg@1.22.21": {
+          "package_url": "pkg:deb/debian/dpkg@1.22.21?arch=amd64&distro=debian-13",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libmagickcore-7.q16-10@8%3A7.1.1.43%2Bdfsg1-1",
+            "pkg:deb/debian/libdpkg-perl@1.22.21",
+            "pkg:deb/debian/libmagickwand-7.q16-10@8%3A7.1.1.43%2Bdfsg1-1",
+            "pkg:deb/debian/python3-minimal@3.13.5-1"
+          ]
+        },
+        "pkg:deb/debian/file@1%3A5.46-5": {
+          "package_url": "pkg:deb/debian/file@1%3A5.46-5?arch=amd64&distro=debian-13",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:deb/debian/findutils@4.10.0-3": {
+          "package_url": "pkg:deb/debian/findutils@4.10.0-3?arch=amd64&distro=debian-13",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:deb/debian/fontconfig-config@2.15.0-2.3": {
+          "package_url": "pkg:deb/debian/fontconfig-config@2.15.0-2.3?arch=amd64&distro=debian-13&upstream=fontconfig",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/fontconfig@2.15.0-2.3",
+            "pkg:deb/debian/libfontconfig1@2.15.0-2.3"
+          ]
+        },
+        "pkg:deb/debian/fontconfig@2.15.0-2.3": {
+          "package_url": "pkg:deb/debian/fontconfig@2.15.0-2.3?arch=amd64&distro=debian-13",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libpango-1.0-0@1.56.3-1"
+          ]
+        },
+        "pkg:deb/debian/fonts-dejavu-core@2.37-8": {
+          "package_url": "pkg:deb/debian/fonts-dejavu-core@2.37-8?arch=all&distro=debian-13&upstream=fonts-dejavu",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/fontconfig-config@2.15.0-2.3"
+          ]
+        },
+        "pkg:deb/debian/fonts-dejavu-mono@2.37-8": {
+          "package_url": "pkg:deb/debian/fonts-dejavu-mono@2.37-8?arch=all&distro=debian-13&upstream=fonts-dejavu",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/fonts-dejavu-core@2.37-8"
+          ]
+        },
+        "pkg:deb/debian/g%2B%2B-14-x86-64-linux-gnu@14.2.0-19": {
+          "package_url": "pkg:deb/debian/g%2B%2B-14-x86-64-linux-gnu@14.2.0-19?arch=amd64&distro=debian-13&upstream=gcc-14",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/g%2B%2B-14@14.2.0-19",
+            "pkg:deb/debian/g%2B%2B-x86-64-linux-gnu@4%3A14.2.0-1"
+          ]
+        },
+        "pkg:deb/debian/g%2B%2B-14@14.2.0-19": {
+          "package_url": "pkg:deb/debian/g%2B%2B-14@14.2.0-19?arch=amd64&distro=debian-13&upstream=gcc-14",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/g%2B%2B@4%3A14.2.0-1"
+          ]
+        },
+        "pkg:deb/debian/g%2B%2B-x86-64-linux-gnu@4%3A14.2.0-1": {
+          "package_url": "pkg:deb/debian/g%2B%2B-x86-64-linux-gnu@4%3A14.2.0-1?arch=amd64&distro=debian-13&upstream=gcc-defaults%401.220",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/g%2B%2B@4%3A14.2.0-1"
+          ]
+        },
+        "pkg:deb/debian/g%2B%2B@4%3A14.2.0-1": {
+          "package_url": "pkg:deb/debian/g%2B%2B@4%3A14.2.0-1?arch=amd64&distro=debian-13&upstream=gcc-defaults%401.220",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:deb/debian/gcc-14-base@14.2.0-19": {
+          "package_url": "pkg:deb/debian/gcc-14-base@14.2.0-19?arch=amd64&distro=debian-13&upstream=gcc-14",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/g%2B%2B-14@14.2.0-19",
+            "pkg:deb/debian/libasan8@14.2.0-19",
+            "pkg:deb/debian/libstdc%2B%2B6@14.2.0-19",
+            "pkg:deb/debian/gcc-14@14.2.0-19",
+            "pkg:deb/debian/libubsan1@14.2.0-19",
+            "pkg:deb/debian/libstdc%2B%2B-14-dev@14.2.0-19",
+            "pkg:deb/debian/libgomp1@14.2.0-19",
+            "pkg:deb/debian/libtsan2@14.2.0-19",
+            "pkg:deb/debian/liblsan0@14.2.0-19",
+            "pkg:deb/debian/libgcc-s1@14.2.0-19",
+            "pkg:deb/debian/libitm1@14.2.0-19",
+            "pkg:deb/debian/libgcc-14-dev@14.2.0-19",
+            "pkg:deb/debian/libhwasan0@14.2.0-19",
+            "pkg:deb/debian/cpp-14@14.2.0-19",
+            "pkg:deb/debian/libquadmath0@14.2.0-19",
+            "pkg:deb/debian/gcc-14-x86-64-linux-gnu@14.2.0-19",
+            "pkg:deb/debian/libatomic1@14.2.0-19",
+            "pkg:deb/debian/cpp-14-x86-64-linux-gnu@14.2.0-19",
+            "pkg:deb/debian/g%2B%2B-14-x86-64-linux-gnu@14.2.0-19",
+            "pkg:deb/debian/libcc1-0@14.2.0-19"
+          ]
+        },
+        "pkg:deb/debian/gcc-14-x86-64-linux-gnu@14.2.0-19": {
+          "package_url": "pkg:deb/debian/gcc-14-x86-64-linux-gnu@14.2.0-19?arch=amd64&distro=debian-13&upstream=gcc-14",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/gcc-14@14.2.0-19",
+            "pkg:deb/debian/gcc-x86-64-linux-gnu@4%3A14.2.0-1",
+            "pkg:deb/debian/g%2B%2B-14-x86-64-linux-gnu@14.2.0-19"
+          ]
+        },
+        "pkg:deb/debian/gcc-14@14.2.0-19": {
+          "package_url": "pkg:deb/debian/gcc-14@14.2.0-19?arch=amd64&distro=debian-13",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/gcc@4%3A14.2.0-1",
+            "pkg:deb/debian/g%2B%2B-14@14.2.0-19",
+            "pkg:deb/debian/g%2B%2B@4%3A14.2.0-1"
+          ]
+        },
+        "pkg:deb/debian/gcc-x86-64-linux-gnu@4%3A14.2.0-1": {
+          "package_url": "pkg:deb/debian/gcc-x86-64-linux-gnu@4%3A14.2.0-1?arch=amd64&distro=debian-13&upstream=gcc-defaults%401.220",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/gcc@4%3A14.2.0-1",
+            "pkg:deb/debian/g%2B%2B-x86-64-linux-gnu@4%3A14.2.0-1"
+          ]
+        },
+        "pkg:deb/debian/gcc@4%3A14.2.0-1": {
+          "package_url": "pkg:deb/debian/gcc@4%3A14.2.0-1?arch=amd64&distro=debian-13&upstream=gcc-defaults%401.220",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/g%2B%2B@4%3A14.2.0-1"
+          ]
+        },
+        "pkg:deb/debian/girepository-tools@2.84.3-1": {
+          "package_url": "pkg:deb/debian/girepository-tools@2.84.3-1?arch=amd64&distro=debian-13&upstream=glib2.0",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libglib2.0-dev@2.84.3-1",
+            "pkg:deb/debian/libglib2.0-dev-bin@2.84.3-1"
+          ]
+        },
+        "pkg:deb/debian/grep@3.11-4": {
+          "package_url": "pkg:deb/debian/grep@3.11-4?arch=amd64&distro=debian-13",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:deb/debian/gzip@1.13-1": {
+          "package_url": "pkg:deb/debian/gzip@1.13-1?arch=amd64&distro=debian-13",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:deb/debian/hostname@3.25": {
+          "package_url": "pkg:deb/debian/hostname@3.25?arch=amd64&distro=debian-13",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:deb/debian/imagemagick-7-common@8%3A7.1.1.43%2Bdfsg1-1": {
+          "package_url": "pkg:deb/debian/imagemagick-7-common@8%3A7.1.1.43%2Bdfsg1-1?arch=all&distro=debian-13&upstream=imagemagick",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libmagickcore-7.q16-10@8%3A7.1.1.43%2Bdfsg1-1",
+            "pkg:deb/debian/libmagickwand-7.q16-10@8%3A7.1.1.43%2Bdfsg1-1"
+          ]
+        },
+        "pkg:deb/debian/init-system-helpers@1.68": {
+          "package_url": "pkg:deb/debian/init-system-helpers@1.68?arch=all&distro=debian-13",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/apache2@2.4.65-2",
+            "pkg:deb/debian/rsync@3.4.1%2Bds1-5",
+            "pkg:deb/debian/procps@2%3A4.0.4-9"
+          ]
+        },
+        "pkg:deb/debian/libacl1@2.3.2-2%2Bb1": {
+          "package_url": "pkg:deb/debian/libacl1@2.3.2-2%2Bb1?arch=amd64&distro=debian-13&upstream=acl%402.3.2-2",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/sed@4.9-2",
+            "pkg:deb/debian/tar@1.35%2Bdfsg-3.1",
+            "pkg:deb/debian/coreutils@9.7-3",
+            "pkg:deb/debian/passwd@1%3A4.17.4-2",
+            "pkg:deb/debian/rsync@3.4.1%2Bds1-5"
+          ]
+        },
+        "pkg:deb/debian/libapr1t64@1.7.5-1": {
+          "package_url": "pkg:deb/debian/libapr1t64@1.7.5-1?arch=amd64&distro=debian-13&upstream=apr",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libaprutil1t64@1.6.3-3%2Bb1",
+            "pkg:deb/debian/apache2-bin@2.4.65-2",
+            "pkg:deb/debian/apache2-utils@2.4.65-2"
+          ]
+        },
+        "pkg:deb/debian/libaprutil1-dbd-sqlite3@1.6.3-3%2Bb1": {
+          "package_url": "pkg:deb/debian/libaprutil1-dbd-sqlite3@1.6.3-3%2Bb1?arch=amd64&distro=debian-13&upstream=apr-util%401.6.3-3",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/apache2-bin@2.4.65-2"
+          ]
+        },
+        "pkg:deb/debian/libaprutil1-ldap@1.6.3-3%2Bb1": {
+          "package_url": "pkg:deb/debian/libaprutil1-ldap@1.6.3-3%2Bb1?arch=amd64&distro=debian-13&upstream=apr-util%401.6.3-3",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/apache2-bin@2.4.65-2"
+          ]
+        },
+        "pkg:deb/debian/libaprutil1t64@1.6.3-3%2Bb1": {
+          "package_url": "pkg:deb/debian/libaprutil1t64@1.6.3-3%2Bb1?arch=amd64&distro=debian-13&upstream=apr-util%401.6.3-3",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libaprutil1-ldap@1.6.3-3%2Bb1",
+            "pkg:deb/debian/libaprutil1-dbd-sqlite3@1.6.3-3%2Bb1",
+            "pkg:deb/debian/apache2-bin@2.4.65-2",
+            "pkg:deb/debian/apache2-utils@2.4.65-2"
+          ]
+        },
+        "pkg:deb/debian/libapt-pkg7.0@3.0.3": {
+          "package_url": "pkg:deb/debian/libapt-pkg7.0@3.0.3?arch=amd64&distro=debian-13&upstream=apt",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/apt@3.0.3"
+          ]
+        },
+        "pkg:deb/debian/libargon2-1@0~20190702%2Bdfsg-4%2Bb2": {
+          "package_url": "pkg:deb/debian/libargon2-1@0~20190702%2Bdfsg-4%2Bb2?arch=amd64&distro=debian-13&upstream=argon2%400~20190702%2Bdfsg-4",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:deb/debian/libasan8@14.2.0-19": {
+          "package_url": "pkg:deb/debian/libasan8@14.2.0-19?arch=amd64&distro=debian-13&upstream=gcc-14",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libgcc-14-dev@14.2.0-19"
+          ]
+        },
+        "pkg:deb/debian/libatomic1@14.2.0-19": {
+          "package_url": "pkg:deb/debian/libatomic1@14.2.0-19?arch=amd64&distro=debian-13&upstream=gcc-14",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libglib2.0-0t64@2.84.3-1",
+            "pkg:deb/debian/libgcc-14-dev@14.2.0-19"
+          ]
+        },
+        "pkg:deb/debian/libattr1@1%3A2.5.2-3": {
+          "package_url": "pkg:deb/debian/libattr1@1%3A2.5.2-3?arch=amd64&distro=debian-13&upstream=attr",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/coreutils@9.7-3",
+            "pkg:deb/debian/passwd@1%3A4.17.4-2"
+          ]
+        },
+        "pkg:deb/debian/libaudit-common@1%3A4.0.2-2": {
+          "package_url": "pkg:deb/debian/libaudit-common@1%3A4.0.2-2?arch=all&distro=debian-13&upstream=audit",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libaudit1@1%3A4.0.2-2%2Bb2"
+          ]
+        },
+        "pkg:deb/debian/libaudit1@1%3A4.0.2-2%2Bb2": {
+          "package_url": "pkg:deb/debian/libaudit1@1%3A4.0.2-2%2Bb2?arch=amd64&distro=debian-13&upstream=audit%401%3A4.0.2-2",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libpam0g@1.7.0-5",
+            "pkg:deb/debian/libpam-modules@1.7.0-5",
+            "pkg:deb/debian/libsemanage2@3.8.1-1",
+            "pkg:deb/debian/passwd@1%3A4.17.4-2",
+            "pkg:deb/debian/libpam-modules-bin@1.7.0-5",
+            "pkg:deb/debian/login@1%3A4.16.0-2%2Breally2.41-5"
+          ]
+        },
+        "pkg:deb/debian/libbinutils@2.44-3": {
+          "package_url": "pkg:deb/debian/libbinutils@2.44-3?arch=amd64&distro=debian-13&upstream=binutils",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/binutils-x86-64-linux-gnu@2.44-3",
+            "pkg:deb/debian/libctf0@2.44-3",
+            "pkg:deb/debian/libgprofng0@2.44-3",
+            "pkg:deb/debian/binutils@2.44-3"
+          ]
+        },
+        "pkg:deb/debian/libblkid-dev@2.41-5": {
+          "package_url": "pkg:deb/debian/libblkid-dev@2.41-5?arch=amd64&distro=debian-13&upstream=util-linux",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libmount-dev@2.41-5"
+          ]
+        },
+        "pkg:deb/debian/libblkid1@2.41-5": {
+          "package_url": "pkg:deb/debian/libblkid1@2.41-5?arch=amd64&distro=debian-13&upstream=util-linux",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/mount@2.41-5",
+            "pkg:deb/debian/libblkid-dev@2.41-5",
+            "pkg:deb/debian/util-linux@2.41-5",
+            "pkg:deb/debian/libmount1@2.41-5"
+          ]
+        },
+        "pkg:deb/debian/libbrotli1@1.1.0-2%2Bb7": {
+          "package_url": "pkg:deb/debian/libbrotli1@1.1.0-2%2Bb7?arch=amd64&distro=debian-13&upstream=brotli%401.1.0-2",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libcurl4t64@8.14.1-2",
+            "pkg:deb/debian/libfreetype6@2.13.3%2Bdfsg-1",
+            "pkg:deb/debian/apache2-bin@2.4.65-2"
+          ]
+        },
+        "pkg:deb/debian/libbsd0@0.12.2-2": {
+          "package_url": "pkg:deb/debian/libbsd0@0.12.2-2?arch=amd64&distro=debian-13&upstream=libbsd",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/passwd@1%3A4.17.4-2"
+          ]
+        },
+        "pkg:deb/debian/libbz2-1.0@1.0.8-6": {
+          "package_url": "pkg:deb/debian/libbz2-1.0@1.0.8-6?arch=amd64&distro=debian-13&upstream=bzip2",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/dpkg@1.22.21",
+            "pkg:deb/debian/libzip5@1.11.3-2",
+            "pkg:deb/debian/libmagickcore-7.q16-10@8%3A7.1.1.43%2Bdfsg1-1",
+            "pkg:deb/debian/libapt-pkg7.0@3.0.3",
+            "pkg:deb/debian/libpython3.13-stdlib@3.13.5-2",
+            "pkg:deb/debian/bzip2@1.0.8-6",
+            "pkg:deb/debian/libsemanage2@3.8.1-1",
+            "pkg:deb/debian/libfreetype6@2.13.3%2Bdfsg-1",
+            "pkg:deb/debian/libmagic1t64@1%3A5.46-5",
+            "pkg:deb/debian/libperl5.40@5.40.1-6"
+          ]
+        },
+        "pkg:deb/debian/libc-bin@2.41-12": {
+          "package_url": "pkg:deb/debian/libc-bin@2.41-12?arch=amd64&distro=debian-13&upstream=glibc",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:deb/debian/libc-dev-bin@2.41-12": {
+          "package_url": "pkg:deb/debian/libc-dev-bin@2.41-12?arch=amd64&distro=debian-13&upstream=glibc",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libc6-dev@2.41-12"
+          ]
+        },
+        "pkg:deb/debian/libc6-dev@2.41-12": {
+          "package_url": "pkg:deb/debian/libc6-dev@2.41-12?arch=amd64&distro=debian-13&upstream=glibc",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libmount-dev@2.41-5",
+            "pkg:deb/debian/uuid-dev@2.41-5",
+            "pkg:deb/debian/libstdc%2B%2B-14-dev@14.2.0-19",
+            "pkg:deb/debian/zlib1g-dev@1%3A1.3.dfsg%2Breally1.3.1-1%2Bb1",
+            "pkg:deb/debian/libblkid-dev@2.41-5",
+            "pkg:deb/debian/libpcre2-dev@10.45-1"
+          ]
+        },
+        "pkg:deb/debian/libc6@2.41-12": {
+          "package_url": "pkg:deb/debian/libc6@2.41-12?arch=amd64&distro=debian-13&upstream=glibc",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/curl@8.14.1-2",
+            "pkg:deb/debian/openssl-provider-legacy@3.5.1-1",
+            "pkg:deb/debian/libgdbm-compat4t64@1.24-2",
+            "pkg:deb/debian/libasan8@14.2.0-19",
+            "pkg:deb/debian/libgdbm6t64@1.24-2",
+            "pkg:deb/debian/libxml2@2.12.7%2Bdfsg%2Breally2.9.14-2.1",
+            "pkg:deb/debian/mount@2.41-5",
+            "pkg:deb/debian/sed@4.9-2",
+            "pkg:deb/debian/libacl1@2.3.2-2%2Bb1",
+            "pkg:deb/debian/libstdc%2B%2B6@14.2.0-19",
+            "pkg:deb/debian/libcap2@1%3A2.75-10%2Bb1",
+            "pkg:deb/debian/apt@3.0.3",
+            "pkg:deb/debian/libsasl2-2@2.1.28%2Bdfsg1-9",
+            "pkg:deb/debian/libfribidi0@1.0.16-1",
+            "pkg:deb/debian/librtmp1@2.4%2B20151223.gitfa8646d.1-2%2Bb5",
+            "pkg:deb/debian/libglib2.0-0t64@2.84.3-1",
+            "pkg:deb/debian/dpkg@1.22.21",
+            "pkg:deb/debian/libhogweed6t64@3.10.1-1",
+            "pkg:deb/debian/bsdutils@1%3A2.41-5",
+            "pkg:deb/debian/libsasl2-modules-db@2.1.28%2Bdfsg1-9",
+            "pkg:deb/debian/libpcre2-16-0@10.45-1",
+            "pkg:deb/debian/libssl3t64@3.5.1-1",
+            "pkg:deb/debian/sysvinit-utils@3.14-4",
+            "pkg:deb/debian/debianutils@5.23.2",
+            "pkg:deb/debian/libzip5@1.11.3-2",
+            "pkg:deb/debian/libopenexr-3-1-30@3.1.13-2",
+            "pkg:deb/debian/libpam0g@1.7.0-5",
+            "pkg:deb/debian/libgmp10@2%3A6.3.0%2Bdfsg-3",
+            "pkg:deb/debian/libpam-modules@1.7.0-5",
+            "pkg:deb/debian/libncursesw6@6.5%2B20250216-2",
+            "pkg:deb/debian/tar@1.35%2Bdfsg-3.1",
+            "pkg:deb/debian/libp11-kit0@0.25.5-3",
+            "pkg:deb/debian/file@1%3A5.46-5",
+            "pkg:deb/debian/libexpat1@2.7.1-2",
+            "pkg:deb/debian/libblkid1@2.41-5",
+            "pkg:deb/debian/libmagickcore-7.q16-10@8%3A7.1.1.43%2Bdfsg1-1",
+            "pkg:deb/debian/sqv@1.3.0-3",
+            "pkg:deb/debian/binutils-x86-64-linux-gnu@2.44-3",
+            "pkg:deb/debian/libnghttp2-14@1.64.0-1.1",
+            "pkg:deb/debian/girepository-tools@2.84.3-1",
+            "pkg:deb/debian/libapt-pkg7.0@3.0.3",
+            "pkg:deb/debian/libwmflite-0.2-7@0.2.13-1.1%2Bb3",
+            "pkg:deb/debian/libaudit1@1%3A4.0.2-2%2Bb2",
+            "pkg:deb/debian/libubsan1@14.2.0-19",
+            "pkg:deb/debian/libwebp7@1.5.0-0.1",
+            "pkg:deb/debian/coreutils@9.7-3",
+            "pkg:deb/debian/openssl@3.5.1-1",
+            "pkg:deb/debian/libidn2-0@2.3.8-2",
+            "pkg:deb/debian/libcurl4t64@8.14.1-2",
+            "pkg:deb/debian/libsqlite3-0@3.46.1-7",
+            "pkg:deb/debian/libsepol2@3.8.1-1",
+            "pkg:deb/debian/libxcb-shm0@1.17.0-2%2Bb1",
+            "pkg:deb/debian/libjpeg62-turbo@1%3A2.1.5-4",
+            "pkg:deb/debian/libpython3.13-stdlib@3.13.5-2",
+            "pkg:deb/debian/re2c@4.1-1",
+            "pkg:deb/debian/rpcsvc-proto@1.4.3-1",
+            "pkg:deb/debian/libtiff6@4.7.0-3",
+            "pkg:deb/debian/libunistring5@1.3-2",
+            "pkg:deb/debian/bzip2@1.0.8-6",
+            "pkg:deb/debian/libgomp1@14.2.0-19",
+            "pkg:deb/debian/libgnutls30t64@3.8.9-3",
+            "pkg:deb/debian/libde265-0@1.0.15-1%2Bb3",
+            "pkg:deb/debian/libxext6@2%3A1.3.4-1%2Bb3",
+            "pkg:deb/debian/liblz4-1@1.10.0-4",
+            "pkg:deb/debian/libdav1d7@1.5.1-1",
+            "pkg:deb/debian/base-passwd@3.6.7",
+            "pkg:deb/debian/libproc2-0@2%3A4.0.4-9",
+            "pkg:deb/debian/xz-utils@5.8.1-1",
+            "pkg:deb/debian/liblua5.4-0@5.4.7-1%2Bb2",
+            "pkg:deb/debian/libtsan2@14.2.0-19",
+            "pkg:deb/debian/libseccomp2@2.6.0-2",
+            "pkg:deb/debian/libsemanage2@3.8.1-1",
+            "pkg:deb/debian/libfreetype6@2.13.3%2Bdfsg-1",
+            "pkg:deb/debian/liblsan0@14.2.0-19",
+            "pkg:deb/debian/libisl23@0.27-1",
+            "pkg:deb/debian/libselinux1@3.8.1-1",
+            "pkg:deb/debian/libelf1t64@0.192-4",
+            "pkg:deb/debian/libmagic1t64@1%3A5.46-5",
+            "pkg:deb/debian/libbsd0@0.12.2-2",
+            "pkg:deb/debian/libdebconfclient0@0.280",
+            "pkg:deb/debian/libbrotli1@1.1.0-2%2Bb7",
+            "pkg:deb/debian/libraw23t64@0.21.4-2",
+            "pkg:deb/debian/libmagickwand-7.q16-10@8%3A7.1.1.43%2Bdfsg1-1",
+            "pkg:deb/debian/libsodium23@1.0.18-1%2Bb2",
+            "pkg:deb/debian/liblqr-1-0@0.4.2-2.1%2Bb2",
+            "pkg:deb/debian/libpangoft2-1.0-0@1.56.3-1",
+            "pkg:deb/debian/libbz2-1.0@1.0.8-6",
+            "pkg:deb/debian/libargon2-1@0~20190702%2Bdfsg-4%2Bb2",
+            "pkg:deb/debian/libldap2@2.6.10%2Bdfsg-1",
+            "pkg:deb/debian/libpopt0@1.19%2Bdfsg-2",
+            "pkg:deb/debian/libheif-plugin-libde265@1.19.8-1",
+            "pkg:deb/debian/libjansson4@2.14-2%2Bb3",
+            "pkg:deb/debian/libc-bin@2.41-12",
+            "pkg:deb/debian/libssh2-1t64@1.11.1-1",
+            "pkg:deb/debian/libgcc-s1@14.2.0-19",
+            "pkg:deb/debian/libkeyutils1@1.6.3-6",
+            "pkg:deb/debian/libjbig0@2.1-6.1%2Bb2",
+            "pkg:deb/debian/libgirepository-2.0-0@2.84.3-1",
+            "pkg:deb/debian/libdb5.3t64@5.3.28%2Bdfsg2-9",
+            "pkg:deb/debian/libhashkit2t64@1.1.4-1.1%2Bb2",
+            "pkg:deb/debian/liblzma5@5.8.1-1",
+            "pkg:deb/debian/liblcms2-2@2.16-2",
+            "pkg:deb/debian/libattr1@1%3A2.5.2-3",
+            "pkg:deb/debian/libpcre2-8-0@10.45-1",
+            "pkg:deb/debian/libitm1@14.2.0-19",
+            "pkg:deb/debian/libtasn1-6@4.20.0-2",
+            "pkg:deb/debian/libaprutil1t64@1.6.3-3%2Bb1",
+            "pkg:deb/debian/libtinfo6@6.5%2B20250216-2",
+            "pkg:deb/debian/libc-dev-bin@2.41-12",
+            "pkg:deb/debian/libudev1@257.7-1",
+            "pkg:deb/debian/libcrypt1@1%3A4.4.38-1",
+            "pkg:deb/debian/make@4.4.1-2",
+            "pkg:deb/debian/libpng16-16t64@1.6.48-1",
+            "pkg:deb/debian/libaprutil1-ldap@1.6.3-3%2Bb1",
+            "pkg:deb/debian/libltdl7@2.5.4-4",
+            "pkg:deb/debian/libpython3.13-minimal@3.13.5-2",
+            "pkg:deb/debian/libimath-3-1-29t64@3.1.12-1%2Bb3",
+            "pkg:deb/debian/libapr1t64@1.7.5-1",
+            "pkg:deb/debian/libheif-plugin-dav1d@1.19.8-1",
+            "pkg:deb/debian/libxxhash0@0.8.3-2",
+            "pkg:deb/debian/libwebpdemux2@1.5.0-0.1",
+            "pkg:deb/debian/pkgconf-bin@1.8.1-4",
+            "pkg:deb/debian/liblastlog2-2@2.41-5",
+            "pkg:deb/debian/libnettle8t64@3.10.1-1",
+            "pkg:deb/debian/libreadline8t64@8.2-6",
+            "pkg:deb/debian/libctf0@2.44-3",
+            "pkg:deb/debian/libicu76@76.1-4",
+            "pkg:deb/debian/zlib1g@1%3A1.3.dfsg%2Breally1.3.1-1%2Bb1",
+            "pkg:deb/debian/libkrb5support0@1.21.3-5",
+            "pkg:deb/debian/python3.13-minimal@3.13.5-2",
+            "pkg:deb/debian/libdeflate0@1.23-2",
+            "pkg:deb/debian/bash@5.2.37-2%2Bb5",
+            "pkg:deb/debian/libperl5.40@5.40.1-6",
+            "pkg:deb/debian/libhwasan0@14.2.0-19",
+            "pkg:deb/debian/libmagickcore-7.q16-10-extra@8%3A7.1.1.43%2Bdfsg1-1",
+            "pkg:deb/debian/libcairo2@1.18.4-1%2Bb1",
+            "pkg:deb/debian/libaprutil1-dbd-sqlite3@1.6.3-3%2Bb1",
+            "pkg:deb/debian/liblerc4@4.0.0%2Bds-5",
+            "pkg:deb/debian/diffutils@1%3A3.10-4",
+            "pkg:deb/debian/libharfbuzz0b@10.2.0-1%2Bb1",
+            "pkg:deb/debian/libkrb5-3@1.21.3-5",
+            "pkg:deb/debian/hostname@3.25",
+            "pkg:deb/debian/libxcb-render0@1.17.0-2%2Bb1",
+            "pkg:deb/debian/libzstd1@1.5.7%2Bdfsg-1",
+            "pkg:deb/debian/libglib2.0-bin@2.84.3-1",
+            "pkg:deb/debian/passwd@1%3A4.17.4-2",
+            "pkg:deb/debian/libmemcached11t64@1.1.4-1.1%2Bb2",
+            "pkg:deb/debian/libgssapi-krb5-2@1.21.3-5",
+            "pkg:deb/debian/fontconfig@2.15.0-2.3",
+            "pkg:deb/debian/libuuid1@2.41-5",
+            "pkg:deb/debian/libsmartcols1@2.41-5",
+            "pkg:deb/debian/libfftw3-double3@3.3.10-2%2Bb1",
+            "pkg:deb/debian/grep@3.11-4",
+            "pkg:deb/debian/libxau6@1%3A1.0.11-1",
+            "pkg:deb/debian/libdatrie1@0.2.13-3%2Bb1",
+            "pkg:deb/debian/libdjvulibre21@3.5.28-2.2",
+            "pkg:deb/debian/libpixman-1-0@0.44.0-3",
+            "pkg:deb/debian/util-linux@2.41-5",
+            "pkg:deb/debian/libgio-2.0-dev-bin@2.84.3-1",
+            "pkg:deb/debian/libthai0@0.1.29-2%2Bb1",
+            "pkg:deb/debian/gzip@1.13-1",
+            "pkg:deb/debian/libheif1@1.19.8-1",
+            "pkg:deb/debian/libcap-ng0@0.8.5-4%2Bb1",
+            "pkg:deb/debian/libwebpmux3@1.5.0-0.1",
+            "pkg:deb/debian/libmpc3@1.3.1-1%2Bb3",
+            "pkg:deb/debian/libpangocairo-1.0-0@1.56.3-1",
+            "pkg:deb/debian/libnghttp3-9@1.8.0-1",
+            "pkg:deb/debian/libpkgconf3@1.8.1-4",
+            "pkg:deb/debian/libcom-err2@1.47.2-3%2Bb3",
+            "pkg:deb/debian/libquadmath0@14.2.0-19",
+            "pkg:deb/debian/m4@1.4.19-8",
+            "pkg:deb/debian/patch@2.8-2",
+            "pkg:deb/debian/libpcre2-posix3@10.45-1",
+            "pkg:deb/debian/libpam-modules-bin@1.7.0-5",
+            "pkg:deb/debian/libonig5@6.9.9-1%2Bb1",
+            "pkg:deb/debian/libpq5@17.5-1",
+            "pkg:deb/debian/libsharpyuv0@1.5.0-0.1",
+            "pkg:deb/debian/apache2-bin@2.4.65-2",
+            "pkg:deb/debian/gcc-14-x86-64-linux-gnu@14.2.0-19",
+            "pkg:deb/debian/findutils@4.10.0-3",
+            "pkg:deb/debian/libgraphite2-3@1.3.14-2%2Bb1",
+            "pkg:deb/debian/libatomic1@14.2.0-19",
+            "pkg:deb/debian/libpango-1.0-0@1.56.3-1",
+            "pkg:deb/debian/mawk@1.3.4.20250131-1",
+            "pkg:deb/debian/cpp-14-x86-64-linux-gnu@14.2.0-19",
+            "pkg:deb/debian/libk5crypto3@1.21.3-5",
+            "pkg:deb/debian/libctf-nobfd0@2.44-3",
+            "pkg:deb/debian/libpcre2-32-0@10.45-1",
+            "pkg:deb/debian/login@1%3A4.16.0-2%2Breally2.41-5",
+            "pkg:deb/debian/g%2B%2B-14-x86-64-linux-gnu@14.2.0-19",
+            "pkg:deb/debian/libgprofng0@2.44-3",
+            "pkg:deb/debian/perl-base@5.40.1-6",
+            "pkg:deb/debian/libxcb1@1.17.0-2%2Bb1",
+            "pkg:deb/debian/apache2-utils@2.4.65-2",
+            "pkg:deb/debian/rsync@3.4.1%2Bds1-5",
+            "pkg:deb/debian/libsystemd0@257.7-1",
+            "pkg:deb/debian/dash@0.5.12-12",
+            "pkg:deb/debian/ncurses-bin@6.5%2B20250216-2",
+            "pkg:deb/debian/libx11-6@2%3A1.8.12-1",
+            "pkg:deb/debian/libbinutils@2.44-3",
+            "pkg:deb/debian/libcc1-0@14.2.0-19",
+            "pkg:deb/debian/libffi8@3.4.8-2",
+            "pkg:deb/debian/procps@2%3A4.0.4-9",
+            "pkg:deb/debian/libpsl5t64@0.21.2-1.1%2Bb1",
+            "pkg:deb/debian/libopenjp2-7@2.5.3-2",
+            "pkg:deb/debian/libxdmcp6@1%3A1.1.5-1",
+            "pkg:deb/debian/binutils@2.44-3",
+            "pkg:deb/debian/libmpfr6@4.2.2-1",
+            "pkg:deb/debian/libxrender1@1%3A0.9.12-1",
+            "pkg:deb/debian/libc6-dev@2.41-12",
+            "pkg:deb/debian/libsframe1@2.44-3",
+            "pkg:deb/debian/libfontconfig1@2.15.0-2.3",
+            "pkg:deb/debian/libmount1@2.41-5",
+            "pkg:deb/debian/libmd0@1.1.0-2%2Bb1"
+          ]
+        },
+        "pkg:deb/debian/libcairo2@1.18.4-1%2Bb1": {
+          "package_url": "pkg:deb/debian/libcairo2@1.18.4-1%2Bb1?arch=amd64&distro=debian-13&upstream=cairo%401.18.4-1",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libmagickcore-7.q16-10-extra@8%3A7.1.1.43%2Bdfsg1-1",
+            "pkg:deb/debian/libpangocairo-1.0-0@1.56.3-1"
+          ]
+        },
+        "pkg:deb/debian/libcap-ng0@0.8.5-4%2Bb1": {
+          "package_url": "pkg:deb/debian/libcap-ng0@0.8.5-4%2Bb1?arch=amd64&distro=debian-13&upstream=libcap-ng%400.8.5-4",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libaudit1@1%3A4.0.2-2%2Bb2",
+            "pkg:deb/debian/util-linux@2.41-5"
+          ]
+        },
+        "pkg:deb/debian/libcap2@1%3A2.75-10%2Bb1": {
+          "package_url": "pkg:deb/debian/libcap2@1%3A2.75-10%2Bb1?arch=amd64&distro=debian-13&upstream=libcap2%401%3A2.75-10",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/coreutils@9.7-3",
+            "pkg:deb/debian/libudev1@257.7-1",
+            "pkg:deb/debian/libsystemd0@257.7-1"
+          ]
+        },
+        "pkg:deb/debian/libcc1-0@14.2.0-19": {
+          "package_url": "pkg:deb/debian/libcc1-0@14.2.0-19?arch=amd64&distro=debian-13&upstream=gcc-14",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/gcc-14-x86-64-linux-gnu@14.2.0-19"
+          ]
+        },
+        "pkg:deb/debian/libcom-err2@1.47.2-3%2Bb3": {
+          "package_url": "pkg:deb/debian/libcom-err2@1.47.2-3%2Bb3?arch=amd64&distro=debian-13&upstream=e2fsprogs%401.47.2-3",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libkrb5-3@1.21.3-5",
+            "pkg:deb/debian/libgssapi-krb5-2@1.21.3-5"
+          ]
+        },
+        "pkg:deb/debian/libcrypt-dev@1%3A4.4.38-1": {
+          "package_url": "pkg:deb/debian/libcrypt-dev@1%3A4.4.38-1?arch=amd64&distro=debian-13&upstream=libxcrypt",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libc6-dev@2.41-12"
+          ]
+        },
+        "pkg:deb/debian/libcrypt1@1%3A4.4.38-1": {
+          "package_url": "pkg:deb/debian/libcrypt1@1%3A4.4.38-1?arch=amd64&distro=debian-13&upstream=libxcrypt",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libpam-modules@1.7.0-5",
+            "pkg:deb/debian/libcrypt-dev@1%3A4.4.38-1",
+            "pkg:deb/debian/libaprutil1t64@1.6.3-3%2Bb1",
+            "pkg:deb/debian/libperl5.40@5.40.1-6",
+            "pkg:deb/debian/passwd@1%3A4.17.4-2",
+            "pkg:deb/debian/util-linux@2.41-5",
+            "pkg:deb/debian/libpam-modules-bin@1.7.0-5",
+            "pkg:deb/debian/apache2-bin@2.4.65-2",
+            "pkg:deb/debian/login@1%3A4.16.0-2%2Breally2.41-5",
+            "pkg:deb/debian/perl-base@5.40.1-6",
+            "pkg:deb/debian/apache2-utils@2.4.65-2"
+          ]
+        },
+        "pkg:deb/debian/libctf-nobfd0@2.44-3": {
+          "package_url": "pkg:deb/debian/libctf-nobfd0@2.44-3?arch=amd64&distro=debian-13&upstream=binutils",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/binutils-x86-64-linux-gnu@2.44-3"
+          ]
+        },
+        "pkg:deb/debian/libctf0@2.44-3": {
+          "package_url": "pkg:deb/debian/libctf0@2.44-3?arch=amd64&distro=debian-13&upstream=binutils",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/binutils-x86-64-linux-gnu@2.44-3"
+          ]
+        },
+        "pkg:deb/debian/libcurl4t64@8.14.1-2": {
+          "package_url": "pkg:deb/debian/libcurl4t64@8.14.1-2?arch=amd64&distro=debian-13&upstream=curl",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/curl@8.14.1-2",
+            "pkg:deb/debian/apache2-bin@2.4.65-2"
+          ]
+        },
+        "pkg:deb/debian/libdatrie1@0.2.13-3%2Bb1": {
+          "package_url": "pkg:deb/debian/libdatrie1@0.2.13-3%2Bb1?arch=amd64&distro=debian-13&upstream=libdatrie%400.2.13-3",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libthai0@0.1.29-2%2Bb1"
+          ]
+        },
+        "pkg:deb/debian/libdav1d7@1.5.1-1": {
+          "package_url": "pkg:deb/debian/libdav1d7@1.5.1-1?arch=amd64&distro=debian-13&upstream=dav1d",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libheif-plugin-dav1d@1.19.8-1"
+          ]
+        },
+        "pkg:deb/debian/libdb5.3t64@5.3.28%2Bdfsg2-9": {
+          "package_url": "pkg:deb/debian/libdb5.3t64@5.3.28%2Bdfsg2-9?arch=amd64&distro=debian-13&upstream=db5.3",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libsasl2-modules-db@2.1.28%2Bdfsg1-9",
+            "pkg:deb/debian/libpam-modules@1.7.0-5",
+            "pkg:deb/debian/libpython3.13-stdlib@3.13.5-2",
+            "pkg:deb/debian/libaprutil1t64@1.6.3-3%2Bb1",
+            "pkg:deb/debian/libperl5.40@5.40.1-6"
+          ]
+        },
+        "pkg:deb/debian/libde265-0@1.0.15-1%2Bb3": {
+          "package_url": "pkg:deb/debian/libde265-0@1.0.15-1%2Bb3?arch=amd64&distro=debian-13&upstream=libde265%401.0.15-1",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libheif-plugin-libde265@1.19.8-1"
+          ]
+        },
+        "pkg:deb/debian/libdebconfclient0@0.280": {
+          "package_url": "pkg:deb/debian/libdebconfclient0@0.280?arch=amd64&distro=debian-13&upstream=cdebconf",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/base-passwd@3.6.7"
+          ]
+        },
+        "pkg:deb/debian/libdeflate0@1.23-2": {
+          "package_url": "pkg:deb/debian/libdeflate0@1.23-2?arch=amd64&distro=debian-13&upstream=libdeflate",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libtiff6@4.7.0-3"
+          ]
+        },
+        "pkg:deb/debian/libdjvulibre-text@3.5.28-2.2": {
+          "package_url": "pkg:deb/debian/libdjvulibre-text@3.5.28-2.2?arch=all&distro=debian-13&upstream=djvulibre",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libdjvulibre21@3.5.28-2.2"
+          ]
+        },
+        "pkg:deb/debian/libdjvulibre21@3.5.28-2.2": {
+          "package_url": "pkg:deb/debian/libdjvulibre21@3.5.28-2.2?arch=amd64&distro=debian-13&upstream=djvulibre",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libmagickcore-7.q16-10-extra@8%3A7.1.1.43%2Bdfsg1-1"
+          ]
+        },
+        "pkg:deb/debian/libdpkg-perl@1.22.21": {
+          "package_url": "pkg:deb/debian/libdpkg-perl@1.22.21?arch=all&distro=debian-13&upstream=dpkg",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/dpkg-dev@1.22.21"
+          ]
+        },
+        "pkg:deb/debian/libelf1t64@0.192-4": {
+          "package_url": "pkg:deb/debian/libelf1t64@0.192-4?arch=amd64&distro=debian-13&upstream=elfutils",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libglib2.0-bin@2.84.3-1"
+          ]
+        },
+        "pkg:deb/debian/libexpat1@2.7.1-2": {
+          "package_url": "pkg:deb/debian/libexpat1@2.7.1-2?arch=amd64&distro=debian-13&upstream=expat",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libaprutil1t64@1.6.3-3%2Bb1",
+            "pkg:deb/debian/python3.13-minimal@3.13.5-2",
+            "pkg:deb/debian/libfontconfig1@2.15.0-2.3"
+          ]
+        },
+        "pkg:deb/debian/libffi-dev@3.4.8-2": {
+          "package_url": "pkg:deb/debian/libffi-dev@3.4.8-2?arch=amd64&distro=debian-13&upstream=libffi",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libgio-2.0-dev@2.84.3-1"
+          ]
+        },
+        "pkg:deb/debian/libffi8@3.4.8-2": {
+          "package_url": "pkg:deb/debian/libffi8@3.4.8-2?arch=amd64&distro=debian-13&upstream=libffi",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libglib2.0-0t64@2.84.3-1",
+            "pkg:deb/debian/libp11-kit0@0.25.5-3",
+            "pkg:deb/debian/girepository-tools@2.84.3-1",
+            "pkg:deb/debian/libpython3.13-stdlib@3.13.5-2",
+            "pkg:deb/debian/libgirepository-2.0-0@2.84.3-1",
+            "pkg:deb/debian/libffi-dev@3.4.8-2"
+          ]
+        },
+        "pkg:deb/debian/libfftw3-double3@3.3.10-2%2Bb1": {
+          "package_url": "pkg:deb/debian/libfftw3-double3@3.3.10-2%2Bb1?arch=amd64&distro=debian-13&upstream=fftw3%403.3.10-2",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libmagickcore-7.q16-10@8%3A7.1.1.43%2Bdfsg1-1"
+          ]
+        },
+        "pkg:deb/debian/libfontconfig1@2.15.0-2.3": {
+          "package_url": "pkg:deb/debian/libfontconfig1@2.15.0-2.3?arch=amd64&distro=debian-13&upstream=fontconfig",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libmagickcore-7.q16-10@8%3A7.1.1.43%2Bdfsg1-1",
+            "pkg:deb/debian/libpangoft2-1.0-0@1.56.3-1",
+            "pkg:deb/debian/libcairo2@1.18.4-1%2Bb1",
+            "pkg:deb/debian/fontconfig@2.15.0-2.3",
+            "pkg:deb/debian/libpangocairo-1.0-0@1.56.3-1"
+          ]
+        },
+        "pkg:deb/debian/libfreetype6@2.13.3%2Bdfsg-1": {
+          "package_url": "pkg:deb/debian/libfreetype6@2.13.3%2Bdfsg-1?arch=amd64&distro=debian-13&upstream=freetype",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libmagickcore-7.q16-10@8%3A7.1.1.43%2Bdfsg1-1",
+            "pkg:deb/debian/libpangoft2-1.0-0@1.56.3-1",
+            "pkg:deb/debian/libcairo2@1.18.4-1%2Bb1",
+            "pkg:deb/debian/libharfbuzz0b@10.2.0-1%2Bb1",
+            "pkg:deb/debian/fontconfig@2.15.0-2.3",
+            "pkg:deb/debian/libfontconfig1@2.15.0-2.3"
+          ]
+        },
+        "pkg:deb/debian/libfribidi0@1.0.16-1": {
+          "package_url": "pkg:deb/debian/libfribidi0@1.0.16-1?arch=amd64&distro=debian-13&upstream=fribidi",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libpango-1.0-0@1.56.3-1"
+          ]
+        },
+        "pkg:deb/debian/libgcc-14-dev@14.2.0-19": {
+          "package_url": "pkg:deb/debian/libgcc-14-dev@14.2.0-19?arch=amd64&distro=debian-13&upstream=gcc-14",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libstdc%2B%2B-14-dev@14.2.0-19",
+            "pkg:deb/debian/gcc-14-x86-64-linux-gnu@14.2.0-19"
+          ]
+        },
+        "pkg:deb/debian/libgcc-s1@14.2.0-19": {
+          "package_url": "pkg:deb/debian/libgcc-s1@14.2.0-19?arch=amd64&distro=debian-13&upstream=gcc-14",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libasan8@14.2.0-19",
+            "pkg:deb/debian/libstdc%2B%2B6@14.2.0-19",
+            "pkg:deb/debian/apt@3.0.3",
+            "pkg:deb/debian/libopenexr-3-1-30@3.1.13-2",
+            "pkg:deb/debian/libc6@2.41-12",
+            "pkg:deb/debian/libmagickcore-7.q16-10@8%3A7.1.1.43%2Bdfsg1-1",
+            "pkg:deb/debian/sqv@1.3.0-3",
+            "pkg:deb/debian/libapt-pkg7.0@3.0.3",
+            "pkg:deb/debian/libubsan1@14.2.0-19",
+            "pkg:deb/debian/re2c@4.1-1",
+            "pkg:deb/debian/libde265-0@1.0.15-1%2Bb3",
+            "pkg:deb/debian/libtsan2@14.2.0-19",
+            "pkg:deb/debian/liblsan0@14.2.0-19",
+            "pkg:deb/debian/libraw23t64@0.21.4-2",
+            "pkg:deb/debian/libmagickwand-7.q16-10@8%3A7.1.1.43%2Bdfsg1-1",
+            "pkg:deb/debian/libheif-plugin-libde265@1.19.8-1",
+            "pkg:deb/debian/libgcc-14-dev@14.2.0-19",
+            "pkg:deb/debian/libicu76@76.1-4",
+            "pkg:deb/debian/libhwasan0@14.2.0-19",
+            "pkg:deb/debian/liblerc4@4.0.0%2Bds-5",
+            "pkg:deb/debian/libmemcached11t64@1.1.4-1.1%2Bb2",
+            "pkg:deb/debian/libdjvulibre21@3.5.28-2.2",
+            "pkg:deb/debian/libheif1@1.19.8-1",
+            "pkg:deb/debian/gcc-14-x86-64-linux-gnu@14.2.0-19",
+            "pkg:deb/debian/libgprofng0@2.44-3",
+            "pkg:deb/debian/libcc1-0@14.2.0-19",
+            "pkg:deb/debian/binutils@2.44-3"
+          ]
+        },
+        "pkg:deb/debian/libgdbm-compat4t64@1.24-2": {
+          "package_url": "pkg:deb/debian/libgdbm-compat4t64@1.24-2?arch=amd64&distro=debian-13&upstream=gdbm",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libperl5.40@5.40.1-6"
+          ]
+        },
+        "pkg:deb/debian/libgdbm6t64@1.24-2": {
+          "package_url": "pkg:deb/debian/libgdbm6t64@1.24-2?arch=amd64&distro=debian-13&upstream=gdbm",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libgdbm-compat4t64@1.24-2",
+            "pkg:deb/debian/libaprutil1t64@1.6.3-3%2Bb1",
+            "pkg:deb/debian/libperl5.40@5.40.1-6"
+          ]
+        },
+        "pkg:deb/debian/libgio-2.0-dev-bin@2.84.3-1": {
+          "package_url": "pkg:deb/debian/libgio-2.0-dev-bin@2.84.3-1?arch=amd64&distro=debian-13&upstream=glib2.0",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libglib2.0-dev-bin@2.84.3-1"
+          ]
+        },
+        "pkg:deb/debian/libgio-2.0-dev@2.84.3-1": {
+          "package_url": "pkg:deb/debian/libgio-2.0-dev@2.84.3-1?arch=amd64&distro=debian-13&upstream=glib2.0",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libglib2.0-dev@2.84.3-1"
+          ]
+        },
+        "pkg:deb/debian/libgirepository-2.0-0@2.84.3-1": {
+          "package_url": "pkg:deb/debian/libgirepository-2.0-0@2.84.3-1?arch=amd64&distro=debian-13&upstream=glib2.0",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/girepository-tools@2.84.3-1"
+          ]
+        },
+        "pkg:deb/debian/libglib2.0-0t64@2.84.3-1": {
+          "package_url": "pkg:deb/debian/libglib2.0-0t64@2.84.3-1?arch=amd64&distro=debian-13&upstream=glib2.0",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/girepository-tools@2.84.3-1",
+            "pkg:deb/debian/liblqr-1-0@0.4.2-2.1%2Bb2",
+            "pkg:deb/debian/libpangoft2-1.0-0@1.56.3-1",
+            "pkg:deb/debian/libgirepository-2.0-0@2.84.3-1",
+            "pkg:deb/debian/libmagickcore-7.q16-10-extra@8%3A7.1.1.43%2Bdfsg1-1",
+            "pkg:deb/debian/libharfbuzz0b@10.2.0-1%2Bb1",
+            "pkg:deb/debian/libglib2.0-bin@2.84.3-1",
+            "pkg:deb/debian/libgio-2.0-dev-bin@2.84.3-1",
+            "pkg:deb/debian/libpangocairo-1.0-0@1.56.3-1",
+            "pkg:deb/debian/libgio-2.0-dev@2.84.3-1",
+            "pkg:deb/debian/libpango-1.0-0@1.56.3-1"
+          ]
+        },
+        "pkg:deb/debian/libglib2.0-bin@2.84.3-1": {
+          "package_url": "pkg:deb/debian/libglib2.0-bin@2.84.3-1?arch=amd64&distro=debian-13&upstream=glib2.0",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libglib2.0-dev@2.84.3-1"
+          ]
+        },
+        "pkg:deb/debian/libglib2.0-data@2.84.3-1": {
+          "package_url": "pkg:deb/debian/libglib2.0-data@2.84.3-1?arch=all&distro=debian-13&upstream=glib2.0",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libglib2.0-bin@2.84.3-1"
+          ]
+        },
+        "pkg:deb/debian/libglib2.0-dev-bin@2.84.3-1": {
+          "package_url": "pkg:deb/debian/libglib2.0-dev-bin@2.84.3-1?arch=amd64&distro=debian-13&upstream=glib2.0",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libglib2.0-dev@2.84.3-1"
+          ]
+        },
+        "pkg:deb/debian/libglib2.0-dev@2.84.3-1": {
+          "package_url": "pkg:deb/debian/libglib2.0-dev@2.84.3-1?arch=amd64&distro=debian-13&upstream=glib2.0",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:deb/debian/libgmp10@2%3A6.3.0%2Bdfsg-3": {
+          "package_url": "pkg:deb/debian/libgmp10@2%3A6.3.0%2Bdfsg-3?arch=amd64&distro=debian-13&upstream=gmp",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/librtmp1@2.4%2B20151223.gitfa8646d.1-2%2Bb5",
+            "pkg:deb/debian/libhogweed6t64@3.10.1-1",
+            "pkg:deb/debian/sqv@1.3.0-3",
+            "pkg:deb/debian/coreutils@9.7-3",
+            "pkg:deb/debian/libgnutls30t64@3.8.9-3",
+            "pkg:deb/debian/libisl23@0.27-1",
+            "pkg:deb/debian/libmpc3@1.3.1-1%2Bb3",
+            "pkg:deb/debian/gcc-14-x86-64-linux-gnu@14.2.0-19",
+            "pkg:deb/debian/cpp-14-x86-64-linux-gnu@14.2.0-19",
+            "pkg:deb/debian/g%2B%2B-14-x86-64-linux-gnu@14.2.0-19",
+            "pkg:deb/debian/libmpfr6@4.2.2-1"
+          ]
+        },
+        "pkg:deb/debian/libgnutls30t64@3.8.9-3": {
+          "package_url": "pkg:deb/debian/libgnutls30t64@3.8.9-3?arch=amd64&distro=debian-13&upstream=gnutls28",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/librtmp1@2.4%2B20151223.gitfa8646d.1-2%2Bb5"
+          ]
+        },
+        "pkg:deb/debian/libgomp1@14.2.0-19": {
+          "package_url": "pkg:deb/debian/libgomp1@14.2.0-19?arch=amd64&distro=debian-13&upstream=gcc-14",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libmagickcore-7.q16-10@8%3A7.1.1.43%2Bdfsg1-1",
+            "pkg:deb/debian/libraw23t64@0.21.4-2",
+            "pkg:deb/debian/libmagickwand-7.q16-10@8%3A7.1.1.43%2Bdfsg1-1",
+            "pkg:deb/debian/libgcc-14-dev@14.2.0-19",
+            "pkg:deb/debian/libfftw3-double3@3.3.10-2%2Bb1"
+          ]
+        },
+        "pkg:deb/debian/libgprofng0@2.44-3": {
+          "package_url": "pkg:deb/debian/libgprofng0@2.44-3?arch=amd64&distro=debian-13&upstream=binutils",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/binutils@2.44-3"
+          ]
+        },
+        "pkg:deb/debian/libgraphite2-3@1.3.14-2%2Bb1": {
+          "package_url": "pkg:deb/debian/libgraphite2-3@1.3.14-2%2Bb1?arch=amd64&distro=debian-13&upstream=graphite2%401.3.14-2",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libharfbuzz0b@10.2.0-1%2Bb1"
+          ]
+        },
+        "pkg:deb/debian/libgssapi-krb5-2@1.21.3-5": {
+          "package_url": "pkg:deb/debian/libgssapi-krb5-2@1.21.3-5?arch=amd64&distro=debian-13&upstream=krb5",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libcurl4t64@8.14.1-2",
+            "pkg:deb/debian/libpq5@17.5-1"
+          ]
+        },
+        "pkg:deb/debian/libharfbuzz0b@10.2.0-1%2Bb1": {
+          "package_url": "pkg:deb/debian/libharfbuzz0b@10.2.0-1%2Bb1?arch=amd64&distro=debian-13&upstream=harfbuzz%4010.2.0-1",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libpangoft2-1.0-0@1.56.3-1",
+            "pkg:deb/debian/libpangocairo-1.0-0@1.56.3-1",
+            "pkg:deb/debian/libpango-1.0-0@1.56.3-1"
+          ]
+        },
+        "pkg:deb/debian/libhashkit2t64@1.1.4-1.1%2Bb2": {
+          "package_url": "pkg:deb/debian/libhashkit2t64@1.1.4-1.1%2Bb2?arch=amd64&distro=debian-13&upstream=libmemcached%401.1.4-1.1",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libmemcached11t64@1.1.4-1.1%2Bb2"
+          ]
+        },
+        "pkg:deb/debian/libheif-plugin-dav1d@1.19.8-1": {
+          "package_url": "pkg:deb/debian/libheif-plugin-dav1d@1.19.8-1?arch=amd64&distro=debian-13&upstream=libheif",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libheif1@1.19.8-1"
+          ]
+        },
+        "pkg:deb/debian/libheif-plugin-libde265@1.19.8-1": {
+          "package_url": "pkg:deb/debian/libheif-plugin-libde265@1.19.8-1?arch=amd64&distro=debian-13&upstream=libheif",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libheif1@1.19.8-1"
+          ]
+        },
+        "pkg:deb/debian/libheif1@1.19.8-1": {
+          "package_url": "pkg:deb/debian/libheif1@1.19.8-1?arch=amd64&distro=debian-13&upstream=libheif",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libmagickcore-7.q16-10@8%3A7.1.1.43%2Bdfsg1-1",
+            "pkg:deb/debian/libheif-plugin-libde265@1.19.8-1",
+            "pkg:deb/debian/libheif-plugin-dav1d@1.19.8-1"
+          ]
+        },
+        "pkg:deb/debian/libhogweed6t64@3.10.1-1": {
+          "package_url": "pkg:deb/debian/libhogweed6t64@3.10.1-1?arch=amd64&distro=debian-13&upstream=nettle",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/librtmp1@2.4%2B20151223.gitfa8646d.1-2%2Bb5",
+            "pkg:deb/debian/sqv@1.3.0-3",
+            "pkg:deb/debian/libgnutls30t64@3.8.9-3"
+          ]
+        },
+        "pkg:deb/debian/libhwasan0@14.2.0-19": {
+          "package_url": "pkg:deb/debian/libhwasan0@14.2.0-19?arch=amd64&distro=debian-13&upstream=gcc-14",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libgcc-14-dev@14.2.0-19"
+          ]
+        },
+        "pkg:deb/debian/libicu76@76.1-4": {
+          "package_url": "pkg:deb/debian/libicu76@76.1-4?arch=amd64&distro=debian-13&upstream=icu",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:deb/debian/libidn2-0@2.3.8-2": {
+          "package_url": "pkg:deb/debian/libidn2-0@2.3.8-2?arch=amd64&distro=debian-13&upstream=libidn2",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libcurl4t64@8.14.1-2",
+            "pkg:deb/debian/libgnutls30t64@3.8.9-3",
+            "pkg:deb/debian/libpsl5t64@0.21.2-1.1%2Bb1"
+          ]
+        },
+        "pkg:deb/debian/libimath-3-1-29t64@3.1.12-1%2Bb3": {
+          "package_url": "pkg:deb/debian/libimath-3-1-29t64@3.1.12-1%2Bb3?arch=amd64&distro=debian-13&upstream=imath%403.1.12-1",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libopenexr-3-1-30@3.1.13-2"
+          ]
+        },
+        "pkg:deb/debian/libisl23@0.27-1": {
+          "package_url": "pkg:deb/debian/libisl23@0.27-1?arch=amd64&distro=debian-13&upstream=isl",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/gcc-14-x86-64-linux-gnu@14.2.0-19",
+            "pkg:deb/debian/cpp-14-x86-64-linux-gnu@14.2.0-19",
+            "pkg:deb/debian/g%2B%2B-14-x86-64-linux-gnu@14.2.0-19"
+          ]
+        },
+        "pkg:deb/debian/libitm1@14.2.0-19": {
+          "package_url": "pkg:deb/debian/libitm1@14.2.0-19?arch=amd64&distro=debian-13&upstream=gcc-14",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libgcc-14-dev@14.2.0-19"
+          ]
+        },
+        "pkg:deb/debian/libjansson4@2.14-2%2Bb3": {
+          "package_url": "pkg:deb/debian/libjansson4@2.14-2%2Bb3?arch=amd64&distro=debian-13&upstream=jansson%402.14-2",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/binutils-x86-64-linux-gnu@2.44-3",
+            "pkg:deb/debian/apache2-bin@2.4.65-2"
+          ]
+        },
+        "pkg:deb/debian/libjbig0@2.1-6.1%2Bb2": {
+          "package_url": "pkg:deb/debian/libjbig0@2.1-6.1%2Bb2?arch=amd64&distro=debian-13&upstream=jbigkit%402.1-6.1",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libmagickcore-7.q16-10@8%3A7.1.1.43%2Bdfsg1-1",
+            "pkg:deb/debian/libtiff6@4.7.0-3"
+          ]
+        },
+        "pkg:deb/debian/libjpeg62-turbo@1%3A2.1.5-4": {
+          "package_url": "pkg:deb/debian/libjpeg62-turbo@1%3A2.1.5-4?arch=amd64&distro=debian-13&upstream=libjpeg-turbo",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libmagickcore-7.q16-10@8%3A7.1.1.43%2Bdfsg1-1",
+            "pkg:deb/debian/libtiff6@4.7.0-3",
+            "pkg:deb/debian/libraw23t64@0.21.4-2",
+            "pkg:deb/debian/libdjvulibre21@3.5.28-2.2"
+          ]
+        },
+        "pkg:deb/debian/libk5crypto3@1.21.3-5": {
+          "package_url": "pkg:deb/debian/libk5crypto3@1.21.3-5?arch=amd64&distro=debian-13&upstream=krb5",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libkrb5-3@1.21.3-5",
+            "pkg:deb/debian/libgssapi-krb5-2@1.21.3-5"
+          ]
+        },
+        "pkg:deb/debian/libkeyutils1@1.6.3-6": {
+          "package_url": "pkg:deb/debian/libkeyutils1@1.6.3-6?arch=amd64&distro=debian-13&upstream=keyutils",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libkrb5-3@1.21.3-5"
+          ]
+        },
+        "pkg:deb/debian/libkrb5-3@1.21.3-5": {
+          "package_url": "pkg:deb/debian/libkrb5-3@1.21.3-5?arch=amd64&distro=debian-13&upstream=krb5",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libgssapi-krb5-2@1.21.3-5"
+          ]
+        },
+        "pkg:deb/debian/libkrb5support0@1.21.3-5": {
+          "package_url": "pkg:deb/debian/libkrb5support0@1.21.3-5?arch=amd64&distro=debian-13&upstream=krb5",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libkrb5-3@1.21.3-5",
+            "pkg:deb/debian/libgssapi-krb5-2@1.21.3-5",
+            "pkg:deb/debian/libk5crypto3@1.21.3-5"
+          ]
+        },
+        "pkg:deb/debian/liblastlog2-2@2.41-5": {
+          "package_url": "pkg:deb/debian/liblastlog2-2@2.41-5?arch=amd64&distro=debian-13&upstream=util-linux",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/util-linux@2.41-5"
+          ]
+        },
+        "pkg:deb/debian/liblcms2-2@2.16-2": {
+          "package_url": "pkg:deb/debian/liblcms2-2@2.16-2?arch=amd64&distro=debian-13&upstream=lcms2",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libmagickcore-7.q16-10@8%3A7.1.1.43%2Bdfsg1-1",
+            "pkg:deb/debian/libraw23t64@0.21.4-2"
+          ]
+        },
+        "pkg:deb/debian/libldap-common@2.6.10%2Bdfsg-1": {
+          "package_url": "pkg:deb/debian/libldap-common@2.6.10%2Bdfsg-1?arch=all&distro=debian-13&upstream=openldap",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:deb/debian/libldap2@2.6.10%2Bdfsg-1": {
+          "package_url": "pkg:deb/debian/libldap2@2.6.10%2Bdfsg-1?arch=amd64&distro=debian-13&upstream=openldap",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libcurl4t64@8.14.1-2",
+            "pkg:deb/debian/libaprutil1-ldap@1.6.3-3%2Bb1",
+            "pkg:deb/debian/libpq5@17.5-1",
+            "pkg:deb/debian/apache2-bin@2.4.65-2"
+          ]
+        },
+        "pkg:deb/debian/liblerc4@4.0.0%2Bds-5": {
+          "package_url": "pkg:deb/debian/liblerc4@4.0.0%2Bds-5?arch=amd64&distro=debian-13&upstream=lerc",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libtiff6@4.7.0-3"
+          ]
+        },
+        "pkg:deb/debian/liblqr-1-0@0.4.2-2.1%2Bb2": {
+          "package_url": "pkg:deb/debian/liblqr-1-0@0.4.2-2.1%2Bb2?arch=amd64&distro=debian-13&upstream=liblqr%400.4.2-2.1",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libmagickcore-7.q16-10@8%3A7.1.1.43%2Bdfsg1-1"
+          ]
+        },
+        "pkg:deb/debian/liblsan0@14.2.0-19": {
+          "package_url": "pkg:deb/debian/liblsan0@14.2.0-19?arch=amd64&distro=debian-13&upstream=gcc-14",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libgcc-14-dev@14.2.0-19"
+          ]
+        },
+        "pkg:deb/debian/libltdl7@2.5.4-4": {
+          "package_url": "pkg:deb/debian/libltdl7@2.5.4-4?arch=amd64&distro=debian-13&upstream=libtool",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libmagickcore-7.q16-10@8%3A7.1.1.43%2Bdfsg1-1"
+          ]
+        },
+        "pkg:deb/debian/liblua5.4-0@5.4.7-1%2Bb2": {
+          "package_url": "pkg:deb/debian/liblua5.4-0@5.4.7-1%2Bb2?arch=amd64&distro=debian-13&upstream=lua5.4%405.4.7-1",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/apache2-bin@2.4.65-2"
+          ]
+        },
+        "pkg:deb/debian/liblz4-1@1.10.0-4": {
+          "package_url": "pkg:deb/debian/liblz4-1@1.10.0-4?arch=amd64&distro=debian-13&upstream=lz4",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libapt-pkg7.0@3.0.3",
+            "pkg:deb/debian/rsync@3.4.1%2Bds1-5"
+          ]
+        },
+        "pkg:deb/debian/liblzma5@5.8.1-1": {
+          "package_url": "pkg:deb/debian/liblzma5@5.8.1-1?arch=amd64&distro=debian-13&upstream=xz-utils",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libxml2@2.12.7%2Bdfsg%2Breally2.9.14-2.1",
+            "pkg:deb/debian/dpkg@1.22.21",
+            "pkg:deb/debian/libzip5@1.11.3-2",
+            "pkg:deb/debian/libmagickcore-7.q16-10@8%3A7.1.1.43%2Bdfsg1-1",
+            "pkg:deb/debian/libapt-pkg7.0@3.0.3",
+            "pkg:deb/debian/libpython3.13-stdlib@3.13.5-2",
+            "pkg:deb/debian/libtiff6@4.7.0-3",
+            "pkg:deb/debian/xz-utils@5.8.1-1",
+            "pkg:deb/debian/libmagic1t64@1%3A5.46-5"
+          ]
+        },
+        "pkg:deb/debian/libmagic-mgc@1%3A5.46-5": {
+          "package_url": "pkg:deb/debian/libmagic-mgc@1%3A5.46-5?arch=amd64&distro=debian-13&upstream=file",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libmagic1t64@1%3A5.46-5"
+          ]
+        },
+        "pkg:deb/debian/libmagic1t64@1%3A5.46-5": {
+          "package_url": "pkg:deb/debian/libmagic1t64@1%3A5.46-5?arch=amd64&distro=debian-13&upstream=file",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/file@1%3A5.46-5"
+          ]
+        },
+        "pkg:deb/debian/libmagickcore-7.q16-10-extra@8%3A7.1.1.43%2Bdfsg1-1": {
+          "package_url": "pkg:deb/debian/libmagickcore-7.q16-10-extra@8%3A7.1.1.43%2Bdfsg1-1?arch=amd64&distro=debian-13&upstream=imagemagick",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:deb/debian/libmagickcore-7.q16-10@8%3A7.1.1.43%2Bdfsg1-1": {
+          "package_url": "pkg:deb/debian/libmagickcore-7.q16-10@8%3A7.1.1.43%2Bdfsg1-1?arch=amd64&distro=debian-13&upstream=imagemagick",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libmagickwand-7.q16-10@8%3A7.1.1.43%2Bdfsg1-1",
+            "pkg:deb/debian/libmagickcore-7.q16-10-extra@8%3A7.1.1.43%2Bdfsg1-1"
+          ]
+        },
+        "pkg:deb/debian/libmagickwand-7.q16-10@8%3A7.1.1.43%2Bdfsg1-1": {
+          "package_url": "pkg:deb/debian/libmagickwand-7.q16-10@8%3A7.1.1.43%2Bdfsg1-1?arch=amd64&distro=debian-13&upstream=imagemagick",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libmagickcore-7.q16-10-extra@8%3A7.1.1.43%2Bdfsg1-1"
+          ]
+        },
+        "pkg:deb/debian/libmd0@1.1.0-2%2Bb1": {
+          "package_url": "pkg:deb/debian/libmd0@1.1.0-2%2Bb1?arch=amd64&distro=debian-13&upstream=libmd%401.1.0-2",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/dpkg@1.22.21",
+            "pkg:deb/debian/libbsd0@0.12.2-2"
+          ]
+        },
+        "pkg:deb/debian/libmemcached11t64@1.1.4-1.1%2Bb2": {
+          "package_url": "pkg:deb/debian/libmemcached11t64@1.1.4-1.1%2Bb2?arch=amd64&distro=debian-13&upstream=libmemcached%401.1.4-1.1",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:deb/debian/libmount-dev@2.41-5": {
+          "package_url": "pkg:deb/debian/libmount-dev@2.41-5?arch=amd64&distro=debian-13&upstream=util-linux",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libgio-2.0-dev@2.84.3-1"
+          ]
+        },
+        "pkg:deb/debian/libmount1@2.41-5": {
+          "package_url": "pkg:deb/debian/libmount1@2.41-5?arch=amd64&distro=debian-13&upstream=util-linux",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libmount-dev@2.41-5",
+            "pkg:deb/debian/mount@2.41-5",
+            "pkg:deb/debian/libglib2.0-0t64@2.84.3-1",
+            "pkg:deb/debian/util-linux@2.41-5"
+          ]
+        },
+        "pkg:deb/debian/libmpc3@1.3.1-1%2Bb3": {
+          "package_url": "pkg:deb/debian/libmpc3@1.3.1-1%2Bb3?arch=amd64&distro=debian-13&upstream=mpclib3%401.3.1-1",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/gcc-14-x86-64-linux-gnu@14.2.0-19",
+            "pkg:deb/debian/cpp-14-x86-64-linux-gnu@14.2.0-19",
+            "pkg:deb/debian/g%2B%2B-14-x86-64-linux-gnu@14.2.0-19"
+          ]
+        },
+        "pkg:deb/debian/libmpfr6@4.2.2-1": {
+          "package_url": "pkg:deb/debian/libmpfr6@4.2.2-1?arch=amd64&distro=debian-13&upstream=mpfr4",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libmpc3@1.3.1-1%2Bb3",
+            "pkg:deb/debian/gcc-14-x86-64-linux-gnu@14.2.0-19",
+            "pkg:deb/debian/cpp-14-x86-64-linux-gnu@14.2.0-19",
+            "pkg:deb/debian/g%2B%2B-14-x86-64-linux-gnu@14.2.0-19"
+          ]
+        },
+        "pkg:deb/debian/libncursesw6@6.5%2B20250216-2": {
+          "package_url": "pkg:deb/debian/libncursesw6@6.5%2B20250216-2?arch=amd64&distro=debian-13&upstream=ncurses",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libpython3.13-stdlib@3.13.5-2",
+            "pkg:deb/debian/procps@2%3A4.0.4-9"
+          ]
+        },
+        "pkg:deb/debian/libnettle8t64@3.10.1-1": {
+          "package_url": "pkg:deb/debian/libnettle8t64@3.10.1-1?arch=amd64&distro=debian-13&upstream=nettle",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/librtmp1@2.4%2B20151223.gitfa8646d.1-2%2Bb5",
+            "pkg:deb/debian/libhogweed6t64@3.10.1-1",
+            "pkg:deb/debian/sqv@1.3.0-3",
+            "pkg:deb/debian/libgnutls30t64@3.8.9-3"
+          ]
+        },
+        "pkg:deb/debian/libnghttp2-14@1.64.0-1.1": {
+          "package_url": "pkg:deb/debian/libnghttp2-14@1.64.0-1.1?arch=amd64&distro=debian-13&upstream=nghttp2",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libcurl4t64@8.14.1-2",
+            "pkg:deb/debian/apache2-bin@2.4.65-2"
+          ]
+        },
+        "pkg:deb/debian/libnghttp3-9@1.8.0-1": {
+          "package_url": "pkg:deb/debian/libnghttp3-9@1.8.0-1?arch=amd64&distro=debian-13&upstream=nghttp3",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libcurl4t64@8.14.1-2"
+          ]
+        },
+        "pkg:deb/debian/libonig5@6.9.9-1%2Bb1": {
+          "package_url": "pkg:deb/debian/libonig5@6.9.9-1%2Bb1?arch=amd64&distro=debian-13&upstream=libonig%406.9.9-1",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:deb/debian/libopenexr-3-1-30@3.1.13-2": {
+          "package_url": "pkg:deb/debian/libopenexr-3-1-30@3.1.13-2?arch=amd64&distro=debian-13&upstream=openexr",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libmagickcore-7.q16-10-extra@8%3A7.1.1.43%2Bdfsg1-1"
+          ]
+        },
+        "pkg:deb/debian/libopenjp2-7@2.5.3-2": {
+          "package_url": "pkg:deb/debian/libopenjp2-7@2.5.3-2?arch=amd64&distro=debian-13&upstream=openjpeg2",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libmagickcore-7.q16-10@8%3A7.1.1.43%2Bdfsg1-1"
+          ]
+        },
+        "pkg:deb/debian/libp11-kit0@0.25.5-3": {
+          "package_url": "pkg:deb/debian/libp11-kit0@0.25.5-3?arch=amd64&distro=debian-13&upstream=p11-kit",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libgnutls30t64@3.8.9-3"
+          ]
+        },
+        "pkg:deb/debian/libpam-modules-bin@1.7.0-5": {
+          "package_url": "pkg:deb/debian/libpam-modules-bin@1.7.0-5?arch=amd64&distro=debian-13&upstream=pam",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libpam-modules@1.7.0-5"
+          ]
+        },
+        "pkg:deb/debian/libpam-modules@1.7.0-5": {
+          "package_url": "pkg:deb/debian/libpam-modules@1.7.0-5?arch=amd64&distro=debian-13&upstream=pam",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/passwd@1%3A4.17.4-2",
+            "pkg:deb/debian/util-linux@2.41-5",
+            "pkg:deb/debian/login@1%3A4.16.0-2%2Breally2.41-5",
+            "pkg:deb/debian/libpam-runtime@1.7.0-5"
+          ]
+        },
+        "pkg:deb/debian/libpam-runtime@1.7.0-5": {
+          "package_url": "pkg:deb/debian/libpam-runtime@1.7.0-5?arch=all&distro=debian-13&upstream=pam",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/util-linux@2.41-5",
+            "pkg:deb/debian/login@1%3A4.16.0-2%2Breally2.41-5"
+          ]
+        },
+        "pkg:deb/debian/libpam0g@1.7.0-5": {
+          "package_url": "pkg:deb/debian/libpam0g@1.7.0-5?arch=amd64&distro=debian-13&upstream=pam",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libpam-modules@1.7.0-5",
+            "pkg:deb/debian/passwd@1%3A4.17.4-2",
+            "pkg:deb/debian/util-linux@2.41-5",
+            "pkg:deb/debian/libpam-modules-bin@1.7.0-5",
+            "pkg:deb/debian/login@1%3A4.16.0-2%2Breally2.41-5"
+          ]
+        },
+        "pkg:deb/debian/libpango-1.0-0@1.56.3-1": {
+          "package_url": "pkg:deb/debian/libpango-1.0-0@1.56.3-1?arch=amd64&distro=debian-13&upstream=pango1.0",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libpangoft2-1.0-0@1.56.3-1",
+            "pkg:deb/debian/libmagickcore-7.q16-10-extra@8%3A7.1.1.43%2Bdfsg1-1",
+            "pkg:deb/debian/libpangocairo-1.0-0@1.56.3-1"
+          ]
+        },
+        "pkg:deb/debian/libpangocairo-1.0-0@1.56.3-1": {
+          "package_url": "pkg:deb/debian/libpangocairo-1.0-0@1.56.3-1?arch=amd64&distro=debian-13&upstream=pango1.0",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libmagickcore-7.q16-10-extra@8%3A7.1.1.43%2Bdfsg1-1"
+          ]
+        },
+        "pkg:deb/debian/libpangoft2-1.0-0@1.56.3-1": {
+          "package_url": "pkg:deb/debian/libpangoft2-1.0-0@1.56.3-1?arch=amd64&distro=debian-13&upstream=pango1.0",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libpangocairo-1.0-0@1.56.3-1"
+          ]
+        },
+        "pkg:deb/debian/libpcre2-16-0@10.45-1": {
+          "package_url": "pkg:deb/debian/libpcre2-16-0@10.45-1?arch=amd64&distro=debian-13&upstream=pcre2",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libpcre2-dev@10.45-1"
+          ]
+        },
+        "pkg:deb/debian/libpcre2-32-0@10.45-1": {
+          "package_url": "pkg:deb/debian/libpcre2-32-0@10.45-1?arch=amd64&distro=debian-13&upstream=pcre2",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libpcre2-dev@10.45-1"
+          ]
+        },
+        "pkg:deb/debian/libpcre2-8-0@10.45-1": {
+          "package_url": "pkg:deb/debian/libpcre2-8-0@10.45-1?arch=amd64&distro=debian-13&upstream=pcre2",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libglib2.0-0t64@2.84.3-1",
+            "pkg:deb/debian/libselinux1@3.8.1-1",
+            "pkg:deb/debian/grep@3.11-4",
+            "pkg:deb/debian/libpcre2-dev@10.45-1",
+            "pkg:deb/debian/libpcre2-posix3@10.45-1",
+            "pkg:deb/debian/apache2-bin@2.4.65-2"
+          ]
+        },
+        "pkg:deb/debian/libpcre2-dev@10.45-1": {
+          "package_url": "pkg:deb/debian/libpcre2-dev@10.45-1?arch=amd64&distro=debian-13&upstream=pcre2",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libgio-2.0-dev@2.84.3-1",
+            "pkg:deb/debian/libselinux1-dev@3.8.1-1"
+          ]
+        },
+        "pkg:deb/debian/libpcre2-posix3@10.45-1": {
+          "package_url": "pkg:deb/debian/libpcre2-posix3@10.45-1?arch=amd64&distro=debian-13&upstream=pcre2",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libpcre2-dev@10.45-1"
+          ]
+        },
+        "pkg:deb/debian/libperl5.40@5.40.1-6": {
+          "package_url": "pkg:deb/debian/libperl5.40@5.40.1-6?arch=amd64&distro=debian-13&upstream=perl",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/perl@5.40.1-6"
+          ]
+        },
+        "pkg:deb/debian/libpixman-1-0@0.44.0-3": {
+          "package_url": "pkg:deb/debian/libpixman-1-0@0.44.0-3?arch=amd64&distro=debian-13&upstream=pixman",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libcairo2@1.18.4-1%2Bb1"
+          ]
+        },
+        "pkg:deb/debian/libpkgconf3@1.8.1-4": {
+          "package_url": "pkg:deb/debian/libpkgconf3@1.8.1-4?arch=amd64&distro=debian-13&upstream=pkgconf",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/pkgconf-bin@1.8.1-4"
+          ]
+        },
+        "pkg:deb/debian/libpng16-16t64@1.6.48-1": {
+          "package_url": "pkg:deb/debian/libpng16-16t64@1.6.48-1?arch=amd64&distro=debian-13&upstream=libpng1.6",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libmagickcore-7.q16-10@8%3A7.1.1.43%2Bdfsg1-1",
+            "pkg:deb/debian/libfreetype6@2.13.3%2Bdfsg-1",
+            "pkg:deb/debian/libcairo2@1.18.4-1%2Bb1"
+          ]
+        },
+        "pkg:deb/debian/libpopt0@1.19%2Bdfsg-2": {
+          "package_url": "pkg:deb/debian/libpopt0@1.19%2Bdfsg-2?arch=amd64&distro=debian-13&upstream=popt",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/rsync@3.4.1%2Bds1-5"
+          ]
+        },
+        "pkg:deb/debian/libpq5@17.5-1": {
+          "package_url": "pkg:deb/debian/libpq5@17.5-1?arch=amd64&distro=debian-13&upstream=postgresql-17",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:deb/debian/libproc2-0@2%3A4.0.4-9": {
+          "package_url": "pkg:deb/debian/libproc2-0@2%3A4.0.4-9?arch=amd64&distro=debian-13&upstream=procps",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/procps@2%3A4.0.4-9"
+          ]
+        },
+        "pkg:deb/debian/libpsl5t64@0.21.2-1.1%2Bb1": {
+          "package_url": "pkg:deb/debian/libpsl5t64@0.21.2-1.1%2Bb1?arch=amd64&distro=debian-13&upstream=libpsl%400.21.2-1.1",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libcurl4t64@8.14.1-2"
+          ]
+        },
+        "pkg:deb/debian/libpython3-stdlib@3.13.5-1": {
+          "package_url": "pkg:deb/debian/libpython3-stdlib@3.13.5-1?arch=amd64&distro=debian-13&upstream=python3-defaults",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/python3@3.13.5-1"
+          ]
+        },
+        "pkg:deb/debian/libpython3.13-minimal@3.13.5-2": {
+          "package_url": "pkg:deb/debian/libpython3.13-minimal@3.13.5-2?arch=amd64&distro=debian-13&upstream=python3.13",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libpython3.13-stdlib@3.13.5-2",
+            "pkg:deb/debian/python3.13-minimal@3.13.5-2"
+          ]
+        },
+        "pkg:deb/debian/libpython3.13-stdlib@3.13.5-2": {
+          "package_url": "pkg:deb/debian/libpython3.13-stdlib@3.13.5-2?arch=amd64&distro=debian-13&upstream=python3.13",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/python3.13@3.13.5-2",
+            "pkg:deb/debian/libpython3-stdlib@3.13.5-1"
+          ]
+        },
+        "pkg:deb/debian/libquadmath0@14.2.0-19": {
+          "package_url": "pkg:deb/debian/libquadmath0@14.2.0-19?arch=amd64&distro=debian-13&upstream=gcc-14",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libgcc-14-dev@14.2.0-19"
+          ]
+        },
+        "pkg:deb/debian/libraw23t64@0.21.4-2": {
+          "package_url": "pkg:deb/debian/libraw23t64@0.21.4-2?arch=amd64&distro=debian-13&upstream=libraw",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libmagickcore-7.q16-10@8%3A7.1.1.43%2Bdfsg1-1"
+          ]
+        },
+        "pkg:deb/debian/libreadline8t64@8.2-6": {
+          "package_url": "pkg:deb/debian/libreadline8t64@8.2-6?arch=amd64&distro=debian-13&upstream=readline",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libpython3.13-stdlib@3.13.5-2"
+          ]
+        },
+        "pkg:deb/debian/librtmp1@2.4%2B20151223.gitfa8646d.1-2%2Bb5": {
+          "package_url": "pkg:deb/debian/librtmp1@2.4%2B20151223.gitfa8646d.1-2%2Bb5?arch=amd64&distro=debian-13&upstream=rtmpdump%402.4%2B20151223.gitfa8646d.1-2",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libcurl4t64@8.14.1-2"
+          ]
+        },
+        "pkg:deb/debian/libsasl2-2@2.1.28%2Bdfsg1-9": {
+          "package_url": "pkg:deb/debian/libsasl2-2@2.1.28%2Bdfsg1-9?arch=amd64&distro=debian-13&upstream=cyrus-sasl2",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libldap2@2.6.10%2Bdfsg-1",
+            "pkg:deb/debian/libmemcached11t64@1.1.4-1.1%2Bb2"
+          ]
+        },
+        "pkg:deb/debian/libsasl2-modules-db@2.1.28%2Bdfsg1-9": {
+          "package_url": "pkg:deb/debian/libsasl2-modules-db@2.1.28%2Bdfsg1-9?arch=amd64&distro=debian-13&upstream=cyrus-sasl2",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libsasl2-2@2.1.28%2Bdfsg1-9"
+          ]
+        },
+        "pkg:deb/debian/libseccomp2@2.6.0-2": {
+          "package_url": "pkg:deb/debian/libseccomp2@2.6.0-2?arch=amd64&distro=debian-13&upstream=libseccomp",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/apt@3.0.3"
+          ]
+        },
+        "pkg:deb/debian/libselinux1-dev@3.8.1-1": {
+          "package_url": "pkg:deb/debian/libselinux1-dev@3.8.1-1?arch=amd64&distro=debian-13&upstream=libselinux",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libmount-dev@2.41-5",
+            "pkg:deb/debian/libgio-2.0-dev@2.84.3-1"
+          ]
+        },
+        "pkg:deb/debian/libselinux1@3.8.1-1": {
+          "package_url": "pkg:deb/debian/libselinux1@3.8.1-1?arch=amd64&distro=debian-13&upstream=libselinux",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/mount@2.41-5",
+            "pkg:deb/debian/sed@4.9-2",
+            "pkg:deb/debian/libglib2.0-0t64@2.84.3-1",
+            "pkg:deb/debian/dpkg@1.22.21",
+            "pkg:deb/debian/libpam-modules@1.7.0-5",
+            "pkg:deb/debian/tar@1.35%2Bdfsg-3.1",
+            "pkg:deb/debian/coreutils@9.7-3",
+            "pkg:deb/debian/base-passwd@3.6.7",
+            "pkg:deb/debian/libsemanage2@3.8.1-1",
+            "pkg:deb/debian/passwd@1%3A4.17.4-2",
+            "pkg:deb/debian/util-linux@2.41-5",
+            "pkg:deb/debian/libpam-modules-bin@1.7.0-5",
+            "pkg:deb/debian/findutils@4.10.0-3",
+            "pkg:deb/debian/libselinux1-dev@3.8.1-1",
+            "pkg:deb/debian/libmount1@2.41-5"
+          ]
+        },
+        "pkg:deb/debian/libsemanage-common@3.8.1-1": {
+          "package_url": "pkg:deb/debian/libsemanage-common@3.8.1-1?arch=all&distro=debian-13&upstream=libsemanage",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libsemanage2@3.8.1-1"
+          ]
+        },
+        "pkg:deb/debian/libsemanage2@3.8.1-1": {
+          "package_url": "pkg:deb/debian/libsemanage2@3.8.1-1?arch=amd64&distro=debian-13&upstream=libsemanage",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/passwd@1%3A4.17.4-2"
+          ]
+        },
+        "pkg:deb/debian/libsepol-dev@3.8.1-1": {
+          "package_url": "pkg:deb/debian/libsepol-dev@3.8.1-1?arch=amd64&distro=debian-13&upstream=libsepol",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libselinux1-dev@3.8.1-1"
+          ]
+        },
+        "pkg:deb/debian/libsepol2@3.8.1-1": {
+          "package_url": "pkg:deb/debian/libsepol2@3.8.1-1?arch=amd64&distro=debian-13&upstream=libsepol",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libsemanage2@3.8.1-1",
+            "pkg:deb/debian/libsepol-dev@3.8.1-1"
+          ]
+        },
+        "pkg:deb/debian/libsframe1@2.44-3": {
+          "package_url": "pkg:deb/debian/libsframe1@2.44-3?arch=amd64&distro=debian-13&upstream=binutils",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/binutils-x86-64-linux-gnu@2.44-3",
+            "pkg:deb/debian/libbinutils@2.44-3"
+          ]
+        },
+        "pkg:deb/debian/libsharpyuv0@1.5.0-0.1": {
+          "package_url": "pkg:deb/debian/libsharpyuv0@1.5.0-0.1?arch=amd64&distro=debian-13&upstream=libwebp",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libwebp7@1.5.0-0.1",
+            "pkg:deb/debian/libheif1@1.19.8-1"
+          ]
+        },
+        "pkg:deb/debian/libsmartcols1@2.41-5": {
+          "package_url": "pkg:deb/debian/libsmartcols1@2.41-5?arch=amd64&distro=debian-13&upstream=util-linux",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/mount@2.41-5",
+            "pkg:deb/debian/util-linux@2.41-5"
+          ]
+        },
+        "pkg:deb/debian/libsodium23@1.0.18-1%2Bb2": {
+          "package_url": "pkg:deb/debian/libsodium23@1.0.18-1%2Bb2?arch=amd64&distro=debian-13&upstream=libsodium%401.0.18-1",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:deb/debian/libsqlite3-0@3.46.1-7": {
+          "package_url": "pkg:deb/debian/libsqlite3-0@3.46.1-7?arch=amd64&distro=debian-13&upstream=sqlite3",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libpython3.13-stdlib@3.13.5-2",
+            "pkg:deb/debian/liblastlog2-2@2.41-5",
+            "pkg:deb/debian/libaprutil1-dbd-sqlite3@1.6.3-3%2Bb1"
+          ]
+        },
+        "pkg:deb/debian/libssh2-1t64@1.11.1-1": {
+          "package_url": "pkg:deb/debian/libssh2-1t64@1.11.1-1?arch=amd64&distro=debian-13&upstream=libssh2",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libcurl4t64@8.14.1-2"
+          ]
+        },
+        "pkg:deb/debian/libssl3t64@3.5.1-1": {
+          "package_url": "pkg:deb/debian/libssl3t64@3.5.1-1?arch=amd64&distro=debian-13&upstream=openssl",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/openssl-provider-legacy@3.5.1-1",
+            "pkg:deb/debian/apt@3.0.3",
+            "pkg:deb/debian/libsasl2-2@2.1.28%2Bdfsg1-9",
+            "pkg:deb/debian/libzip5@1.11.3-2",
+            "pkg:deb/debian/libapt-pkg7.0@3.0.3",
+            "pkg:deb/debian/coreutils@9.7-3",
+            "pkg:deb/debian/openssl@3.5.1-1",
+            "pkg:deb/debian/libcurl4t64@8.14.1-2",
+            "pkg:deb/debian/libldap2@2.6.10%2Bdfsg-1",
+            "pkg:deb/debian/libssh2-1t64@1.11.1-1",
+            "pkg:deb/debian/libhashkit2t64@1.1.4-1.1%2Bb2",
+            "pkg:deb/debian/libaprutil1t64@1.6.3-3%2Bb1",
+            "pkg:deb/debian/libpython3.13-minimal@3.13.5-2",
+            "pkg:deb/debian/libkrb5-3@1.21.3-5",
+            "pkg:deb/debian/libpq5@17.5-1",
+            "pkg:deb/debian/apache2-bin@2.4.65-2",
+            "pkg:deb/debian/apache2-utils@2.4.65-2",
+            "pkg:deb/debian/rsync@3.4.1%2Bds1-5"
+          ]
+        },
+        "pkg:deb/debian/libstdc%2B%2B-14-dev@14.2.0-19": {
+          "package_url": "pkg:deb/debian/libstdc%2B%2B-14-dev@14.2.0-19?arch=amd64&distro=debian-13&upstream=gcc-14",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/g%2B%2B-14-x86-64-linux-gnu@14.2.0-19"
+          ]
+        },
+        "pkg:deb/debian/libstdc%2B%2B6@14.2.0-19": {
+          "package_url": "pkg:deb/debian/libstdc%2B%2B6@14.2.0-19?arch=amd64&distro=debian-13&upstream=gcc-14",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/apt@3.0.3",
+            "pkg:deb/debian/libopenexr-3-1-30@3.1.13-2",
+            "pkg:deb/debian/libapt-pkg7.0@3.0.3",
+            "pkg:deb/debian/libubsan1@14.2.0-19",
+            "pkg:deb/debian/re2c@4.1-1",
+            "pkg:deb/debian/libstdc%2B%2B-14-dev@14.2.0-19",
+            "pkg:deb/debian/libde265-0@1.0.15-1%2Bb3",
+            "pkg:deb/debian/liblua5.4-0@5.4.7-1%2Bb2",
+            "pkg:deb/debian/libraw23t64@0.21.4-2",
+            "pkg:deb/debian/libheif-plugin-libde265@1.19.8-1",
+            "pkg:deb/debian/libimath-3-1-29t64@3.1.12-1%2Bb3",
+            "pkg:deb/debian/libheif-plugin-dav1d@1.19.8-1",
+            "pkg:deb/debian/libicu76@76.1-4",
+            "pkg:deb/debian/liblerc4@4.0.0%2Bds-5",
+            "pkg:deb/debian/libmemcached11t64@1.1.4-1.1%2Bb2",
+            "pkg:deb/debian/libdjvulibre21@3.5.28-2.2",
+            "pkg:deb/debian/libheif1@1.19.8-1",
+            "pkg:deb/debian/gcc-14-x86-64-linux-gnu@14.2.0-19",
+            "pkg:deb/debian/libgprofng0@2.44-3",
+            "pkg:deb/debian/libcc1-0@14.2.0-19",
+            "pkg:deb/debian/binutils@2.44-3"
+          ]
+        },
+        "pkg:deb/debian/libsysprof-capture-4-dev@48.0-2": {
+          "package_url": "pkg:deb/debian/libsysprof-capture-4-dev@48.0-2?arch=amd64&distro=debian-13&upstream=sysprof",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libgio-2.0-dev@2.84.3-1"
+          ]
+        },
+        "pkg:deb/debian/libsystemd0@257.7-1": {
+          "package_url": "pkg:deb/debian/libsystemd0@257.7-1?arch=amd64&distro=debian-13&upstream=systemd",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/apt@3.0.3",
+            "pkg:deb/debian/bsdutils@1%3A2.41-5",
+            "pkg:deb/debian/libpam-modules@1.7.0-5",
+            "pkg:deb/debian/libapt-pkg7.0@3.0.3",
+            "pkg:deb/debian/coreutils@9.7-3",
+            "pkg:deb/debian/libproc2-0@2%3A4.0.4-9",
+            "pkg:deb/debian/util-linux@2.41-5",
+            "pkg:deb/debian/libpam-modules-bin@1.7.0-5",
+            "pkg:deb/debian/procps@2%3A4.0.4-9"
+          ]
+        },
+        "pkg:deb/debian/libtasn1-6@4.20.0-2": {
+          "package_url": "pkg:deb/debian/libtasn1-6@4.20.0-2?arch=amd64&distro=debian-13",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libgnutls30t64@3.8.9-3"
+          ]
+        },
+        "pkg:deb/debian/libthai-data@0.1.29-2": {
+          "package_url": "pkg:deb/debian/libthai-data@0.1.29-2?arch=all&distro=debian-13&upstream=libthai",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libthai0@0.1.29-2%2Bb1"
+          ]
+        },
+        "pkg:deb/debian/libthai0@0.1.29-2%2Bb1": {
+          "package_url": "pkg:deb/debian/libthai0@0.1.29-2%2Bb1?arch=amd64&distro=debian-13&upstream=libthai%400.1.29-2",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libpango-1.0-0@1.56.3-1"
+          ]
+        },
+        "pkg:deb/debian/libtiff6@4.7.0-3": {
+          "package_url": "pkg:deb/debian/libtiff6@4.7.0-3?arch=amd64&distro=debian-13&upstream=tiff",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libmagickcore-7.q16-10@8%3A7.1.1.43%2Bdfsg1-1"
+          ]
+        },
+        "pkg:deb/debian/libtinfo6@6.5%2B20250216-2": {
+          "package_url": "pkg:deb/debian/libtinfo6@6.5%2B20250216-2?arch=amd64&distro=debian-13&upstream=ncurses",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libncursesw6@6.5%2B20250216-2",
+            "pkg:deb/debian/libpython3.13-stdlib@3.13.5-2",
+            "pkg:deb/debian/libreadline8t64@8.2-6",
+            "pkg:deb/debian/bash@5.2.37-2%2Bb5",
+            "pkg:deb/debian/util-linux@2.41-5",
+            "pkg:deb/debian/ncurses-bin@6.5%2B20250216-2",
+            "pkg:deb/debian/procps@2%3A4.0.4-9"
+          ]
+        },
+        "pkg:deb/debian/libtsan2@14.2.0-19": {
+          "package_url": "pkg:deb/debian/libtsan2@14.2.0-19?arch=amd64&distro=debian-13&upstream=gcc-14",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libgcc-14-dev@14.2.0-19"
+          ]
+        },
+        "pkg:deb/debian/libubsan1@14.2.0-19": {
+          "package_url": "pkg:deb/debian/libubsan1@14.2.0-19?arch=amd64&distro=debian-13&upstream=gcc-14",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libgcc-14-dev@14.2.0-19"
+          ]
+        },
+        "pkg:deb/debian/libudev1@257.7-1": {
+          "package_url": "pkg:deb/debian/libudev1@257.7-1?arch=amd64&distro=debian-13&upstream=systemd",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libapt-pkg7.0@3.0.3",
+            "pkg:deb/debian/util-linux@2.41-5"
+          ]
+        },
+        "pkg:deb/debian/libunistring5@1.3-2": {
+          "package_url": "pkg:deb/debian/libunistring5@1.3-2?arch=amd64&distro=debian-13&upstream=libunistring",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libidn2-0@2.3.8-2",
+            "pkg:deb/debian/libgnutls30t64@3.8.9-3",
+            "pkg:deb/debian/libpsl5t64@0.21.2-1.1%2Bb1"
+          ]
+        },
+        "pkg:deb/debian/libuuid1@2.41-5": {
+          "package_url": "pkg:deb/debian/libuuid1@2.41-5?arch=amd64&distro=debian-13&upstream=util-linux",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/uuid-dev@2.41-5",
+            "pkg:deb/debian/libpython3.13-stdlib@3.13.5-2",
+            "pkg:deb/debian/libapr1t64@1.7.5-1",
+            "pkg:deb/debian/util-linux@2.41-5"
+          ]
+        },
+        "pkg:deb/debian/libwebp7@1.5.0-0.1": {
+          "package_url": "pkg:deb/debian/libwebp7@1.5.0-0.1?arch=amd64&distro=debian-13&upstream=libwebp",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libmagickcore-7.q16-10@8%3A7.1.1.43%2Bdfsg1-1",
+            "pkg:deb/debian/libtiff6@4.7.0-3",
+            "pkg:deb/debian/libwebpdemux2@1.5.0-0.1",
+            "pkg:deb/debian/libwebpmux3@1.5.0-0.1"
+          ]
+        },
+        "pkg:deb/debian/libwebpdemux2@1.5.0-0.1": {
+          "package_url": "pkg:deb/debian/libwebpdemux2@1.5.0-0.1?arch=amd64&distro=debian-13&upstream=libwebp",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libmagickcore-7.q16-10@8%3A7.1.1.43%2Bdfsg1-1"
+          ]
+        },
+        "pkg:deb/debian/libwebpmux3@1.5.0-0.1": {
+          "package_url": "pkg:deb/debian/libwebpmux3@1.5.0-0.1?arch=amd64&distro=debian-13&upstream=libwebp",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libmagickcore-7.q16-10@8%3A7.1.1.43%2Bdfsg1-1"
+          ]
+        },
+        "pkg:deb/debian/libwmflite-0.2-7@0.2.13-1.1%2Bb3": {
+          "package_url": "pkg:deb/debian/libwmflite-0.2-7@0.2.13-1.1%2Bb3?arch=amd64&distro=debian-13&upstream=libwmf%400.2.13-1.1",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libmagickcore-7.q16-10-extra@8%3A7.1.1.43%2Bdfsg1-1"
+          ]
+        },
+        "pkg:deb/debian/libx11-6@2%3A1.8.12-1": {
+          "package_url": "pkg:deb/debian/libx11-6@2%3A1.8.12-1?arch=amd64&distro=debian-13&upstream=libx11",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libmagickcore-7.q16-10@8%3A7.1.1.43%2Bdfsg1-1",
+            "pkg:deb/debian/libxext6@2%3A1.3.4-1%2Bb3",
+            "pkg:deb/debian/libmagickwand-7.q16-10@8%3A7.1.1.43%2Bdfsg1-1",
+            "pkg:deb/debian/libcairo2@1.18.4-1%2Bb1",
+            "pkg:deb/debian/libxrender1@1%3A0.9.12-1"
+          ]
+        },
+        "pkg:deb/debian/libx11-data@2%3A1.8.12-1": {
+          "package_url": "pkg:deb/debian/libx11-data@2%3A1.8.12-1?arch=all&distro=debian-13&upstream=libx11",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libx11-6@2%3A1.8.12-1"
+          ]
+        },
+        "pkg:deb/debian/libxau6@1%3A1.0.11-1": {
+          "package_url": "pkg:deb/debian/libxau6@1%3A1.0.11-1?arch=amd64&distro=debian-13&upstream=libxau",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libxcb1@1.17.0-2%2Bb1"
+          ]
+        },
+        "pkg:deb/debian/libxcb-render0@1.17.0-2%2Bb1": {
+          "package_url": "pkg:deb/debian/libxcb-render0@1.17.0-2%2Bb1?arch=amd64&distro=debian-13&upstream=libxcb%401.17.0-2",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libcairo2@1.18.4-1%2Bb1"
+          ]
+        },
+        "pkg:deb/debian/libxcb-shm0@1.17.0-2%2Bb1": {
+          "package_url": "pkg:deb/debian/libxcb-shm0@1.17.0-2%2Bb1?arch=amd64&distro=debian-13&upstream=libxcb%401.17.0-2",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libcairo2@1.18.4-1%2Bb1"
+          ]
+        },
+        "pkg:deb/debian/libxcb1@1.17.0-2%2Bb1": {
+          "package_url": "pkg:deb/debian/libxcb1@1.17.0-2%2Bb1?arch=amd64&distro=debian-13&upstream=libxcb%401.17.0-2",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libxcb-shm0@1.17.0-2%2Bb1",
+            "pkg:deb/debian/libcairo2@1.18.4-1%2Bb1",
+            "pkg:deb/debian/libxcb-render0@1.17.0-2%2Bb1",
+            "pkg:deb/debian/libx11-6@2%3A1.8.12-1"
+          ]
+        },
+        "pkg:deb/debian/libxdmcp6@1%3A1.1.5-1": {
+          "package_url": "pkg:deb/debian/libxdmcp6@1%3A1.1.5-1?arch=amd64&distro=debian-13&upstream=libxdmcp",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libxcb1@1.17.0-2%2Bb1"
+          ]
+        },
+        "pkg:deb/debian/libxext6@2%3A1.3.4-1%2Bb3": {
+          "package_url": "pkg:deb/debian/libxext6@2%3A1.3.4-1%2Bb3?arch=amd64&distro=debian-13&upstream=libxext%402%3A1.3.4-1",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libmagickcore-7.q16-10@8%3A7.1.1.43%2Bdfsg1-1",
+            "pkg:deb/debian/libcairo2@1.18.4-1%2Bb1"
+          ]
+        },
+        "pkg:deb/debian/libxml2@2.12.7%2Bdfsg%2Breally2.9.14-2.1": {
+          "package_url": "pkg:deb/debian/libxml2@2.12.7%2Bdfsg%2Breally2.9.14-2.1?arch=amd64&distro=debian-13",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libmagickcore-7.q16-10@8%3A7.1.1.43%2Bdfsg1-1",
+            "pkg:deb/debian/libmagickcore-7.q16-10-extra@8%3A7.1.1.43%2Bdfsg1-1",
+            "pkg:deb/debian/apache2-bin@2.4.65-2"
+          ]
+        },
+        "pkg:deb/debian/libxrender1@1%3A0.9.12-1": {
+          "package_url": "pkg:deb/debian/libxrender1@1%3A0.9.12-1?arch=amd64&distro=debian-13&upstream=libxrender",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libcairo2@1.18.4-1%2Bb1"
+          ]
+        },
+        "pkg:deb/debian/libxxhash0@0.8.3-2": {
+          "package_url": "pkg:deb/debian/libxxhash0@0.8.3-2?arch=amd64&distro=debian-13&upstream=xxhash",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libapt-pkg7.0@3.0.3",
+            "pkg:deb/debian/liblz4-1@1.10.0-4",
+            "pkg:deb/debian/rsync@3.4.1%2Bds1-5"
+          ]
+        },
+        "pkg:deb/debian/libzip5@1.11.3-2": {
+          "package_url": "pkg:deb/debian/libzip5@1.11.3-2?arch=amd64&distro=debian-13&upstream=libzip",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:deb/debian/libzstd1@1.5.7%2Bdfsg-1": {
+          "package_url": "pkg:deb/debian/libzstd1@1.5.7%2Bdfsg-1?arch=amd64&distro=debian-13&upstream=libzstd",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/dpkg@1.22.21",
+            "pkg:deb/debian/libssl3t64@3.5.1-1",
+            "pkg:deb/debian/libzip5@1.11.3-2",
+            "pkg:deb/debian/binutils-x86-64-linux-gnu@2.44-3",
+            "pkg:deb/debian/libapt-pkg7.0@3.0.3",
+            "pkg:deb/debian/libcurl4t64@8.14.1-2",
+            "pkg:deb/debian/libtiff6@4.7.0-3",
+            "pkg:deb/debian/libelf1t64@0.192-4",
+            "pkg:deb/debian/gcc-14-x86-64-linux-gnu@14.2.0-19",
+            "pkg:deb/debian/cpp-14-x86-64-linux-gnu@14.2.0-19",
+            "pkg:deb/debian/g%2B%2B-14-x86-64-linux-gnu@14.2.0-19",
+            "pkg:deb/debian/rsync@3.4.1%2Bds1-5",
+            "pkg:deb/debian/libbinutils@2.44-3"
+          ]
+        },
+        "pkg:deb/debian/linux-libc-dev@6.12.38-1": {
+          "package_url": "pkg:deb/debian/linux-libc-dev@6.12.38-1?arch=all&distro=debian-13&upstream=linux",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libc6-dev@2.41-12"
+          ]
+        },
+        "pkg:deb/debian/login.defs@1%3A4.17.4-2": {
+          "package_url": "pkg:deb/debian/login.defs@1%3A4.17.4-2?arch=all&distro=debian-13&upstream=shadow",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/passwd@1%3A4.17.4-2",
+            "pkg:deb/debian/login@1%3A4.16.0-2%2Breally2.41-5"
+          ]
+        },
+        "pkg:deb/debian/login@1%3A4.16.0-2%2Breally2.41-5": {
+          "package_url": "pkg:deb/debian/login@1%3A4.16.0-2%2Breally2.41-5?arch=amd64&distro=debian-13&upstream=util-linux%402.41-5",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:deb/debian/m4@1.4.19-8": {
+          "package_url": "pkg:deb/debian/m4@1.4.19-8?arch=amd64&distro=debian-13",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/autoconf@2.72-3.1"
+          ]
+        },
+        "pkg:deb/debian/make@4.4.1-2": {
+          "package_url": "pkg:deb/debian/make@4.4.1-2?arch=amd64&distro=debian-13&upstream=make-dfsg",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/dpkg-dev@1.22.21"
+          ]
+        },
+        "pkg:deb/debian/mawk@1.3.4.20250131-1": {
+          "package_url": "pkg:deb/debian/mawk@1.3.4.20250131-1?arch=amd64&distro=debian-13",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/base-files@13.8"
+          ]
+        },
+        "pkg:deb/debian/media-types@13.0.0": {
+          "package_url": "pkg:deb/debian/media-types@13.0.0?arch=all&distro=debian-13",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libpython3.13-stdlib@3.13.5-2",
+            "pkg:deb/debian/apache2@2.4.65-2",
+            "pkg:deb/debian/python3.13@3.13.5-2"
+          ]
+        },
+        "pkg:deb/debian/mount@2.41-5": {
+          "package_url": "pkg:deb/debian/mount@2.41-5?arch=amd64&distro=debian-13&upstream=util-linux",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:deb/debian/native-architecture@0.2.6": {
+          "package_url": "pkg:deb/debian/native-architecture@0.2.6?arch=all&distro=debian-13&upstream=architecture-properties",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/girepository-tools@2.84.3-1"
+          ]
+        },
+        "pkg:deb/debian/ncurses-base@6.5%2B20250216-2": {
+          "package_url": "pkg:deb/debian/ncurses-base@6.5%2B20250216-2?arch=all&distro=debian-13&upstream=ncurses",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:deb/debian/ncurses-bin@6.5%2B20250216-2": {
+          "package_url": "pkg:deb/debian/ncurses-bin@6.5%2B20250216-2?arch=amd64&distro=debian-13&upstream=ncurses",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:deb/debian/netbase@6.5": {
+          "package_url": "pkg:deb/debian/netbase@6.5?arch=all&distro=debian-13",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libpython3.13-stdlib@3.13.5-2"
+          ]
+        },
+        "pkg:deb/debian/openssl-provider-legacy@3.5.1-1": {
+          "package_url": "pkg:deb/debian/openssl-provider-legacy@3.5.1-1?arch=amd64&distro=debian-13&upstream=openssl",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libssl3t64@3.5.1-1"
+          ]
+        },
+        "pkg:deb/debian/openssl@3.5.1-1": {
+          "package_url": "pkg:deb/debian/openssl@3.5.1-1?arch=amd64&distro=debian-13",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/ca-certificates@20250419"
+          ]
+        },
+        "pkg:deb/debian/passwd@1%3A4.17.4-2": {
+          "package_url": "pkg:deb/debian/passwd@1%3A4.17.4-2?arch=amd64&distro=debian-13&upstream=shadow",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/adduser@3.152"
+          ]
+        },
+        "pkg:deb/debian/patch@2.8-2": {
+          "package_url": "pkg:deb/debian/patch@2.8-2?arch=amd64&distro=debian-13",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/dpkg-dev@1.22.21"
+          ]
+        },
+        "pkg:deb/debian/perl-base@5.40.1-6": {
+          "package_url": "pkg:deb/debian/perl-base@5.40.1-6?arch=amd64&distro=debian-13&upstream=perl",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/perl-modules-5.40@5.40.1-6",
+            "pkg:deb/debian/perl@5.40.1-6"
+          ]
+        },
+        "pkg:deb/debian/perl-modules-5.40@5.40.1-6": {
+          "package_url": "pkg:deb/debian/perl-modules-5.40@5.40.1-6?arch=all&distro=debian-13&upstream=perl",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libperl5.40@5.40.1-6",
+            "pkg:deb/debian/perl@5.40.1-6"
+          ]
+        },
+        "pkg:deb/debian/perl@5.40.1-6": {
+          "package_url": "pkg:deb/debian/perl@5.40.1-6?arch=amd64&distro=debian-13",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/autoconf@2.72-3.1"
+          ]
+        },
+        "pkg:deb/debian/pkg-config@1.8.1-4": {
+          "package_url": "pkg:deb/debian/pkg-config@1.8.1-4?arch=amd64&distro=debian-13&upstream=pkgconf",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:deb/debian/pkgconf-bin@1.8.1-4": {
+          "package_url": "pkg:deb/debian/pkgconf-bin@1.8.1-4?arch=amd64&distro=debian-13&upstream=pkgconf",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/pkgconf@1.8.1-4"
+          ]
+        },
+        "pkg:deb/debian/pkgconf@1.8.1-4": {
+          "package_url": "pkg:deb/debian/pkgconf@1.8.1-4?arch=amd64&distro=debian-13",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/pkg-config@1.8.1-4",
+            "pkg:deb/debian/libgio-2.0-dev@2.84.3-1"
+          ]
+        },
+        "pkg:deb/debian/procps@2%3A4.0.4-9": {
+          "package_url": "pkg:deb/debian/procps@2%3A4.0.4-9?arch=amd64&distro=debian-13",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/apache2@2.4.65-2"
+          ]
+        },
+        "pkg:deb/debian/python3-minimal@3.13.5-1": {
+          "package_url": "pkg:deb/debian/python3-minimal@3.13.5-1?arch=amd64&distro=debian-13&upstream=python3-defaults",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/python3@3.13.5-1"
+          ]
+        },
+        "pkg:deb/debian/python3-packaging@25.0-1": {
+          "package_url": "pkg:deb/debian/python3-packaging@25.0-1?arch=all&distro=debian-13&upstream=python-packaging",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libgio-2.0-dev-bin@2.84.3-1",
+            "pkg:pypi/packaging@25.0"
+          ]
+        },
+        "pkg:deb/debian/python3.13-minimal@3.13.5-2": {
+          "package_url": "pkg:deb/debian/python3.13-minimal@3.13.5-2?arch=amd64&distro=debian-13&upstream=python3.13",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/python3-minimal@3.13.5-1",
+            "pkg:deb/debian/python3.13@3.13.5-2"
+          ]
+        },
+        "pkg:deb/debian/python3.13@3.13.5-2": {
+          "package_url": "pkg:deb/debian/python3.13@3.13.5-2?arch=amd64&distro=debian-13",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/python3@3.13.5-1"
+          ]
+        },
+        "pkg:deb/debian/python3@3.13.5-1": {
+          "package_url": "pkg:deb/debian/python3@3.13.5-1?arch=amd64&distro=debian-13&upstream=python3-defaults",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:deb/debian/re2c@4.1-1": {
+          "package_url": "pkg:deb/debian/re2c@4.1-1?arch=amd64&distro=debian-13",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:deb/debian/readline-common@8.2-6": {
+          "package_url": "pkg:deb/debian/readline-common@8.2-6?arch=all&distro=debian-13&upstream=readline",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libreadline8t64@8.2-6"
+          ]
+        },
+        "pkg:deb/debian/rpcsvc-proto@1.4.3-1": {
+          "package_url": "pkg:deb/debian/rpcsvc-proto@1.4.3-1?arch=amd64&distro=debian-13",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libc6-dev@2.41-12"
+          ]
+        },
+        "pkg:deb/debian/rsync@3.4.1%2Bds1-5": {
+          "package_url": "pkg:deb/debian/rsync@3.4.1%2Bds1-5?arch=amd64&distro=debian-13",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:deb/debian/sed@4.9-2": {
+          "package_url": "pkg:deb/debian/sed@4.9-2?arch=amd64&distro=debian-13",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:deb/debian/sqv@1.3.0-3": {
+          "package_url": "pkg:deb/debian/sqv@1.3.0-3?arch=amd64&distro=debian-13&upstream=rust-sequoia-sqv",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/apt@3.0.3"
+          ]
+        },
+        "pkg:deb/debian/sysvinit-utils@3.14-4": {
+          "package_url": "pkg:deb/debian/sysvinit-utils@3.14-4?arch=amd64&distro=debian-13&upstream=sysvinit",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:deb/debian/tar@1.35%2Bdfsg-3.1": {
+          "package_url": "pkg:deb/debian/tar@1.35%2Bdfsg-3.1?arch=amd64&distro=debian-13",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/dpkg@1.22.21",
+            "pkg:deb/debian/dpkg-dev@1.22.21"
+          ]
+        },
+        "pkg:deb/debian/tzdata@2025b-4": {
+          "package_url": "pkg:deb/debian/tzdata@2025b-4?arch=all&distro=debian-13",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libpython3.13-stdlib@3.13.5-2",
+            "pkg:deb/debian/python3.13@3.13.5-2"
+          ]
+        },
+        "pkg:deb/debian/util-linux@2.41-5": {
+          "package_url": "pkg:deb/debian/util-linux@2.41-5?arch=amd64&distro=debian-13",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:deb/debian/uuid-dev@2.41-5": {
+          "package_url": "pkg:deb/debian/uuid-dev@2.41-5?arch=amd64&distro=debian-13&upstream=util-linux",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libblkid-dev@2.41-5"
+          ]
+        },
+        "pkg:deb/debian/xz-utils@5.8.1-1": {
+          "package_url": "pkg:deb/debian/xz-utils@5.8.1-1?arch=amd64&distro=debian-13",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/dpkg-dev@1.22.21"
+          ]
+        },
+        "pkg:deb/debian/zlib1g-dev@1%3A1.3.dfsg%2Breally1.3.1-1%2Bb1": {
+          "package_url": "pkg:deb/debian/zlib1g-dev@1%3A1.3.dfsg%2Breally1.3.1-1%2Bb1?arch=amd64&distro=debian-13&upstream=zlib%401%3A1.3.dfsg%2Breally1.3.1-1",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/libgio-2.0-dev@2.84.3-1"
+          ]
+        },
+        "pkg:deb/debian/zlib1g@1%3A1.3.dfsg%2Breally1.3.1-1%2Bb1": {
+          "package_url": "pkg:deb/debian/zlib1g@1%3A1.3.dfsg%2Breally1.3.1-1%2Bb1?arch=amd64&distro=debian-13&upstream=zlib%401%3A1.3.dfsg%2Breally1.3.1-1",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:deb/debian/curl@8.14.1-2",
+            "pkg:deb/debian/libxml2@2.12.7%2Bdfsg%2Breally2.9.14-2.1",
+            "pkg:deb/debian/librtmp1@2.4%2B20151223.gitfa8646d.1-2%2Bb5",
+            "pkg:deb/debian/libglib2.0-0t64@2.84.3-1",
+            "pkg:deb/debian/dpkg@1.22.21",
+            "pkg:deb/debian/libssl3t64@3.5.1-1",
+            "pkg:deb/debian/libzip5@1.11.3-2",
+            "pkg:deb/debian/libopenexr-3-1-30@3.1.13-2",
+            "pkg:deb/debian/libmagickcore-7.q16-10@8%3A7.1.1.43%2Bdfsg1-1",
+            "pkg:deb/debian/binutils-x86-64-linux-gnu@2.44-3",
+            "pkg:deb/debian/libapt-pkg7.0@3.0.3",
+            "pkg:deb/debian/libcurl4t64@8.14.1-2",
+            "pkg:deb/debian/libtiff6@4.7.0-3",
+            "pkg:deb/debian/libfreetype6@2.13.3%2Bdfsg-1",
+            "pkg:deb/debian/libelf1t64@0.192-4",
+            "pkg:deb/debian/libmagic1t64@1%3A5.46-5",
+            "pkg:deb/debian/zlib1g-dev@1%3A1.3.dfsg%2Breally1.3.1-1%2Bb1",
+            "pkg:deb/debian/libssh2-1t64@1.11.1-1",
+            "pkg:deb/debian/libpng16-16t64@1.6.48-1",
+            "pkg:deb/debian/libctf0@2.44-3",
+            "pkg:deb/debian/python3.13-minimal@3.13.5-2",
+            "pkg:deb/debian/libperl5.40@5.40.1-6",
+            "pkg:deb/debian/libcairo2@1.18.4-1%2Bb1",
+            "pkg:deb/debian/libheif1@1.19.8-1",
+            "pkg:deb/debian/apache2-bin@2.4.65-2",
+            "pkg:deb/debian/gcc-14-x86-64-linux-gnu@14.2.0-19",
+            "pkg:deb/debian/cpp-14-x86-64-linux-gnu@14.2.0-19",
+            "pkg:deb/debian/libctf-nobfd0@2.44-3",
+            "pkg:deb/debian/g%2B%2B-14-x86-64-linux-gnu@14.2.0-19",
+            "pkg:deb/debian/libgprofng0@2.44-3",
+            "pkg:deb/debian/rsync@3.4.1%2Bds1-5",
+            "pkg:deb/debian/libbinutils@2.44-3"
+          ]
+        }
+      }
+    }
+  },
+  "scanned": "2025-08-18T18:08:06+02:00"
+}
