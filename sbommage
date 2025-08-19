@@ -178,7 +178,31 @@ class SBOMParser:
 
     @staticmethod
     def parse_github(content: Dict[Any, Any]) -> Dict[str, Any]:
-        """Parse GitHub dependency graph SBOM format."""
+        """
+        Parse a GitHub dependency graph SBOM format into a common structure.
+
+        The expected input is a dictionary representing the JSON content of a GitHub dependency graph export.
+        The format typically includes the following top-level fields:
+            - 'detector': Information about the tool that generated the dependency graph (name, version, url).
+            - 'manifests': A dictionary where each key is a manifest file path and each value contains a list of resolved dependencies.
+            - 'version': The version of the dependency graph format.
+            - 'scanned': (optional) Timestamp of when the scan was performed.
+
+        Each manifest entry contains:
+            - 'resolved': A dictionary of dependencies, where each key is a package name and the value contains:
+                - 'package_url': A purl (package URL) string identifying the package.
+                - 'metadata': (optional) Additional metadata about the package.
+
+        The method parses each manifest and extracts package information, including the package URL (purl),
+        name, version, and any available metadata. It also collects detector and scan metadata.
+
+        Returns:
+            A dictionary with the following structure:
+                - 'format': 'GitHub'
+                - 'version': The version of the dependency graph format.
+                - 'packages': A list of parsed package dictionaries, each containing at least 'purl', 'name', 'version', and 'manifest'.
+                - 'metadata': A dictionary with detector information and scan timestamp.
+        """
         import urllib.parse
         
         packages = []
