@@ -14,20 +14,61 @@ Software Bill of Materials ([SBOM](https://anchore.com/sbom/)) files are increas
 
 ## Installation
 
-Sbommage is written in Python, and uses the [Textual](https://textual.textualize.io/) library for the UI.
+Sbommage is written in Python and requires Python 3.8 or later.
 
-### Pre-requisites
+### From PyPI (Recommended)
 
-You just need Python and the Textual library installed.
+The easiest way to install sbommage is from PyPI:
 
-I use [uv](https://github.com/astral-sh/uv) to manage Python virtual environments. It's good. You might like it too.
+```shell
+pip install sbommage
+```
+
+Or use the install script:
+
+```shell
+curl -sSL https://raw.githubusercontent.com/popey/sbommage/main/install.sh | bash
+```
+
+### From GitHub Releases
+
+Download the latest release from the [GitHub releases page](https://github.com/popey/sbommage/releases).
+
+### Using Homebrew (macOS/Linux)
+
+```shell
+brew tap popey/sbommage
+brew install sbommage
+```
+
+### Using Docker
+
+Note: `-it` is required for interaction with the application. Setting the `TERM` variable allows for better colour support.
+
+```shell
+docker run --rm -it -e TERM=xterm-256color -v $(pwd):/data ghcr.io/popey/sbommage:latest /data/your-sbom.json
+```
+
+### From Source
+
+For development or if you prefer to install from source:
+
+```shell
+git clone https://github.com/popey/sbommage
+cd sbommage
+pip install -e .
+```
+
+### Using uv (Alternative)
+
+If you use [uv](https://github.com/astral-sh/uv) for Python environment management:
 
 ```shell
 git clone https://github.com/popey/sbommage
 cd sbommage
 uv venv
-source ./venv/bin/activate
-uv pip install textual
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+uv pip install -e .
 ```
 
 ## Usage

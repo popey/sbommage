@@ -1,0 +1,31 @@
+name: sbommage
+version: '1.0.0'
+summary: Interactive terminal frontend for SBOM files
+description: |
+  Sbommage is an interactive terminal frontend for viewing Software Bill of
+  Materials (SBOM) files in various formats including SPDX, CycloneDX, GitHub,
+  and Syft. It provides a consistent, user-friendly way to view and explore SBOM
+  data with keyboard navigation and multiple view modes.
+
+base: core22
+confinement: strict
+grade: stable
+
+apps:
+  sbommage:
+    command: bin/sbommage
+    plugs:
+      - home
+      - removable-media
+
+parts:
+  sbommage:
+    plugin: python
+    source: .
+    python-packages:
+      - .
+    build-packages:
+      - python3-pip
+      - python3-setuptools
+    stage-packages:
+      - python3-setuptools

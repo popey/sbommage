@@ -1,0 +1,16 @@
+include README.md
+include LICENSE
+include requirements.txt
+include sbommage.py
+exclude *.pyc
+exclude test_*.py
+exclude *debug*.txt
+exclude *.json
+exclude *.gif
+exclude *.png
+exclude *.tape
+exclude gen-sbom-examples.sh
+recursive-exclude example_sboms *
+recursive-exclude .github *
+recursive-exclude Formula *
+recursive-exclude snap *
