@@ -34,7 +34,7 @@ class SBOMFormatDetector:
     def detect_format(content: Dict[Any, Any]) -> str:
         """
         Detect the SBOM format based on content markers.
-        Returns: 'spdx', 'cyclonedx', 'syft', or 'unknown'
+        Returns: 'spdx', 'cyclonedx', 'syft', 'github', or 'unknown'
         """
         # SPDX typically has a spdxVersion field
         if 'spdxVersion' in content:
@@ -43,6 +43,10 @@ class SBOMFormatDetector:
         # CycloneDX has a bomFormat field
         if 'bomFormat' in content and content['bomFormat'] == 'CycloneDX':
             return 'cyclonedx'
+        
+        # GitHub dependency graph format has detector and manifests fields
+        if 'detector' in content and 'manifests' in content and 'version' in content:
+            return 'github'
         
         # Syft has a specific descriptor
         if 'descriptor' in content and content.get('schema', {}).get('version', '').startswith(''):
@@ -172,6 +176,113 @@ class SBOMParser:
             'metadata': metadata
         }
 
+    @staticmethod
+    def parse_github(content: Dict[Any, Any]) -> Dict[str, Any]:
+        """Parse GitHub dependency graph SBOM format."""
+        import urllib.parse
+        
+        packages = []
+        metadata = {
+            'detector': {},
+            'scanned': ''
+        }
+
+        # Get detector information
+        if 'detector' in content:
+            detector = content['detector']
+            metadata['detector'] = {
+                'name': detector.get('name', 'Unknown'),
+                'version': detector.get('version', 'Unknown'),
+                'url': detector.get('url', 'Unknown')
+            }
+
+        # Get scan timestamp
+        metadata['scanned'] = content.get('scanned', 'Unknown')
+
+        # Extract packages from manifests
+        if 'manifests' in content:
+            for manifest_key, manifest_data in content['manifests'].items():
+                if 'resolved' in manifest_data:
+                    for package_url, package_info in manifest_data['resolved'].items():
+                        # Parse package URL (format: pkg:type/namespace/name@version?params)
+                        name = 'Unknown'
+                        version = 'Unknown'
+                        package_type = 'Unknown'
+                        namespace = ''
+                        
+                        try:
+                            # Basic package URL parsing
+                            if package_url.startswith('pkg:'):
+                                # Remove query parameters first
+                                url_without_params = package_url.split('?')[0]
+                                
+                                # Split by '/' to get components
+                                parts = url_without_params.split('/')
+                                
+                                if len(parts) >= 3:
+                                    # Extract type (e.g., deb, nuget, npm, apk)
+                                    type_part = parts[0].split(':')[1]  # Remove 'pkg:'
+                                    package_type = type_part
+                                    
+                                    # Handle different package URL formats
+                                    if len(parts) == 3:
+                                        # Format: pkg:type/namespace/name@version
+                                        namespace = parts[1]
+                                        name_version = parts[2]
+                                    elif len(parts) == 4:
+                                        # Format: pkg:type/namespace/subnamespace/name@version
+                                        namespace = f"{parts[1]}/{parts[2]}"
+                                        name_version = parts[3]
+                                    else:
+                                        # Handle other formats by joining middle parts as namespace
+                                        namespace = '/'.join(parts[1:-1])
+                                        name_version = parts[-1]
+                                    
+                                    # Extract name and version
+                                    if '@' in name_version:
+                                        name_parts = name_version.split('@', 1)  # Split only on first '@'
+                                        name = name_parts[0]
+                                        version = urllib.parse.unquote(name_parts[1])  # URL decode version
+                                    else:
+                                        name = name_version
+                                        
+                                elif len(parts) == 2:
+                                    # Format: pkg:type/name@version (no namespace)
+                                    type_part = parts[0].split(':')[1]  # Remove 'pkg:'
+                                    package_type = type_part
+                                    name_version = parts[1]
+                                    
+                                    if '@' in name_version:
+                                        name_parts = name_version.split('@', 1)
+                                        name = name_parts[0]
+                                        version = urllib.parse.unquote(name_parts[1])
+                                    else:
+                                        name = name_version
+                                        
+                        except (IndexError, AttributeError) as e:
+                            # Fallback to using the full package_url as name
+                            name = package_url
+
+                        # Create package entry
+                        packages.append({
+                            'name': name,
+                            'version': version,
+                            'type': package_type,
+                            'supplier': namespace if namespace else 'Unknown',
+                            'license': 'Unknown',  # GitHub format doesn't include license info
+                            'package_url': package_url,
+                            'relationship': package_info.get('relationship', 'Unknown'),
+                            'scope': package_info.get('scope', 'Unknown'),
+                            'source_location': manifest_data.get('file', {}).get('source_location', 'Unknown')
+                        })
+
+        return {
+            'format': 'GitHub',
+            'version': content.get('version', 'Unknown'),
+            'packages': packages,
+            'metadata': metadata
+        }
+
     @classmethod
     def parse(cls, content: Dict[Any, Any], format_type: str) -> Dict[str, Any]:
         """Parse SBOM content based on detected format."""
@@ -181,6 +292,8 @@ class SBOMParser:
             return cls.parse_cyclonedx(content)
         elif format_type == 'syft':
             return cls.parse_syft(content)
+        elif format_type == 'github':
+            return cls.parse_github(content)
         else:
             raise ValueError(f"Unsupported SBOM format: {format_type}")
 
