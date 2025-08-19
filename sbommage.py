@@ -7,7 +7,6 @@ from textual.containers import Container, Horizontal, VerticalScroll
 from textual.widgets import Tree, Footer, Static
 from textual.widgets import Markdown
 from typing import Dict, Any
-import json
 from pathlib import Path
         
 def format_urls_as_markdown(text):
