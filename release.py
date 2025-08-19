@@ -10,16 +10,20 @@ import subprocess
 from pathlib import Path
 
 def update_version(version):
-    """Update version in pyproject.toml"""
+    """Update version in pyproject.toml and snap/snapcraft.yaml"""
     pyproject_path = Path("pyproject.toml")
+    snapcraft_path = Path("snap/snapcraft.yaml")
     
     if not pyproject_path.exists():
         print("Error: pyproject.toml not found")
         return False
     
-    content = pyproject_path.read_text()
+    if not snapcraft_path.exists():
+        print("Error: snap/snapcraft.yaml not found")
+        return False
     
-    # Update version line
+    # Update pyproject.toml
+    content = pyproject_path.read_text()
     updated_content = re.sub(
         r'version\s*=\s*"[^"]*"',
         f'version = "{version}"',
@@ -32,13 +36,29 @@ def update_version(version):
     
     pyproject_path.write_text(updated_content)
     print(f"Updated version to {version} in pyproject.toml")
+    
+    # Update snap/snapcraft.yaml
+    snap_content = snapcraft_path.read_text()
+    updated_snap_content = re.sub(
+        r"version:\s*'[^']*'",
+        f"version: '{version}'",
+        snap_content
+    )
+    
+    if snap_content == updated_snap_content:
+        print("Error: Version not found in snap/snapcraft.yaml")
+        return False
+    
+    snapcraft_path.write_text(updated_snap_content)
+    print(f"Updated version to {version} in snap/snapcraft.yaml")
+    
     return True
 
 def create_tag(version):
     """Create and push git tag"""
     try:
         # Add changed files
-        subprocess.run(["git", "add", "pyproject.toml"], check=True)
+        subprocess.run(["git", "add", "pyproject.toml", "snap/snapcraft.yaml"], check=True)
         subprocess.run(["git", "commit", "-m", f"Bump version to {version}"], check=True)
         
         # Create tag
