@@ -1,0 +1,153 @@
+{
+  "version": 0,
+  "job": {},
+  "detector": {
+    "name": "syft",
+    "url": "https://github.com/anchore/syft",
+    "version": "1.31.0"
+  },
+  "metadata": {
+    "syft:distro": "pkg:generic/alpine@3.22.1"
+  },
+  "manifests": {
+    "docker.io/alpine:latest:/lib/apk/db/installed": {
+      "name": "docker.io/alpine:latest:/lib/apk/db/installed",
+      "file": {
+        "source_location": "docker.io/alpine:latest:/lib/apk/db/installed"
+      },
+      "metadata": {
+        "syft:filesystem": "sha256:418dccb7d85a63a6aa574439840f7a6fa6fd2321b3e2394568a317735e867d35"
+      },
+      "resolved": {
+        "pkg:apk/alpine/alpine-baselayout-data@3.7.0-r0": {
+          "package_url": "pkg:apk/alpine/alpine-baselayout-data@3.7.0-r0?arch=x86_64&distro=alpine-3.22.1&upstream=alpine-baselayout",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:apk/alpine/alpine-baselayout@3.7.0-r0"
+          ]
+        },
+        "pkg:apk/alpine/alpine-baselayout@3.7.0-r0": {
+          "package_url": "pkg:apk/alpine/alpine-baselayout@3.7.0-r0?arch=x86_64&distro=alpine-3.22.1",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:apk/alpine/alpine-keys@2.5-r0": {
+          "package_url": "pkg:apk/alpine/alpine-keys@2.5-r0?arch=x86_64&distro=alpine-3.22.1",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:apk/alpine/alpine-release@3.22.1-r0"
+          ]
+        },
+        "pkg:apk/alpine/alpine-release@3.22.1-r0": {
+          "package_url": "pkg:apk/alpine/alpine-release@3.22.1-r0?arch=x86_64&distro=alpine-3.22.1&upstream=alpine-base",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:apk/alpine/apk-tools@2.14.9-r2": {
+          "package_url": "pkg:apk/alpine/apk-tools@2.14.9-r2?arch=x86_64&distro=alpine-3.22.1",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:apk/alpine/busybox-binsh@1.37.0-r18": {
+          "package_url": "pkg:apk/alpine/busybox-binsh@1.37.0-r18?arch=x86_64&distro=alpine-3.22.1&upstream=busybox",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:apk/alpine/alpine-baselayout@3.7.0-r0"
+          ]
+        },
+        "pkg:apk/alpine/busybox@1.37.0-r18": {
+          "package_url": "pkg:apk/alpine/busybox@1.37.0-r18?arch=x86_64&distro=alpine-3.22.1",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:apk/alpine/busybox-binsh@1.37.0-r18"
+          ]
+        },
+        "pkg:apk/alpine/ca-certificates-bundle@20250619-r0": {
+          "package_url": "pkg:apk/alpine/ca-certificates-bundle@20250619-r0?arch=x86_64&distro=alpine-3.22.1&upstream=ca-certificates",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:apk/alpine/libapk2@2.14.9-r2",
+            "pkg:apk/alpine/apk-tools@2.14.9-r2"
+          ]
+        },
+        "pkg:apk/alpine/libapk2@2.14.9-r2": {
+          "package_url": "pkg:apk/alpine/libapk2@2.14.9-r2?arch=x86_64&distro=alpine-3.22.1&upstream=apk-tools",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:apk/alpine/apk-tools@2.14.9-r2"
+          ]
+        },
+        "pkg:apk/alpine/libcrypto3@3.5.1-r0": {
+          "package_url": "pkg:apk/alpine/libcrypto3@3.5.1-r0?arch=x86_64&distro=alpine-3.22.1&upstream=openssl",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:apk/alpine/libssl3@3.5.1-r0",
+            "pkg:apk/alpine/ssl_client@1.37.0-r18",
+            "pkg:apk/alpine/libapk2@2.14.9-r2",
+            "pkg:apk/alpine/apk-tools@2.14.9-r2"
+          ]
+        },
+        "pkg:apk/alpine/libssl3@3.5.1-r0": {
+          "package_url": "pkg:apk/alpine/libssl3@3.5.1-r0?arch=x86_64&distro=alpine-3.22.1&upstream=openssl",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:apk/alpine/ssl_client@1.37.0-r18",
+            "pkg:apk/alpine/libapk2@2.14.9-r2"
+          ]
+        },
+        "pkg:apk/alpine/musl-utils@1.2.5-r10": {
+          "package_url": "pkg:apk/alpine/musl-utils@1.2.5-r10?arch=x86_64&distro=alpine-3.22.1&upstream=musl",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:apk/alpine/musl@1.2.5-r10": {
+          "package_url": "pkg:apk/alpine/musl@1.2.5-r10?arch=x86_64&distro=alpine-3.22.1",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:apk/alpine/libssl3@3.5.1-r0",
+            "pkg:apk/alpine/ssl_client@1.37.0-r18",
+            "pkg:apk/alpine/scanelf@1.3.8-r1",
+            "pkg:apk/alpine/busybox@1.37.0-r18",
+            "pkg:apk/alpine/libcrypto3@3.5.1-r0",
+            "pkg:apk/alpine/libapk2@2.14.9-r2",
+            "pkg:apk/alpine/musl-utils@1.2.5-r10",
+            "pkg:apk/alpine/apk-tools@2.14.9-r2",
+            "pkg:apk/alpine/zlib@1.3.1-r2"
+          ]
+        },
+        "pkg:apk/alpine/scanelf@1.3.8-r1": {
+          "package_url": "pkg:apk/alpine/scanelf@1.3.8-r1?arch=x86_64&distro=alpine-3.22.1&upstream=pax-utils",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:apk/alpine/musl-utils@1.2.5-r10"
+          ]
+        },
+        "pkg:apk/alpine/ssl_client@1.37.0-r18": {
+          "package_url": "pkg:apk/alpine/ssl_client@1.37.0-r18?arch=x86_64&distro=alpine-3.22.1&upstream=busybox",
+          "relationship": "direct",
+          "scope": "runtime"
+        },
+        "pkg:apk/alpine/zlib@1.3.1-r2": {
+          "package_url": "pkg:apk/alpine/zlib@1.3.1-r2?arch=x86_64&distro=alpine-3.22.1",
+          "relationship": "direct",
+          "scope": "runtime",
+          "dependencies": [
+            "pkg:apk/alpine/libapk2@2.14.9-r2",
+            "pkg:apk/alpine/apk-tools@2.14.9-r2"
+          ]
+        }
+      }
+    }
+  },
+  "scanned": "2025-08-18T18:08:17+02:00"
+}
