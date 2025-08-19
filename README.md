@@ -38,7 +38,7 @@ Point sbommage at an SBOM file:
 ./sbommage example_sboms/nextcloud-latest-syft-sbom.json
 ```
 
-Sbommage will detect the SBOM format (SPDX, CycloneDX, or Syft), and present the data in an interactive interface.
+Sbommage will detect the SBOM format (SPDX, CycloneDX, GitHub, or Syft), and present the data in an interactive interface.
 Use the cursor keys or mouse to navigate the tree on the left pane.
 Click or press Enter on an item to see detailed information in the right pane.
 
@@ -68,7 +68,8 @@ Misc:
 The goal is to support as many SBOM formats as possible. Patches welcome!
 
 * SPDX
-* CycloneDX
+* CycloneDX (JSON)
+* GitHub
 * Syft
 
 ## Generating SBOMs
