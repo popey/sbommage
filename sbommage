@@ -49,7 +49,7 @@ class SBOMFormatDetector:
             return 'github'
         
         # Syft has a specific descriptor
-        if 'descriptor' in content and content.get('schema', {}).get('version', '').startswith(''):
+        if 'descriptor' in content and content.get('schema', {}).get('version', '').startswith(('1.', '2.')):
             return 'syft'
             
         return 'unknown'
