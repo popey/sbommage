@@ -260,6 +260,7 @@ class SBOMParser:
                                         name = name_version
                                         
                         except (IndexError, AttributeError) as e:
+                            logging.warning(f"Failed to parse package URL '{package_url}': {e}")
                             # Fallback to using the full package_url as name
                             name = package_url
 
