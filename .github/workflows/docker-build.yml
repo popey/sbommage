@@ -35,7 +35,7 @@ jobs:
     
     - name: Test Docker image
       id: test
-      run: docker run sbommage
+      run: docker run sbommage --help
 
     - name: Generate SBOM
       if: github.event_name != 'pull_request'
