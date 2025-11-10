@@ -1,5 +1,5 @@
 name: sbommage
-version: '1.0.0'
+version: '1.0.2'
 summary: Interactive terminal frontend for SBOM files
 description: |
   Sbommage is an interactive terminal frontend for viewing Software Bill of
