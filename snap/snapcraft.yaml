@@ -21,7 +21,8 @@ apps:
 parts:
   sbommage:
     plugin: python
-    source: .
+    source: https://github.com/popey/sbommage.git
+    source-tag: v$SNAPCRAFT_PROJECT_VERSION
     python-packages:
       - .
     build-packages:
